@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 93
+  m_EditorClassIdentifier: 
+  num: 93
+  nombre: Haunter
+  tipo1: 6
+  tipo2: 17
+  idle: {fileID: 739514705366826764, guid: 8392d1cbb5dac564e843f6b66b5b3787, type: 3}
+  idleShiny: {fileID: 739514705366826764, guid: 70ec60cca191ac2479d9fd90556d19f1, type: 3}
+  explorar: {fileID: 1187936239844330004, guid: 8392d1cbb5dac564e843f6b66b5b3787, type: 3}
+  explorarShiny: {fileID: 1187936239844330004, guid: 70ec60cca191ac2479d9fd90556d19f1, type: 3}
+  andar:
+  - {fileID: 8244601906583008624, guid: 8392d1cbb5dac564e843f6b66b5b3787, type: 3}
+  - {fileID: 6339054593255017733, guid: 8392d1cbb5dac564e843f6b66b5b3787, type: 3}
+  - {fileID: 2993077748890269850, guid: 8392d1cbb5dac564e843f6b66b5b3787, type: 3}
+  - {fileID: -45108008905259125, guid: 8392d1cbb5dac564e843f6b66b5b3787, type: 3}
+  andarShiny:
+  - {fileID: 8244601906583008624, guid: 70ec60cca191ac2479d9fd90556d19f1, type: 3}
+  - {fileID: 6339054593255017733, guid: 70ec60cca191ac2479d9fd90556d19f1, type: 3}
+  - {fileID: 2993077748890269850, guid: 70ec60cca191ac2479d9fd90556d19f1, type: 3}
+  - {fileID: -45108008905259125, guid: 70ec60cca191ac2479d9fd90556d19f1, type: 3}
+  hp: 45
+  atk: 115
+  def: 55
+  lvlEvo: 36
+  evolucion:
+  - {fileID: 11400000, guid: c09fd9adef721f547be3a01456b4478e, type: 2}
+  minLvl: 25
+  ratioCaptura: 90
+  tipoExp: 0
+  SpriteTipo1: {fileID: 4448715427215634006, guid: 4a8254e73c1ad2a41ab3a14c94623e9b, type: 3}
+  SpriteTipo2: {fileID: -5005990984189769374, guid: e92ae9ff3784b7240b609f27cb3756ca, type: 3}

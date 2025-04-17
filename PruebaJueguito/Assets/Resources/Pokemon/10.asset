@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 10
+  m_EditorClassIdentifier: 
+  num: 10
+  nombre: Caterpie
+  tipo1: 3
+  tipo2: 0
+  idle: {fileID: 1665001287886657096, guid: 1d9e69691d1104c45b43a67af930567e, type: 3}
+  idleShiny: {fileID: 1665001287886657096, guid: 657d06466538da0408e6bdd54da2b3f1, type: 3}
+  explorar: {fileID: -4473855743855877962, guid: 1d9e69691d1104c45b43a67af930567e, type: 3}
+  explorarShiny: {fileID: -4473855743855877962, guid: 657d06466538da0408e6bdd54da2b3f1, type: 3}
+  andar:
+  - {fileID: -7905815579731339895, guid: 1d9e69691d1104c45b43a67af930567e, type: 3}
+  - {fileID: 3232532682211041597, guid: 1d9e69691d1104c45b43a67af930567e, type: 3}
+  - {fileID: 4225096508503270436, guid: 1d9e69691d1104c45b43a67af930567e, type: 3}
+  - {fileID: 4262585960618048211, guid: 1d9e69691d1104c45b43a67af930567e, type: 3}
+  andarShiny:
+  - {fileID: -7905815579731339895, guid: 657d06466538da0408e6bdd54da2b3f1, type: 3}
+  - {fileID: 3232532682211041597, guid: 657d06466538da0408e6bdd54da2b3f1, type: 3}
+  - {fileID: 4225096508503270436, guid: 657d06466538da0408e6bdd54da2b3f1, type: 3}
+  - {fileID: 4262585960618048211, guid: 657d06466538da0408e6bdd54da2b3f1, type: 3}
+  hp: 45
+  atk: 30
+  def: 35
+  lvlEvo: 7
+  evolucion:
+  - {fileID: 11400000, guid: b2d66b02752c4e746a157a68920f9eb8, type: 2}
+  minLvl: 1
+  ratioCaptura: 255
+  tipoExp: 2
+  SpriteTipo1: {fileID: -3367932149377307684, guid: 6fd472e56c695804abba7eca29ae7f25, type: 3}
+  SpriteTipo2: {fileID: 0}

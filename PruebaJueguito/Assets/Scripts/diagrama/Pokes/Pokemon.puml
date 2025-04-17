@@ -1,0 +1,13 @@
+@startuml
+class Pokemon {
+    + Base : PokemonBase <<get>> <<set>>
+    + Nivel : int <<get>> <<set>>
+    + IVs : int <<get>> <<set>>
+    + HP : int <<get>> <<set>>
+    + isShiny : bool <<get>> <<set>>
+    + Pokemon(_base:PokemonBase, lvl:int, potencial:int, isShiny:bool)
+    + MaxHP : int <<get>>
+    + Ataque : int <<get>>
+    + Defensa : int <<get>>
+}
+@enduml

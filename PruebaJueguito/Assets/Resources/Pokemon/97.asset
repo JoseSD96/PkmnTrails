@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 97
+  m_EditorClassIdentifier: 
+  num: 97
+  nombre: Hypno
+  tipo1: 13
+  tipo2: 0
+  idle: {fileID: 3245874562483424487, guid: 7692e1f5777a2ef4eaf95819ad97e81e, type: 3}
+  idleShiny: {fileID: 3245874562483424487, guid: 3a0aeccb85e1e4e4090fb0fbd195a5ad, type: 3}
+  explorar: {fileID: 1394989641834516048, guid: 7692e1f5777a2ef4eaf95819ad97e81e, type: 3}
+  explorarShiny: {fileID: 1394989641834516048, guid: 3a0aeccb85e1e4e4090fb0fbd195a5ad, type: 3}
+  andar:
+  - {fileID: -4162894520599533331, guid: 7692e1f5777a2ef4eaf95819ad97e81e, type: 3}
+  - {fileID: -7178854818918298723, guid: 7692e1f5777a2ef4eaf95819ad97e81e, type: 3}
+  - {fileID: -5859806195294856573, guid: 7692e1f5777a2ef4eaf95819ad97e81e, type: 3}
+  - {fileID: 5734498504496203864, guid: 7692e1f5777a2ef4eaf95819ad97e81e, type: 3}
+  andarShiny:
+  - {fileID: -4162894520599533331, guid: 3a0aeccb85e1e4e4090fb0fbd195a5ad, type: 3}
+  - {fileID: -7178854818918298723, guid: 3a0aeccb85e1e4e4090fb0fbd195a5ad, type: 3}
+  - {fileID: -5859806195294856573, guid: 3a0aeccb85e1e4e4090fb0fbd195a5ad, type: 3}
+  - {fileID: 5734498504496203864, guid: 3a0aeccb85e1e4e4090fb0fbd195a5ad, type: 3}
+  hp: 85
+  atk: 73
+  def: 115
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 26
+  ratioCaptura: 75
+  tipoExp: 2
+  SpriteTipo1: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}
+  SpriteTipo2: {fileID: 0}

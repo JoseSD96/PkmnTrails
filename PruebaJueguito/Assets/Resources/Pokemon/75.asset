@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 75
+  m_EditorClassIdentifier: 
+  num: 75
+  nombre: Graveler
+  tipo1: 14
+  tipo2: 16
+  idle: {fileID: -5630150820299396491, guid: 43a9ed35055407b43ba2924a0ec89b9e, type: 3}
+  idleShiny: {fileID: -5630150820299396491, guid: 762e543387dd0af489dfdd734b0efc1c, type: 3}
+  explorar: {fileID: -7014172142510004468, guid: 43a9ed35055407b43ba2924a0ec89b9e, type: 3}
+  explorarShiny: {fileID: -7014172142510004468, guid: 762e543387dd0af489dfdd734b0efc1c, type: 3}
+  andar:
+  - {fileID: -2333574205646223905, guid: 43a9ed35055407b43ba2924a0ec89b9e, type: 3}
+  - {fileID: -7976895914295235334, guid: 43a9ed35055407b43ba2924a0ec89b9e, type: 3}
+  - {fileID: 991351691972124842, guid: 43a9ed35055407b43ba2924a0ec89b9e, type: 3}
+  - {fileID: -7709843961281315336, guid: 43a9ed35055407b43ba2924a0ec89b9e, type: 3}
+  andarShiny:
+  - {fileID: -2333574205646223905, guid: 762e543387dd0af489dfdd734b0efc1c, type: 3}
+  - {fileID: -7976895914295235334, guid: 762e543387dd0af489dfdd734b0efc1c, type: 3}
+  - {fileID: 991351691972124842, guid: 762e543387dd0af489dfdd734b0efc1c, type: 3}
+  - {fileID: -7709843961281315336, guid: 762e543387dd0af489dfdd734b0efc1c, type: 3}
+  hp: 55
+  atk: 95
+  def: 115
+  lvlEvo: 36
+  evolucion:
+  - {fileID: 11400000, guid: a59ef15f3f1ba444c8a2af0b84f938e6, type: 2}
+  minLvl: 25
+  ratioCaptura: 120
+  tipoExp: 0
+  SpriteTipo1: {fileID: -2182124076254010665, guid: 62ea7f7259a4b424ca10cb0fd9c073d8, type: 3}
+  SpriteTipo2: {fileID: -3878557786174838139, guid: 15b6f5b649c3dc840a961d3f87c45c27, type: 3}

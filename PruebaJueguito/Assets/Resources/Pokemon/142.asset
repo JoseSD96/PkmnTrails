@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 142
+  m_EditorClassIdentifier: 
+  num: 142
+  nombre: Aerodactyl
+  tipo1: 14
+  tipo2: 18
+  idle: {fileID: 7088211405556742235, guid: 996faa44946e1c14c83ac5e9e92e76f6, type: 3}
+  idleShiny: {fileID: 7088211405556742235, guid: f61b10624e1213f428f92befba344d3d, type: 3}
+  explorar: {fileID: -1430077366023181801, guid: 996faa44946e1c14c83ac5e9e92e76f6, type: 3}
+  explorarShiny: {fileID: -1430077366023181801, guid: f61b10624e1213f428f92befba344d3d, type: 3}
+  andar:
+  - {fileID: 2342058575338910487, guid: 996faa44946e1c14c83ac5e9e92e76f6, type: 3}
+  - {fileID: -659691281695248638, guid: 996faa44946e1c14c83ac5e9e92e76f6, type: 3}
+  - {fileID: 8199888833860061485, guid: 996faa44946e1c14c83ac5e9e92e76f6, type: 3}
+  - {fileID: -899705857068489520, guid: 996faa44946e1c14c83ac5e9e92e76f6, type: 3}
+  andarShiny:
+  - {fileID: 2342058575338910487, guid: f61b10624e1213f428f92befba344d3d, type: 3}
+  - {fileID: -659691281695248638, guid: f61b10624e1213f428f92befba344d3d, type: 3}
+  - {fileID: 8199888833860061485, guid: f61b10624e1213f428f92befba344d3d, type: 3}
+  - {fileID: -899705857068489520, guid: f61b10624e1213f428f92befba344d3d, type: 3}
+  hp: 80
+  atk: 105
+  def: 75
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 45
+  tipoExp: 1
+  SpriteTipo1: {fileID: -2182124076254010665, guid: 62ea7f7259a4b424ca10cb0fd9c073d8, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

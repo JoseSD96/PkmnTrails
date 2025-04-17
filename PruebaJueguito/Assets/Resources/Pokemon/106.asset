@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 106
+  m_EditorClassIdentifier: 
+  num: 106
+  nombre: Hitmonlee
+  tipo1: 10
+  tipo2: 0
+  idle: {fileID: -2485749489045988018, guid: 4a4c8eb5a8c310b46836a088ae396a4c, type: 3}
+  idleShiny: {fileID: -2485749489045988018, guid: 867b137b924166b499cea88cb3d681d9, type: 3}
+  explorar: {fileID: 2409924466537278352, guid: 4a4c8eb5a8c310b46836a088ae396a4c, type: 3}
+  explorarShiny: {fileID: 2409924466537278352, guid: 867b137b924166b499cea88cb3d681d9, type: 3}
+  andar:
+  - {fileID: -4398618301257063908, guid: 4a4c8eb5a8c310b46836a088ae396a4c, type: 3}
+  - {fileID: 4047849664032035014, guid: 4a4c8eb5a8c310b46836a088ae396a4c, type: 3}
+  - {fileID: -4993307656637709229, guid: 4a4c8eb5a8c310b46836a088ae396a4c, type: 3}
+  - {fileID: -7631726311722750471, guid: 4a4c8eb5a8c310b46836a088ae396a4c, type: 3}
+  andarShiny:
+  - {fileID: -4398618301257063908, guid: 867b137b924166b499cea88cb3d681d9, type: 3}
+  - {fileID: 4047849664032035014, guid: 867b137b924166b499cea88cb3d681d9, type: 3}
+  - {fileID: -4993307656637709229, guid: 867b137b924166b499cea88cb3d681d9, type: 3}
+  - {fileID: -7631726311722750471, guid: 867b137b924166b499cea88cb3d681d9, type: 3}
+  hp: 50
+  atk: 120
+  def: 110
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 45
+  tipoExp: 2
+  SpriteTipo1: {fileID: -2810909829056618550, guid: f1eb9c19331ad2448b325bdcaccbecb0, type: 3}
+  SpriteTipo2: {fileID: 0}

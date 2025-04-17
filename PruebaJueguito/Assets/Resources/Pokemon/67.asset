@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 67
+  m_EditorClassIdentifier: 
+  num: 67
+  nombre: Machoke
+  tipo1: 10
+  tipo2: 0
+  idle: {fileID: 2294217360685116613, guid: 0d5ef172286b038409b99fb50a71abed, type: 3}
+  idleShiny: {fileID: 2294217360685116613, guid: b770235d7d72ee24b99db027f4da8c43, type: 3}
+  explorar: {fileID: 1770715508233921578, guid: 0d5ef172286b038409b99fb50a71abed, type: 3}
+  explorarShiny: {fileID: 1770715508233921578, guid: b770235d7d72ee24b99db027f4da8c43, type: 3}
+  andar:
+  - {fileID: 474663204243630352, guid: 0d5ef172286b038409b99fb50a71abed, type: 3}
+  - {fileID: -1691175899230349737, guid: 0d5ef172286b038409b99fb50a71abed, type: 3}
+  - {fileID: -8724729858235877723, guid: 0d5ef172286b038409b99fb50a71abed, type: 3}
+  - {fileID: 108375456910813936, guid: 0d5ef172286b038409b99fb50a71abed, type: 3}
+  andarShiny:
+  - {fileID: 474663204243630352, guid: b770235d7d72ee24b99db027f4da8c43, type: 3}
+  - {fileID: -1691175899230349737, guid: b770235d7d72ee24b99db027f4da8c43, type: 3}
+  - {fileID: -8724729858235877723, guid: b770235d7d72ee24b99db027f4da8c43, type: 3}
+  - {fileID: 108375456910813936, guid: b770235d7d72ee24b99db027f4da8c43, type: 3}
+  hp: 80
+  atk: 100
+  def: 70
+  lvlEvo: 38
+  evolucion:
+  - {fileID: 11400000, guid: 763d6c904543c6640aeade20645f0047, type: 2}
+  minLvl: 28
+  ratioCaptura: 90
+  tipoExp: 0
+  SpriteTipo1: {fileID: -2810909829056618550, guid: f1eb9c19331ad2448b325bdcaccbecb0, type: 3}
+  SpriteTipo2: {fileID: 0}

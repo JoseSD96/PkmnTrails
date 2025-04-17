@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 58
+  m_EditorClassIdentifier: 
+  num: 58
+  nombre: Growlithe
+  tipo1: 7
+  tipo2: 0
+  idle: {fileID: -376448993346863429, guid: 7c89dcc78e7df1a48ab3f66370de0f30, type: 3}
+  idleShiny: {fileID: -376448993346863429, guid: 9b243ee01bcc74c48a1bc12d58261994, type: 3}
+  explorar: {fileID: -4021610727434120497, guid: 7c89dcc78e7df1a48ab3f66370de0f30, type: 3}
+  explorarShiny: {fileID: -4021610727434120497, guid: 9b243ee01bcc74c48a1bc12d58261994, type: 3}
+  andar:
+  - {fileID: 664999231398382366, guid: 7c89dcc78e7df1a48ab3f66370de0f30, type: 3}
+  - {fileID: 7506819401406691263, guid: 7c89dcc78e7df1a48ab3f66370de0f30, type: 3}
+  - {fileID: -7022911308942328330, guid: 7c89dcc78e7df1a48ab3f66370de0f30, type: 3}
+  - {fileID: 5094516530765775463, guid: 7c89dcc78e7df1a48ab3f66370de0f30, type: 3}
+  andarShiny:
+  - {fileID: 664999231398382366, guid: 9b243ee01bcc74c48a1bc12d58261994, type: 3}
+  - {fileID: 7506819401406691263, guid: 9b243ee01bcc74c48a1bc12d58261994, type: 3}
+  - {fileID: -7022911308942328330, guid: 9b243ee01bcc74c48a1bc12d58261994, type: 3}
+  - {fileID: 5094516530765775463, guid: 9b243ee01bcc74c48a1bc12d58261994, type: 3}
+  hp: 55
+  atk: 70
+  def: 50
+  lvlEvo: 25
+  evolucion:
+  - {fileID: 11400000, guid: f38d6623ce75c9e439e5756fc4ddcffa, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 1
+  SpriteTipo1: {fileID: 8334651344603559088, guid: cab788a1cc7eb3844af4d00747186c07, type: 3}
+  SpriteTipo2: {fileID: 0}

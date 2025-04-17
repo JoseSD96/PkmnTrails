@@ -1,0 +1,22 @@
+@startuml
+class PkmnCombate {
+    - _base : PokemonBase
+    - lvl : int
+    - potencial : int
+    - isShiny : bool
+    + isEnemy : bool
+    + objetoPkmn : GameObject
+    + Pkmn : Pokemon <<get>> <<set>>
+    - PosInicial : Vector3
+    - colorInicial : Color
+    - Awake() : void
+    + Setup() : void
+    + GetSprite() : Sprite
+    + AnimacionEntrada() : void
+    + AnimacionAtaque() : void
+    + AnimacionGolpe() : void
+    + AnimacionDerrota() : void
+    + ReiniciarEstado() : void
+}
+MonoBehaviour <|-- PkmnCombate
+@enduml

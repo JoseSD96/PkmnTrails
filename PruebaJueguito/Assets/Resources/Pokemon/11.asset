@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 11
+  m_EditorClassIdentifier: 
+  num: 11
+  nombre: Metapod
+  tipo1: 3
+  tipo2: 0
+  idle: {fileID: 3949638394995119127, guid: bfd7255a293a4cc40b0cdad09a2e5153, type: 3}
+  idleShiny: {fileID: 3949638394995119127, guid: f81372e11a2135548a4317178ce5c53d, type: 3}
+  explorar: {fileID: -3324816055924345490, guid: bfd7255a293a4cc40b0cdad09a2e5153, type: 3}
+  explorarShiny: {fileID: -3324816055924345490, guid: f81372e11a2135548a4317178ce5c53d, type: 3}
+  andar:
+  - {fileID: -894670827882060051, guid: bfd7255a293a4cc40b0cdad09a2e5153, type: 3}
+  - {fileID: -6381789614780842477, guid: bfd7255a293a4cc40b0cdad09a2e5153, type: 3}
+  - {fileID: -8062742716491764186, guid: bfd7255a293a4cc40b0cdad09a2e5153, type: 3}
+  - {fileID: -6880152526936123546, guid: bfd7255a293a4cc40b0cdad09a2e5153, type: 3}
+  andarShiny:
+  - {fileID: -894670827882060051, guid: f81372e11a2135548a4317178ce5c53d, type: 3}
+  - {fileID: -6381789614780842477, guid: f81372e11a2135548a4317178ce5c53d, type: 3}
+  - {fileID: -8062742716491764186, guid: f81372e11a2135548a4317178ce5c53d, type: 3}
+  - {fileID: -6880152526936123546, guid: f81372e11a2135548a4317178ce5c53d, type: 3}
+  hp: 50
+  atk: 25
+  def: 55
+  lvlEvo: 10
+  evolucion:
+  - {fileID: 11400000, guid: 3d118371e3f24c343a60a91f2730031a, type: 2}
+  minLvl: 7
+  ratioCaptura: 120
+  tipoExp: 2
+  SpriteTipo1: {fileID: -3367932149377307684, guid: 6fd472e56c695804abba7eca29ae7f25, type: 3}
+  SpriteTipo2: {fileID: 0}

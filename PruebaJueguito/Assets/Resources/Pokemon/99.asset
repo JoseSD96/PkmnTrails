@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 99
+  m_EditorClassIdentifier: 
+  num: 99
+  nombre: Kingler
+  tipo1: 2
+  tipo2: 0
+  idle: {fileID: 818477168870365786, guid: b47cf929beed774479cf2ade0fa66e45, type: 3}
+  idleShiny: {fileID: 818477168870365786, guid: 23661058020d6124995825039c83361e, type: 3}
+  explorar: {fileID: -8655586602010826831, guid: b47cf929beed774479cf2ade0fa66e45, type: 3}
+  explorarShiny: {fileID: -8655586602010826831, guid: 23661058020d6124995825039c83361e, type: 3}
+  andar:
+  - {fileID: 7948911020177240257, guid: b47cf929beed774479cf2ade0fa66e45, type: 3}
+  - {fileID: -5440394629209115857, guid: b47cf929beed774479cf2ade0fa66e45, type: 3}
+  - {fileID: -8281879532195700630, guid: b47cf929beed774479cf2ade0fa66e45, type: 3}
+  - {fileID: -6076151030385999123, guid: b47cf929beed774479cf2ade0fa66e45, type: 3}
+  andarShiny:
+  - {fileID: 7948911020177240257, guid: 23661058020d6124995825039c83361e, type: 3}
+  - {fileID: -5440394629209115857, guid: 23661058020d6124995825039c83361e, type: 3}
+  - {fileID: -8281879532195700630, guid: 23661058020d6124995825039c83361e, type: 3}
+  - {fileID: -6076151030385999123, guid: 23661058020d6124995825039c83361e, type: 3}
+  hp: 55
+  atk: 130
+  def: 115
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 28
+  ratioCaptura: 60
+  tipoExp: 2
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: 0}

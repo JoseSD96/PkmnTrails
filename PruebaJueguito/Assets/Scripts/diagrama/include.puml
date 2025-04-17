@@ -1,0 +1,13 @@
+@startuml
+!include .\\Combate\CombateHUD.puml
+!include .\\Combate\HPBar.puml
+!include .\\Combate\PkmnCombate.puml
+!include .\\Combate\SistemaCombate.puml
+!include .\\Interfaz\CambiadorSpritesPkmn.puml
+!include .\\Interfaz\CambiadorSpritesTrainer.puml
+!include .\\Interfaz\CarruselImagenes.puml
+!include .\\Partida\ControladorPartida.puml
+!include .\\Partida\ControldorInterfaz.puml
+!include .\\Pokes\Pokemon.puml
+!include .\\Pokes\PokemonBase.puml
+@enduml

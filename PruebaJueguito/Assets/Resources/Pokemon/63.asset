@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 63
+  m_EditorClassIdentifier: 
+  num: 63
+  nombre: Abra
+  tipo1: 13
+  tipo2: 0
+  idle: {fileID: 2032059139461526438, guid: 5c75849c6e06f444b828efcf3d033903, type: 3}
+  idleShiny: {fileID: 2032059139461526438, guid: 9510509783e04a743882c73a2156c1b9, type: 3}
+  explorar: {fileID: 293523145334084662, guid: 5c75849c6e06f444b828efcf3d033903, type: 3}
+  explorarShiny: {fileID: 293523145334084662, guid: 9510509783e04a743882c73a2156c1b9, type: 3}
+  andar:
+  - {fileID: -1871373822038676461, guid: 5c75849c6e06f444b828efcf3d033903, type: 3}
+  - {fileID: -8088470144148988936, guid: 5c75849c6e06f444b828efcf3d033903, type: 3}
+  - {fileID: -3602325791431496338, guid: 5c75849c6e06f444b828efcf3d033903, type: 3}
+  - {fileID: 4470776572676607219, guid: 5c75849c6e06f444b828efcf3d033903, type: 3}
+  andarShiny:
+  - {fileID: -1871373822038676461, guid: 9510509783e04a743882c73a2156c1b9, type: 3}
+  - {fileID: -8088470144148988936, guid: 9510509783e04a743882c73a2156c1b9, type: 3}
+  - {fileID: -3602325791431496338, guid: 9510509783e04a743882c73a2156c1b9, type: 3}
+  - {fileID: 4470776572676607219, guid: 9510509783e04a743882c73a2156c1b9, type: 3}
+  hp: 25
+  atk: 105
+  def: 55
+  lvlEvo: 16
+  evolucion:
+  - {fileID: 11400000, guid: cb1a5cb32c812c74c9581ea418063c8b, type: 2}
+  minLvl: 1
+  ratioCaptura: 200
+  tipoExp: 0
+  SpriteTipo1: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}
+  SpriteTipo2: {fileID: 0}

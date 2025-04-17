@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 133
+  m_EditorClassIdentifier: 
+  num: 133
+  nombre: Eevee
+  tipo1: 11
+  tipo2: 0
+  idle: {fileID: -3066002465697938137, guid: 619f0248985e9624eac7c0ade96a40d2, type: 3}
+  idleShiny: {fileID: -3066002465697938137, guid: 1e8415d632e84e541b8c46fc90af9721, type: 3}
+  explorar: {fileID: 5825859946022786482, guid: 619f0248985e9624eac7c0ade96a40d2, type: 3}
+  explorarShiny: {fileID: 5825859946022786482, guid: 1e8415d632e84e541b8c46fc90af9721, type: 3}
+  andar:
+  - {fileID: 156562058745826681, guid: 619f0248985e9624eac7c0ade96a40d2, type: 3}
+  - {fileID: 6153685305685232879, guid: 619f0248985e9624eac7c0ade96a40d2, type: 3}
+  - {fileID: -2836389100965677032, guid: 619f0248985e9624eac7c0ade96a40d2, type: 3}
+  - {fileID: 1234963565470289874, guid: 619f0248985e9624eac7c0ade96a40d2, type: 3}
+  andarShiny:
+  - {fileID: 156562058745826681, guid: 1e8415d632e84e541b8c46fc90af9721, type: 3}
+  - {fileID: 6153685305685232879, guid: 1e8415d632e84e541b8c46fc90af9721, type: 3}
+  - {fileID: -2836389100965677032, guid: 1e8415d632e84e541b8c46fc90af9721, type: 3}
+  - {fileID: 1234963565470289874, guid: 1e8415d632e84e541b8c46fc90af9721, type: 3}
+  hp: 65
+  atk: 75
+  def: 85
+  lvlEvo: 30
+  evolucion:
+  - {fileID: 11400000, guid: 32e108ccfec0675419eec93d406b15cd, type: 2}
+  - {fileID: 11400000, guid: 550f5d606df1ca64bbc94bf1fc72f6e8, type: 2}
+  - {fileID: 11400000, guid: 25dc28800a7534345b3ed1ee1f406280, type: 2}
+  minLvl: 1
+  ratioCaptura: 45
+  tipoExp: 2
+  SpriteTipo1: {fileID: 4606157284126940538, guid: bcea1507ef7c2e5439b7d3f5e0aecd67, type: 3}
+  SpriteTipo2: {fileID: 0}

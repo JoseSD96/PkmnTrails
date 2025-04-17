@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 15
+  m_EditorClassIdentifier: 
+  num: 15
+  nombre: Beedrill
+  tipo1: 3
+  tipo2: 17
+  idle: {fileID: 1342468049688306474, guid: 9df05e670dbca4f449250071f03664c7, type: 3}
+  idleShiny: {fileID: 1342468049688306474, guid: d50917a12a7a2f348a1a97b1ebf48a29, type: 3}
+  explorar: {fileID: -2464900027540718987, guid: 9df05e670dbca4f449250071f03664c7, type: 3}
+  explorarShiny: {fileID: -2464900027540718987, guid: d50917a12a7a2f348a1a97b1ebf48a29, type: 3}
+  andar:
+  - {fileID: -5605705016171011802, guid: 9df05e670dbca4f449250071f03664c7, type: 3}
+  - {fileID: -3106893267580082129, guid: 9df05e670dbca4f449250071f03664c7, type: 3}
+  - {fileID: 6840320723278222020, guid: 9df05e670dbca4f449250071f03664c7, type: 3}
+  - {fileID: 3828029046509285656, guid: 9df05e670dbca4f449250071f03664c7, type: 3}
+  andarShiny:
+  - {fileID: -5605705016171011802, guid: d50917a12a7a2f348a1a97b1ebf48a29, type: 3}
+  - {fileID: -3106893267580082129, guid: d50917a12a7a2f348a1a97b1ebf48a29, type: 3}
+  - {fileID: 6840320723278222020, guid: d50917a12a7a2f348a1a97b1ebf48a29, type: 3}
+  - {fileID: 3828029046509285656, guid: d50917a12a7a2f348a1a97b1ebf48a29, type: 3}
+  hp: 65
+  atk: 90
+  def: 80
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 10
+  ratioCaptura: 45
+  tipoExp: 2
+  SpriteTipo1: {fileID: -3367932149377307684, guid: 6fd472e56c695804abba7eca29ae7f25, type: 3}
+  SpriteTipo2: {fileID: -5005990984189769374, guid: e92ae9ff3784b7240b609f27cb3756ca, type: 3}

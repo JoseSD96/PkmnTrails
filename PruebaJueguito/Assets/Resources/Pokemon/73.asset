@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 73
+  m_EditorClassIdentifier: 
+  num: 73
+  nombre: Tentacruel
+  tipo1: 2
+  tipo2: 17
+  idle: {fileID: 7960105783408294570, guid: ce97b264cbb3ffb42b5b0aae7f12aa9d, type: 3}
+  idleShiny: {fileID: 7960105783408294570, guid: 4ed06bf1e37bb804a8d8d04393672d64, type: 3}
+  explorar: {fileID: 1239633573979081750, guid: ce97b264cbb3ffb42b5b0aae7f12aa9d, type: 3}
+  explorarShiny: {fileID: 1239633573979081750, guid: 4ed06bf1e37bb804a8d8d04393672d64, type: 3}
+  andar:
+  - {fileID: -7244452010261204621, guid: ce97b264cbb3ffb42b5b0aae7f12aa9d, type: 3}
+  - {fileID: 2947021828265420655, guid: ce97b264cbb3ffb42b5b0aae7f12aa9d, type: 3}
+  - {fileID: -6059131306434551380, guid: ce97b264cbb3ffb42b5b0aae7f12aa9d, type: 3}
+  - {fileID: -5718614915073229823, guid: ce97b264cbb3ffb42b5b0aae7f12aa9d, type: 3}
+  andarShiny:
+  - {fileID: -7244452010261204621, guid: 4ed06bf1e37bb804a8d8d04393672d64, type: 3}
+  - {fileID: 2947021828265420655, guid: 4ed06bf1e37bb804a8d8d04393672d64, type: 3}
+  - {fileID: -6059131306434551380, guid: 4ed06bf1e37bb804a8d8d04393672d64, type: 3}
+  - {fileID: -5718614915073229823, guid: 4ed06bf1e37bb804a8d8d04393672d64, type: 3}
+  hp: 80
+  atk: 80
+  def: 120
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 30
+  ratioCaptura: 60
+  tipoExp: 1
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: -5005990984189769374, guid: e92ae9ff3784b7240b609f27cb3756ca, type: 3}

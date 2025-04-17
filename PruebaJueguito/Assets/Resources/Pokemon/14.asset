@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 14
+  m_EditorClassIdentifier: 
+  num: 14
+  nombre: Kakuna
+  tipo1: 3
+  tipo2: 17
+  idle: {fileID: 6172213815815165854, guid: 57289129dbcd62a498083d2213c431c9, type: 3}
+  idleShiny: {fileID: 6172213815815165854, guid: 6431055162eae80469265fc563182ff4, type: 3}
+  explorar: {fileID: -5269083885508441217, guid: 57289129dbcd62a498083d2213c431c9, type: 3}
+  explorarShiny: {fileID: -5269083885508441217, guid: 6431055162eae80469265fc563182ff4, type: 3}
+  andar:
+  - {fileID: -6545449514134949022, guid: 57289129dbcd62a498083d2213c431c9, type: 3}
+  - {fileID: -4586396096289345770, guid: 57289129dbcd62a498083d2213c431c9, type: 3}
+  - {fileID: 7696290026198683758, guid: 57289129dbcd62a498083d2213c431c9, type: 3}
+  - {fileID: -8393896822202104890, guid: 57289129dbcd62a498083d2213c431c9, type: 3}
+  andarShiny:
+  - {fileID: -6545449514134949022, guid: 6431055162eae80469265fc563182ff4, type: 3}
+  - {fileID: -4586396096289345770, guid: 6431055162eae80469265fc563182ff4, type: 3}
+  - {fileID: 7696290026198683758, guid: 6431055162eae80469265fc563182ff4, type: 3}
+  - {fileID: -8393896822202104890, guid: 6431055162eae80469265fc563182ff4, type: 3}
+  hp: 45
+  atk: 25
+  def: 50
+  lvlEvo: 10
+  evolucion:
+  - {fileID: 11400000, guid: 16331e84e16b4ad4ea51b6412fcd135d, type: 2}
+  minLvl: 7
+  ratioCaptura: 120
+  tipoExp: 2
+  SpriteTipo1: {fileID: -3367932149377307684, guid: 6fd472e56c695804abba7eca29ae7f25, type: 3}
+  SpriteTipo2: {fileID: -5005990984189769374, guid: e92ae9ff3784b7240b609f27cb3756ca, type: 3}

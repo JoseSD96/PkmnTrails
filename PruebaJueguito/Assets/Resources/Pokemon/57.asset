@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 57
+  m_EditorClassIdentifier: 
+  num: 57
+  nombre: Primeape
+  tipo1: 10
+  tipo2: 0
+  idle: {fileID: -7090987978024471082, guid: 47ecd2783f69f8f45b838eece6f4c681, type: 3}
+  idleShiny: {fileID: -7090987978024471082, guid: 6df45aef14a5ede42819cb7cfdf05054, type: 3}
+  explorar: {fileID: 5075806925638936440, guid: 47ecd2783f69f8f45b838eece6f4c681, type: 3}
+  explorarShiny: {fileID: 5075806925638936440, guid: 6df45aef14a5ede42819cb7cfdf05054, type: 3}
+  andar:
+  - {fileID: -5372611693335969923, guid: 47ecd2783f69f8f45b838eece6f4c681, type: 3}
+  - {fileID: -5379775412658573295, guid: 47ecd2783f69f8f45b838eece6f4c681, type: 3}
+  - {fileID: 1056011626337607265, guid: 47ecd2783f69f8f45b838eece6f4c681, type: 3}
+  - {fileID: 4946125012983221654, guid: 47ecd2783f69f8f45b838eece6f4c681, type: 3}
+  andarShiny:
+  - {fileID: -5372611693335969923, guid: 6df45aef14a5ede42819cb7cfdf05054, type: 3}
+  - {fileID: -5379775412658573295, guid: 6df45aef14a5ede42819cb7cfdf05054, type: 3}
+  - {fileID: 1056011626337607265, guid: 6df45aef14a5ede42819cb7cfdf05054, type: 3}
+  - {fileID: 4946125012983221654, guid: 6df45aef14a5ede42819cb7cfdf05054, type: 3}
+  hp: 65
+  atk: 105
+  def: 70
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 28
+  ratioCaptura: 75
+  tipoExp: 2
+  SpriteTipo1: {fileID: -2810909829056618550, guid: f1eb9c19331ad2448b325bdcaccbecb0, type: 3}
+  SpriteTipo2: {fileID: 0}

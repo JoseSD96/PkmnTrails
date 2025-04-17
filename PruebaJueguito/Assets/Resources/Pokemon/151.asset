@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 151
+  m_EditorClassIdentifier: 
+  num: 151
+  nombre: Mew
+  tipo1: 13
+  tipo2: 0
+  idle: {fileID: -6605116190751965397, guid: 0fc271e6928e5114b800007048bde6bd, type: 3}
+  idleShiny: {fileID: -6605116190751965397, guid: 16ccc3f487bbde046a83fcf71168e1e6, type: 3}
+  explorar: {fileID: 4040846548858179131, guid: 0fc271e6928e5114b800007048bde6bd, type: 3}
+  explorarShiny: {fileID: 4040846548858179131, guid: 16ccc3f487bbde046a83fcf71168e1e6, type: 3}
+  andar:
+  - {fileID: 6741216094770329490, guid: 0fc271e6928e5114b800007048bde6bd, type: 3}
+  - {fileID: 7298961945549114360, guid: 0fc271e6928e5114b800007048bde6bd, type: 3}
+  - {fileID: 7653258713994731516, guid: 0fc271e6928e5114b800007048bde6bd, type: 3}
+  - {fileID: -5381308251738350882, guid: 0fc271e6928e5114b800007048bde6bd, type: 3}
+  andarShiny:
+  - {fileID: 6741216094770329490, guid: 16ccc3f487bbde046a83fcf71168e1e6, type: 3}
+  - {fileID: 7298961945549114360, guid: 16ccc3f487bbde046a83fcf71168e1e6, type: 3}
+  - {fileID: 7653258713994731516, guid: 16ccc3f487bbde046a83fcf71168e1e6, type: 3}
+  - {fileID: -5381308251738350882, guid: 16ccc3f487bbde046a83fcf71168e1e6, type: 3}
+  hp: 100
+  atk: 100
+  def: 100
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 50
+  ratioCaptura: 45
+  tipoExp: 0
+  SpriteTipo1: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}
+  SpriteTipo2: {fileID: 0}

@@ -1,0 +1,21 @@
+@startuml
+class CombateHUD {
+    - nameTxt : TextMeshProUGUI
+    - lvlTxt : TextMeshProUGUI
+    - hpBar : HPBar
+    - ShinyStars : Image
+    - tipo1 : Image
+    - tipo2 : Image
+    - atk1 : Button
+    - atk2 : Button
+    - extra : Image
+    - pokemonCombate : PkmnCombate
+    - posInicial : Vector3
+    - Awake() : void
+    + SetData(pokemonCombate:PkmnCombate) : void
+    + UpdateHP() : IEnumerator
+    + AnimacionEntrada() : void
+    + AnimacionDerrota() : void
+}
+MonoBehaviour <|-- CombateHUD
+@enduml

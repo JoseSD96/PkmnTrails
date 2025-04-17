@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 128
+  m_EditorClassIdentifier: 
+  num: 128
+  nombre: Tauros
+  tipo1: 11
+  tipo2: 0
+  idle: {fileID: -3481669339004165396, guid: 03167d9b37aa4b64ea34a7df8f2e2f41, type: 3}
+  idleShiny: {fileID: -3481669339004165396, guid: bdf3769435147ff4db95aa44d79e8d6b, type: 3}
+  explorar: {fileID: 2316877941624906058, guid: 03167d9b37aa4b64ea34a7df8f2e2f41, type: 3}
+  explorarShiny: {fileID: 2316877941624906058, guid: bdf3769435147ff4db95aa44d79e8d6b, type: 3}
+  andar:
+  - {fileID: 7324073902308300260, guid: 03167d9b37aa4b64ea34a7df8f2e2f41, type: 3}
+  - {fileID: 7187479389459153698, guid: 03167d9b37aa4b64ea34a7df8f2e2f41, type: 3}
+  - {fileID: 6377677361166912949, guid: 03167d9b37aa4b64ea34a7df8f2e2f41, type: 3}
+  - {fileID: 976859025728010714, guid: 03167d9b37aa4b64ea34a7df8f2e2f41, type: 3}
+  andarShiny:
+  - {fileID: 7324073902308300260, guid: bdf3769435147ff4db95aa44d79e8d6b, type: 3}
+  - {fileID: 7187479389459153698, guid: bdf3769435147ff4db95aa44d79e8d6b, type: 3}
+  - {fileID: 6377677361166912949, guid: bdf3769435147ff4db95aa44d79e8d6b, type: 3}
+  - {fileID: 976859025728010714, guid: bdf3769435147ff4db95aa44d79e8d6b, type: 3}
+  hp: 75
+  atk: 100
+  def: 95
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 45
+  tipoExp: 1
+  SpriteTipo1: {fileID: 4606157284126940538, guid: bcea1507ef7c2e5439b7d3f5e0aecd67, type: 3}
+  SpriteTipo2: {fileID: 0}

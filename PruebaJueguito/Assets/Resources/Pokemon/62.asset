@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 62
+  m_EditorClassIdentifier: 
+  num: 62
+  nombre: Poliwrath
+  tipo1: 2
+  tipo2: 10
+  idle: {fileID: -2188183801771668473, guid: f5c736dfb74154d4a99063a5b377b9bb, type: 3}
+  idleShiny: {fileID: -2188183801771668473, guid: 7b6af2ac2f1b72a40a15ee87a5ae678b, type: 3}
+  explorar: {fileID: 4911109627818825284, guid: f5c736dfb74154d4a99063a5b377b9bb, type: 3}
+  explorarShiny: {fileID: 4911109627818825284, guid: 7b6af2ac2f1b72a40a15ee87a5ae678b, type: 3}
+  andar:
+  - {fileID: -6272080079247603075, guid: f5c736dfb74154d4a99063a5b377b9bb, type: 3}
+  - {fileID: -2805581799691230450, guid: f5c736dfb74154d4a99063a5b377b9bb, type: 3}
+  - {fileID: 7775597552333375097, guid: f5c736dfb74154d4a99063a5b377b9bb, type: 3}
+  - {fileID: 3495510439733124411, guid: f5c736dfb74154d4a99063a5b377b9bb, type: 3}
+  andarShiny:
+  - {fileID: -6272080079247603075, guid: 7b6af2ac2f1b72a40a15ee87a5ae678b, type: 3}
+  - {fileID: -2805581799691230450, guid: 7b6af2ac2f1b72a40a15ee87a5ae678b, type: 3}
+  - {fileID: 7775597552333375097, guid: 7b6af2ac2f1b72a40a15ee87a5ae678b, type: 3}
+  - {fileID: 3495510439733124411, guid: 7b6af2ac2f1b72a40a15ee87a5ae678b, type: 3}
+  hp: 90
+  atk: 95
+  def: 95
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 38
+  ratioCaptura: 45
+  tipoExp: 0
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: -2810909829056618550, guid: f1eb9c19331ad2448b325bdcaccbecb0, type: 3}

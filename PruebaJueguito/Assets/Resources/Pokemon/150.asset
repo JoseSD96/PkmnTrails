@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 150
+  m_EditorClassIdentifier: 
+  num: 150
+  nombre: Mewtwo
+  tipo1: 13
+  tipo2: 0
+  idle: {fileID: -7175363931049077378, guid: 8361a7a0088ed184f9224617888f514b, type: 3}
+  idleShiny: {fileID: -7175363931049077378, guid: c83ed3ba67507714898d48d0e32edde8, type: 3}
+  explorar: {fileID: 7672795666823740342, guid: 8361a7a0088ed184f9224617888f514b, type: 3}
+  explorarShiny: {fileID: 7672795666823740342, guid: c83ed3ba67507714898d48d0e32edde8, type: 3}
+  andar:
+  - {fileID: 2261538675700040919, guid: 8361a7a0088ed184f9224617888f514b, type: 3}
+  - {fileID: -4726762854620214891, guid: 8361a7a0088ed184f9224617888f514b, type: 3}
+  - {fileID: -2081628569586326901, guid: 8361a7a0088ed184f9224617888f514b, type: 3}
+  - {fileID: -2636748258674242748, guid: 8361a7a0088ed184f9224617888f514b, type: 3}
+  andarShiny:
+  - {fileID: 2261538675700040919, guid: c83ed3ba67507714898d48d0e32edde8, type: 3}
+  - {fileID: -4726762854620214891, guid: c83ed3ba67507714898d48d0e32edde8, type: 3}
+  - {fileID: -2081628569586326901, guid: c83ed3ba67507714898d48d0e32edde8, type: 3}
+  - {fileID: -2636748258674242748, guid: c83ed3ba67507714898d48d0e32edde8, type: 3}
+  hp: 106
+  atk: 154
+  def: 90
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 70
+  ratioCaptura: 3
+  tipoExp: 1
+  SpriteTipo1: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}
+  SpriteTipo2: {fileID: 0}

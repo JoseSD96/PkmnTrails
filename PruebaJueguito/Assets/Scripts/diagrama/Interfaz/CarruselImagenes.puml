@@ -1,0 +1,17 @@
+@startuml
+class CarruselImagenes {
+    + imagenes : RectTransform[]
+    + duracionAnimacion : float
+    - imagenesDisponibles : List<Sprite>
+    + zonaInicial : Sprite
+    - indiceActual : int
+    - desplazamiento : float
+    - isCambiando : bool = false
+    - Start() : void
+    - CargarImagenes() : void
+    - AsignarImagenesIniciales() : void
+    + AvanzarCarrusel() : void
+    - AnimarCarrusel(imagenActual:RectTransform, imagenNueva:RectTransform) : IEnumerator
+}
+MonoBehaviour <|-- CarruselImagenes
+@enduml

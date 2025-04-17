@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 144
+  m_EditorClassIdentifier: 
+  num: 144
+  nombre: Articuno
+  tipo1: 9
+  tipo2: 18
+  idle: {fileID: 4176528166696843217, guid: 19db4c7d22a101149af3e5fe034261ac, type: 3}
+  idleShiny: {fileID: 4176528166696843217, guid: 314a707c6a364e24999ef998c05fcb48, type: 3}
+  explorar: {fileID: 8441225497360919159, guid: 19db4c7d22a101149af3e5fe034261ac, type: 3}
+  explorarShiny: {fileID: 8441225497360919159, guid: 314a707c6a364e24999ef998c05fcb48, type: 3}
+  andar:
+  - {fileID: -2839116123809566682, guid: 19db4c7d22a101149af3e5fe034261ac, type: 3}
+  - {fileID: 8831829886876709865, guid: 19db4c7d22a101149af3e5fe034261ac, type: 3}
+  - {fileID: -5303606354668690500, guid: 19db4c7d22a101149af3e5fe034261ac, type: 3}
+  - {fileID: -9221550058033083081, guid: 19db4c7d22a101149af3e5fe034261ac, type: 3}
+  andarShiny:
+  - {fileID: -2839116123809566682, guid: 314a707c6a364e24999ef998c05fcb48, type: 3}
+  - {fileID: 8831829886876709865, guid: 314a707c6a364e24999ef998c05fcb48, type: 3}
+  - {fileID: -5303606354668690500, guid: 314a707c6a364e24999ef998c05fcb48, type: 3}
+  - {fileID: -9221550058033083081, guid: 314a707c6a364e24999ef998c05fcb48, type: 3}
+  hp: 90
+  atk: 95
+  def: 125
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 50
+  ratioCaptura: 3
+  tipoExp: 1
+  SpriteTipo1: {fileID: -856085545168688419, guid: d8e3894f455edc740b8c7ffd27ea0c67, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

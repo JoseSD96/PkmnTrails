@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 135
+  m_EditorClassIdentifier: 
+  num: 135
+  nombre: Jolteon
+  tipo1: 5
+  tipo2: 0
+  idle: {fileID: 2604896084514355528, guid: c5f125941fdca234f846e10a735ee742, type: 3}
+  idleShiny: {fileID: 2604896084514355528, guid: bdc7c18686219ae49a456e34384c6715, type: 3}
+  explorar: {fileID: -5079144329699097394, guid: c5f125941fdca234f846e10a735ee742, type: 3}
+  explorarShiny: {fileID: -5079144329699097394, guid: bdc7c18686219ae49a456e34384c6715, type: 3}
+  andar:
+  - {fileID: 3005230849029984982, guid: c5f125941fdca234f846e10a735ee742, type: 3}
+  - {fileID: 1503052579530294241, guid: c5f125941fdca234f846e10a735ee742, type: 3}
+  - {fileID: -2672187147451616616, guid: c5f125941fdca234f846e10a735ee742, type: 3}
+  - {fileID: -6616698776613690820, guid: c5f125941fdca234f846e10a735ee742, type: 3}
+  andarShiny:
+  - {fileID: 3005230849029984982, guid: bdc7c18686219ae49a456e34384c6715, type: 3}
+  - {fileID: 1503052579530294241, guid: bdc7c18686219ae49a456e34384c6715, type: 3}
+  - {fileID: -2672187147451616616, guid: bdc7c18686219ae49a456e34384c6715, type: 3}
+  - {fileID: -6616698776613690820, guid: bdc7c18686219ae49a456e34384c6715, type: 3}
+  hp: 65
+  atk: 110
+  def: 95
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 30
+  ratioCaptura: 45
+  tipoExp: 2
+  SpriteTipo1: {fileID: 5820286478268577726, guid: f1d7827866e38664fb759c583947fb9a, type: 3}
+  SpriteTipo2: {fileID: 0}

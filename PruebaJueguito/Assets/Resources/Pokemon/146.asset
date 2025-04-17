@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 146
+  m_EditorClassIdentifier: 
+  num: 146
+  nombre: Moltres
+  tipo1: 7
+  tipo2: 18
+  idle: {fileID: 4774554677608779841, guid: 68f77fcc7f2e9cb47ae2d060c6f4b46f, type: 3}
+  idleShiny: {fileID: 4774554677608779841, guid: 2686ec62967f8514db24cca43dde8f0d, type: 3}
+  explorar: {fileID: 6000747802504772755, guid: 68f77fcc7f2e9cb47ae2d060c6f4b46f, type: 3}
+  explorarShiny: {fileID: 6000747802504772755, guid: 2686ec62967f8514db24cca43dde8f0d, type: 3}
+  andar:
+  - {fileID: -9220997316525200641, guid: 68f77fcc7f2e9cb47ae2d060c6f4b46f, type: 3}
+  - {fileID: -7053030724569018984, guid: 68f77fcc7f2e9cb47ae2d060c6f4b46f, type: 3}
+  - {fileID: 2573698465075421234, guid: 68f77fcc7f2e9cb47ae2d060c6f4b46f, type: 3}
+  - {fileID: -8256121286048945833, guid: 68f77fcc7f2e9cb47ae2d060c6f4b46f, type: 3}
+  andarShiny:
+  - {fileID: -9220997316525200641, guid: 2686ec62967f8514db24cca43dde8f0d, type: 3}
+  - {fileID: -7053030724569018984, guid: 2686ec62967f8514db24cca43dde8f0d, type: 3}
+  - {fileID: 2573698465075421234, guid: 2686ec62967f8514db24cca43dde8f0d, type: 3}
+  - {fileID: -8256121286048945833, guid: 2686ec62967f8514db24cca43dde8f0d, type: 3}
+  hp: 90
+  atk: 125
+  def: 90
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 50
+  ratioCaptura: 3
+  tipoExp: 1
+  SpriteTipo1: {fileID: 8334651344603559088, guid: cab788a1cc7eb3844af4d00747186c07, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

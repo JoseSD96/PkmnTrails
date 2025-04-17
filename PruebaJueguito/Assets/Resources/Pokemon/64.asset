@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 64
+  m_EditorClassIdentifier: 
+  num: 64
+  nombre: Kadabra
+  tipo1: 13
+  tipo2: 0
+  idle: {fileID: -1279232133298341471, guid: 7c603a2f841f4a24f9ba6f2969400d3f, type: 3}
+  idleShiny: {fileID: -1279232133298341471, guid: 74816869e1774ac4fbf7060476c3d4f4, type: 3}
+  explorar: {fileID: -4276655061556569768, guid: 7c603a2f841f4a24f9ba6f2969400d3f, type: 3}
+  explorarShiny: {fileID: -4276655061556569768, guid: 74816869e1774ac4fbf7060476c3d4f4, type: 3}
+  andar:
+  - {fileID: -7327988408088179160, guid: 7c603a2f841f4a24f9ba6f2969400d3f, type: 3}
+  - {fileID: 4584750035966600622, guid: 7c603a2f841f4a24f9ba6f2969400d3f, type: 3}
+  - {fileID: 1294971290942144542, guid: 7c603a2f841f4a24f9ba6f2969400d3f, type: 3}
+  - {fileID: -2981697624290042637, guid: 7c603a2f841f4a24f9ba6f2969400d3f, type: 3}
+  andarShiny:
+  - {fileID: -7327988408088179160, guid: 74816869e1774ac4fbf7060476c3d4f4, type: 3}
+  - {fileID: 4584750035966600622, guid: 74816869e1774ac4fbf7060476c3d4f4, type: 3}
+  - {fileID: 1294971290942144542, guid: 74816869e1774ac4fbf7060476c3d4f4, type: 3}
+  - {fileID: -2981697624290042637, guid: 74816869e1774ac4fbf7060476c3d4f4, type: 3}
+  hp: 40
+  atk: 120
+  def: 70
+  lvlEvo: 36
+  evolucion:
+  - {fileID: 11400000, guid: dfe657a4022e3d4488faac65f1b30728, type: 2}
+  minLvl: 16
+  ratioCaptura: 100
+  tipoExp: 0
+  SpriteTipo1: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}
+  SpriteTipo2: {fileID: 0}

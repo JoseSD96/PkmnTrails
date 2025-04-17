@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 69
+  m_EditorClassIdentifier: 
+  num: 69
+  nombre: Bellsprout
+  tipo1: 12
+  tipo2: 17
+  idle: {fileID: 5779618697500676965, guid: a2fa0d960d62ec64babe2a18cc66cf99, type: 3}
+  idleShiny: {fileID: 5779618697500676965, guid: 0ba5f4cf310357b458db9a9338ae8aa0, type: 3}
+  explorar: {fileID: -7753736187457564218, guid: a2fa0d960d62ec64babe2a18cc66cf99, type: 3}
+  explorarShiny: {fileID: -7753736187457564218, guid: 0ba5f4cf310357b458db9a9338ae8aa0, type: 3}
+  andar:
+  - {fileID: -5477088378427016817, guid: a2fa0d960d62ec64babe2a18cc66cf99, type: 3}
+  - {fileID: 5469740717990019062, guid: a2fa0d960d62ec64babe2a18cc66cf99, type: 3}
+  - {fileID: -3795142681991863588, guid: a2fa0d960d62ec64babe2a18cc66cf99, type: 3}
+  - {fileID: -2276296382142731721, guid: a2fa0d960d62ec64babe2a18cc66cf99, type: 3}
+  andarShiny:
+  - {fileID: -5477088378427016817, guid: 0ba5f4cf310357b458db9a9338ae8aa0, type: 3}
+  - {fileID: 5469740717990019062, guid: 0ba5f4cf310357b458db9a9338ae8aa0, type: 3}
+  - {fileID: -3795142681991863588, guid: 0ba5f4cf310357b458db9a9338ae8aa0, type: 3}
+  - {fileID: -2276296382142731721, guid: 0ba5f4cf310357b458db9a9338ae8aa0, type: 3}
+  hp: 50
+  atk: 75
+  def: 35
+  lvlEvo: 21
+  evolucion:
+  - {fileID: 11400000, guid: 8b46fc3af8019434d94b24212dad63af, type: 2}
+  minLvl: 1
+  ratioCaptura: 255
+  tipoExp: 0
+  SpriteTipo1: {fileID: 7932798033344189819, guid: d6d579d0526b1aa46bd061d6721fea3f, type: 3}
+  SpriteTipo2: {fileID: -5005990984189769374, guid: e92ae9ff3784b7240b609f27cb3756ca, type: 3}

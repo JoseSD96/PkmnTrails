@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 12
+  m_EditorClassIdentifier: 
+  num: 12
+  nombre: Butterfree
+  tipo1: 3
+  tipo2: 18
+  idle: {fileID: 3009974611588853491, guid: ccce285abc0f8674eb8d42e139a8804f, type: 3}
+  idleShiny: {fileID: 3009974611588853491, guid: dea3b95517f239f4e8a5d03c20c72d98, type: 3}
+  explorar: {fileID: 4560822025561723541, guid: ccce285abc0f8674eb8d42e139a8804f, type: 3}
+  explorarShiny: {fileID: 4560822025561723541, guid: dea3b95517f239f4e8a5d03c20c72d98, type: 3}
+  andar:
+  - {fileID: -7935729137914735924, guid: ccce285abc0f8674eb8d42e139a8804f, type: 3}
+  - {fileID: 2145013844478519206, guid: ccce285abc0f8674eb8d42e139a8804f, type: 3}
+  - {fileID: 3996958949082740086, guid: ccce285abc0f8674eb8d42e139a8804f, type: 3}
+  - {fileID: 1861315149053991199, guid: ccce285abc0f8674eb8d42e139a8804f, type: 3}
+  andarShiny:
+  - {fileID: -7935729137914735924, guid: dea3b95517f239f4e8a5d03c20c72d98, type: 3}
+  - {fileID: 2145013844478519206, guid: dea3b95517f239f4e8a5d03c20c72d98, type: 3}
+  - {fileID: 3996958949082740086, guid: dea3b95517f239f4e8a5d03c20c72d98, type: 3}
+  - {fileID: 1861315149053991199, guid: dea3b95517f239f4e8a5d03c20c72d98, type: 3}
+  hp: 60
+  atk: 90
+  def: 80
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 10
+  ratioCaptura: 45
+  tipoExp: 2
+  SpriteTipo1: {fileID: -3367932149377307684, guid: 6fd472e56c695804abba7eca29ae7f25, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

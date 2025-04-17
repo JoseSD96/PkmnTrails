@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 125
+  m_EditorClassIdentifier: 
+  num: 125
+  nombre: Electabuzz
+  tipo1: 5
+  tipo2: 0
+  idle: {fileID: 718273996297916940, guid: ccbf68d0ff1d32d4da91073a7bb7ec70, type: 3}
+  idleShiny: {fileID: 718273996297916940, guid: c851c61db93eb9e4281c6f92f5716c15, type: 3}
+  explorar: {fileID: 4443452741433705810, guid: ccbf68d0ff1d32d4da91073a7bb7ec70, type: 3}
+  explorarShiny: {fileID: 4443452741433705810, guid: c851c61db93eb9e4281c6f92f5716c15, type: 3}
+  andar:
+  - {fileID: -7668579183159277009, guid: ccbf68d0ff1d32d4da91073a7bb7ec70, type: 3}
+  - {fileID: 2694202651558619205, guid: ccbf68d0ff1d32d4da91073a7bb7ec70, type: 3}
+  - {fileID: 3493405522738637789, guid: ccbf68d0ff1d32d4da91073a7bb7ec70, type: 3}
+  - {fileID: -7933873574108537072, guid: ccbf68d0ff1d32d4da91073a7bb7ec70, type: 3}
+  andarShiny:
+  - {fileID: -7668579183159277009, guid: c851c61db93eb9e4281c6f92f5716c15, type: 3}
+  - {fileID: 2694202651558619205, guid: c851c61db93eb9e4281c6f92f5716c15, type: 3}
+  - {fileID: 3493405522738637789, guid: c851c61db93eb9e4281c6f92f5716c15, type: 3}
+  - {fileID: -7933873574108537072, guid: c851c61db93eb9e4281c6f92f5716c15, type: 3}
+  hp: 65
+  atk: 95
+  def: 85
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 45
+  tipoExp: 2
+  SpriteTipo1: {fileID: 5820286478268577726, guid: f1d7827866e38664fb759c583947fb9a, type: 3}
+  SpriteTipo2: {fileID: 0}

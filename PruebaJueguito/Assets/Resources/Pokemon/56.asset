@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 56
+  m_EditorClassIdentifier: 
+  num: 56
+  nombre: Mankey
+  tipo1: 10
+  tipo2: 0
+  idle: {fileID: 4404141481002549111, guid: 3150d7b940ccf8642a4287882d9f6b4d, type: 3}
+  idleShiny: {fileID: 4404141481002549111, guid: 92afe3b569eaee646b447f960ce9b57a, type: 3}
+  explorar: {fileID: -6157112068434702981, guid: 3150d7b940ccf8642a4287882d9f6b4d, type: 3}
+  explorarShiny: {fileID: -6157112068434702981, guid: 92afe3b569eaee646b447f960ce9b57a, type: 3}
+  andar:
+  - {fileID: -2516114383264356596, guid: 3150d7b940ccf8642a4287882d9f6b4d, type: 3}
+  - {fileID: 2418536113385101019, guid: 3150d7b940ccf8642a4287882d9f6b4d, type: 3}
+  - {fileID: 1123242815482049405, guid: 3150d7b940ccf8642a4287882d9f6b4d, type: 3}
+  - {fileID: -3683217647433286773, guid: 3150d7b940ccf8642a4287882d9f6b4d, type: 3}
+  andarShiny:
+  - {fileID: -2516114383264356596, guid: 92afe3b569eaee646b447f960ce9b57a, type: 3}
+  - {fileID: 2418536113385101019, guid: 92afe3b569eaee646b447f960ce9b57a, type: 3}
+  - {fileID: 1123242815482049405, guid: 92afe3b569eaee646b447f960ce9b57a, type: 3}
+  - {fileID: -3683217647433286773, guid: 92afe3b569eaee646b447f960ce9b57a, type: 3}
+  hp: 40
+  atk: 80
+  def: 45
+  lvlEvo: 28
+  evolucion:
+  - {fileID: 11400000, guid: cd8f41f1e308f1843a8f2ca1be347f82, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 2
+  SpriteTipo1: {fileID: -2810909829056618550, guid: f1eb9c19331ad2448b325bdcaccbecb0, type: 3}
+  SpriteTipo2: {fileID: 0}

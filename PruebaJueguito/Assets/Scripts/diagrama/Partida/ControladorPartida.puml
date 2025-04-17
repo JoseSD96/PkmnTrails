@@ -1,0 +1,14 @@
+@startuml
+class ControladorPartida {
+    - sistemaCombate : SistemaCombate
+    - mainCamera : Camera
+    - CamaraBatalla : Camera
+    - interfazExploracion : Canvas
+    - interfazBatalla : Canvas
+    - Start() : void
+    + IniciarCombate() : void
+    + TerminarCombate() : void
+    - ActivarExploracion() : void
+}
+MonoBehaviour <|-- ControladorPartida
+@enduml

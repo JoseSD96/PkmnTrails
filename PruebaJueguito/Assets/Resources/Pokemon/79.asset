@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 79
+  m_EditorClassIdentifier: 
+  num: 79
+  nombre: Slowpoke
+  tipo1: 2
+  tipo2: 13
+  idle: {fileID: -7303968488915157332, guid: b70e14072d2e11740b04ca6e75b40a8d, type: 3}
+  idleShiny: {fileID: -7303968488915157332, guid: 90deb91968b65d54c82c7d568cb4a595, type: 3}
+  explorar: {fileID: -1089059906763915613, guid: b70e14072d2e11740b04ca6e75b40a8d, type: 3}
+  explorarShiny: {fileID: -1089059906763915613, guid: 90deb91968b65d54c82c7d568cb4a595, type: 3}
+  andar:
+  - {fileID: -6609255603036219767, guid: b70e14072d2e11740b04ca6e75b40a8d, type: 3}
+  - {fileID: 2736018856775870926, guid: b70e14072d2e11740b04ca6e75b40a8d, type: 3}
+  - {fileID: -2609390489676159020, guid: b70e14072d2e11740b04ca6e75b40a8d, type: 3}
+  - {fileID: 1852534827276918305, guid: b70e14072d2e11740b04ca6e75b40a8d, type: 3}
+  andarShiny:
+  - {fileID: -6609255603036219767, guid: 90deb91968b65d54c82c7d568cb4a595, type: 3}
+  - {fileID: 2736018856775870926, guid: 90deb91968b65d54c82c7d568cb4a595, type: 3}
+  - {fileID: -2609390489676159020, guid: 90deb91968b65d54c82c7d568cb4a595, type: 3}
+  - {fileID: 1852534827276918305, guid: 90deb91968b65d54c82c7d568cb4a595, type: 3}
+  hp: 90
+  atk: 65
+  def: 65
+  lvlEvo: 37
+  evolucion:
+  - {fileID: 11400000}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 2
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}
