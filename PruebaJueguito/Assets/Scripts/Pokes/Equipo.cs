@@ -1,16 +1,30 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Equipo : MonoBehaviour
 {
-    [SerializeField] private List<Pokemon> pokemones;
-    public List<Pokemon> Pokemones => pokemones;
+    public List<Pokemon> pokemones;
+    public PC pc;
 
-    private void Start()
+    public EquipoSaveData GetSaveData()
     {
+        var saveData = new EquipoSaveData();
+        saveData.pokemones = new List<PokemonSaveData>();
         foreach (var pokemon in pokemones)
         {
-            pokemon.Init(10, true);
+            saveData.pokemones.Add(pokemon.GetSaveData());
+        }
+        return saveData;
+    }
+
+    public void RestoreState(EquipoSaveData saveData)
+    {
+        pokemones = new List<Pokemon>();
+        foreach (var pokemonData in saveData.pokemones)
+        {
+            var pokemon = new Pokemon(pokemonData);
+            pokemones.Add(pokemon);
         }
     }
 
@@ -28,14 +42,48 @@ public class Equipo : MonoBehaviour
 
     public int GetMediaNivel()
     {
-        int lvlMedio = 0;
         int lvlTotal = 0;
         foreach (var pokemon in pokemones)
         {
             lvlTotal += pokemon.Nivel;
         }
 
-        lvlMedio = lvlTotal / pokemones.Count;
+        int lvlMedio = lvlTotal / pokemones.Count;
         return lvlMedio;
     }
+
+    public Pokemon GetPokemonByIndex(int index)
+    {
+        if (index >= 0 && index < pokemones.Count)
+        {
+            return pokemones[index];
+        }
+        return null;
+    }
+
+    public void AddPokemon(Pokemon pokemon)
+    {
+        if (pokemones.Count < 6)
+        {
+            pokemones.Add(pokemon);
+        }
+        else
+        {
+            pc.AddPokemon(pokemon);
+        }
+    }
+
+    public void EliminarPokemon(int index)
+    {
+        if (index >= 0 && index < pokemones.Count)
+        {
+            pokemones.RemoveAt(index);
+        }
+    }
+}
+
+[Serializable]
+public class EquipoSaveData
+{
+    public List<PokemonSaveData> pokemones;
 }

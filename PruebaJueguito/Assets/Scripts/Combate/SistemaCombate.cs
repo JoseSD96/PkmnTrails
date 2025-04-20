@@ -3,17 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro; // Asegúrate de tener esto arriba
 
 public class SistemaCombate : MonoBehaviour
 {
     [SerializeField] public PkmnCombate pkmnJugador;
     [SerializeField] CombateHUD pkmnJugadorHUD;
-
+    [SerializeField] GameObject fondoCombate;
     [SerializeField] public PkmnCombate pkmnEnemigo;
     [SerializeField] CombateHUD pkmnEnemigoHUD;
     [SerializeField] Button Atk1;
     [SerializeField] Button Atk2;
+    [SerializeField] Button huirBtn;
+    [SerializeField] Button capturarBtn;
+
+    [SerializeField] GameObject velocidadJugador;
+    [SerializeField] GameObject velocidadEnemigo;
     private ControladorPartida partida;
+    private SistemaCaptura sistemaCaptura;
 
     private Type AtkType;
     bool isAttaking;
@@ -21,27 +28,67 @@ public class SistemaCombate : MonoBehaviour
 
     Pokemon salvaje;
     Equipo equipo;
-    public void IniciarCombate(ControladorPartida controller, Equipo equipo, Pokemon salvaje)
+    public void IniciarCombate(ControladorPartida controller, Equipo equipo, Pokemon salvaje, SistemaCaptura sistemaCaptura, ZonaBase zonaBase)
     {
         partida = controller;
         this.equipo = equipo;
         this.salvaje = salvaje;
+
+        this.sistemaCaptura = sistemaCaptura;
+
         isFinish = false;
+
         Atk1.onClick.RemoveAllListeners();
         Atk2.onClick.RemoveAllListeners();
+        capturarBtn.onClick.RemoveAllListeners();
+
         Atk1.onClick.AddListener(GetAtkType);
         Atk2.onClick.AddListener(GetAtkType);
-        SetupBattle();
+        capturarBtn.onClick.AddListener(CapturarPokemon);
+
+        SetupBattle(zonaBase.FondoCombate);
     }
 
-    public void SetupBattle()
+    public void SetupBattle(ZonaBase.tipoCombate tipoCombate)
     {
         pkmnJugador.Setup(equipo.GetPokemonVivo());
         pkmnEnemigo.Setup(salvaje);
         pkmnJugadorHUD.SetData(pkmnJugador);
         pkmnEnemigoHUD.SetData(pkmnEnemigo);
 
+        fondoCombate.GetComponent<Image>().sprite = Resources.Load<Sprite>("Combate/FondosCombate/" + tipoCombate.ToString());
     }
+
+
+    public void CapturarPokemon()
+    {
+        Atk1.interactable = false;
+        Atk2.interactable = false;
+        capturarBtn.interactable = false;
+        huirBtn.interactable = false;
+        StartCoroutine(CapturaCoroutine());
+    }
+
+    private IEnumerator CapturaCoroutine()
+    {
+        sistemaCaptura.LanzarPokeball();
+        while (sistemaCaptura.IsCapturando)
+            yield return null;
+        Atk1.interactable = true;
+        Atk2.interactable = true;
+        capturarBtn.interactable = true;
+        huirBtn.interactable = true;
+
+        if (sistemaCaptura.ExitoCaptura())
+        {
+            StartCoroutine(TerminarCombateCapturado());
+        }
+        else
+        {
+            StartCoroutine(TurnoEnemigo());
+        }
+    }
+
     public void GetAtkType()
     {
         if (!isAttaking && !isFinish)
@@ -50,15 +97,83 @@ public class SistemaCombate : MonoBehaviour
             GameObject botonPresionado = EventSystem.current.currentSelectedGameObject;
             string tipo = botonPresionado.GetComponent<Button>().image.sprite.name;
             AtkType = StringToType(tipo.Split("_")[0]);
-            StartCoroutine(TurnoJugador());
+            int velEnemigo = Random.Range(1, 51);
+            int velJugador = Random.Range(1, 51);
 
+            StartCoroutine(MostrarVelocidadesYAtacar(velJugador, velEnemigo));
         }
+    }
+
+    private IEnumerator MostrarVelocidadesYAtacar(int velJugador, int velEnemigo)
+    {
+        yield return StartCoroutine(MostrarVelocidades(velJugador, velEnemigo));
+        if (velJugador > velEnemigo)
+        {
+            yield return StartCoroutine(TurnoCombate(true));
+        }
+        else
+        {
+            yield return StartCoroutine(TurnoCombate(false));
+        }
+    }
+
+    private IEnumerator MostrarVelocidades(int velJugador, int velEnemigo)
+    {
+        velocidadJugador.SetActive(true);
+        velocidadEnemigo.SetActive(true);
+
+        velocidadJugador.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = velJugador.ToString();
+        velocidadEnemigo.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = velEnemigo.ToString();
+
+        yield return new WaitForSeconds(1f);
+
+        velocidadJugador.SetActive(false);
+        velocidadEnemigo.SetActive(false);
+    }
+
+    private IEnumerator TurnoCombate(bool jugadorPrimero)
+    {
+        Atk1.interactable = false;
+        Atk2.interactable = false;
+        huirBtn.interactable = false;
+        capturarBtn.interactable = false;
+
+        if (jugadorPrimero)
+        {
+            yield return StartCoroutine(TurnoJugador());
+            if (!isFinish)
+                yield return StartCoroutine(TurnoEnemigo());
+        }
+        else
+        {
+            yield return StartCoroutine(TurnoEnemigo());
+            if (!isFinish)
+                yield return StartCoroutine(TurnoJugador());
+        }
+
+        Atk1.interactable = true;
+        Atk2.interactable = true;
+        huirBtn.interactable = true;
+        capturarBtn.interactable = true;
     }
 
     IEnumerator TerminarCombate()
     {
-        yield return new WaitForSeconds(2f);
+
+        yield return new WaitForSeconds(0.5f);
         partida.TerminarCombate();
+    }
+
+    IEnumerator TerminarCombateCapturado()
+    {
+        foreach (var pkmn in equipo.pokemones)
+        {
+            pkmn.Experiencia += pkmnEnemigo.Pkmn.ExperienciaParaNivel(pkmnEnemigo.Pkmn.Nivel) / 5;
+            pkmn.ComprobarSubirNivel();
+        }
+        yield return new WaitForSeconds(0.8f);
+        sistemaCaptura.resetPokeball();
+        partida.TerminarCombate(pkmnEnemigo.Pkmn);
     }
 
     public static Type StringToType(string tipo)
@@ -77,12 +192,13 @@ public class SistemaCombate : MonoBehaviour
         yield return pkmnEnemigoHUD.UpdateHP();
         yield return new WaitForSeconds(1f);
 
-        if (!isFainted)
+        if (isFainted)
         {
-            StartCoroutine(TurnoEnemigo());
-        }
-        else
-        {
+            foreach (var pkmn in equipo.pokemones)
+            {
+                pkmn.Experiencia += pkmnEnemigo.Pkmn.ExperienciaParaNivel(pkmnEnemigo.Pkmn.Nivel) / 5;
+                pkmn.ComprobarSubirNivel();
+            }
             pkmnEnemigo.AnimacionDerrota();
             pkmnEnemigoHUD.AnimacionDerrota();
             pkmnEnemigoHUD.enabled = false;

@@ -1,20 +1,66 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class InterfazEquipo : MonoBehaviour
 {
     [SerializeField] Equipo equipo;
     [SerializeField] GameObject[] botones;
+    [SerializeField] GameObject botonesOpcion;
+
+    public Pokemon PokemonSeleccionado { get; private set; }
+    public Equipo Equipo => equipo;
+
+    public int indiceSeleccionado = -1;
 
     void Start()
     {
+        botonesOpcion.SetActive(false);
+
+        for (int i = 0; i < botones.Length; i++)
+        {
+            int index = i;
+            var btn = botones[i].GetComponent<Button>();
+            if (btn != null)
+            {
+                btn.onClick.RemoveAllListeners();
+                btn.onClick.AddListener(() => SeleccionarPokemon(index));
+            }
+        }
         ActualizarInterfaz();
     }
 
     void Update()
     {
         ActualizarInterfaz();
+    }
+
+    public void SeleccionarPokemon(int indice)
+    {
+        if (indice < equipo.pokemones.Count && equipo.pokemones[indice] != null)
+        {
+            PokemonSeleccionado = equipo.pokemones[indice];
+            indiceSeleccionado = indice;
+            botonesOpcion.SetActive(true);
+        }
+        else
+        {
+            botonesOpcion.SetActive(false);
+        }
+    }
+
+    public void LimpiarSeleccion()
+    {
+        indiceSeleccionado = -1;
+        botonesOpcion.SetActive(false);
+
+        for (int i = 0; i < botones.Length; i++)
+        {
+            var btnImage = botones[i].GetComponent<Image>();
+            if (btnImage != null)
+                btnImage.color = Color.white;
+        }
     }
 
     public void ActualizarInterfaz()
@@ -44,9 +90,9 @@ public class InterfazEquipo : MonoBehaviour
             }
 
 
-            if (i < equipo.Pokemones.Count && equipo.Pokemones[i] != null)
+            if (i < equipo.pokemones.Count && equipo.pokemones[i] != null)
             {
-                var pokemon = equipo.Pokemones[i];
+                var pokemon = equipo.pokemones[i];
 
                 spritePokemon.sprite = pokemon.isShiny ? pokemon.Base.SpriteIdleShiny : pokemon.Base.SpriteIdle;
                 spritePokemon.enabled = true;
@@ -59,6 +105,10 @@ public class InterfazEquipo : MonoBehaviour
                 nombreTxt.gameObject.SetActive(true);
                 nivelTxt.text = "Nv. " + pokemon.Nivel;
                 nivelTxt.gameObject.SetActive(true);
+
+                var shinyGO = botones[i].transform.Find("shiny");
+                if (shinyGO != null)
+                    shinyGO.gameObject.SetActive(pokemon.isShiny);
             }
             else
             {
@@ -66,6 +116,18 @@ public class InterfazEquipo : MonoBehaviour
                 hpBar.gameObject.SetActive(false);
                 nombreTxt.gameObject.SetActive(false);
                 nivelTxt.gameObject.SetActive(false);
+
+                var shinyGO = botones[i].transform.Find("shiny");
+                if (shinyGO != null)
+                    shinyGO.gameObject.SetActive(false);
+            }
+            var btnImage = botones[i].GetComponent<Image>();
+            if (btnImage != null)
+            {
+                if (i == indiceSeleccionado)
+                    btnImage.color = Color.yellow;
+                else
+                    btnImage.color = Color.white;
             }
         }
     }

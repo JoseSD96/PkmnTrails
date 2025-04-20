@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845d05a7b31a90548bd867fb01085e26, type: 3}
+  m_Name: Pokeball
+  m_EditorClassIdentifier: 
+  spritesLanzamiento:
+  - {fileID: 5888315422345105727, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: 5371866471718008748, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: 724933104740771742, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: -4128064260709374577, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: 3517281720477641126, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: -9103666052561205923, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: -6686840648376083744, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  spritesToque:
+  - {fileID: 4826894011608840846, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: 5177418754537972028, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: 4826894011608840846, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: 7736453419654826607, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: 4826894011608840846, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  spritesCaptura:
+  - {fileID: -6686840648376083744, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: -7294465251024053427, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: -6540262881156913281, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: 9152387664413817271, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: -3135793125748481703, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: -3078543521071344776, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: -6686840648376083744, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: 8094064486911001696, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  - {fileID: -8361436788831895035, guid: a94077c1227a88144aac13d76b09996e, type: 3}

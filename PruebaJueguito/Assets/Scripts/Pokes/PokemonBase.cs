@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "Pokemon", menuName = "Pokemon/Crear Nuevo Pokemon")]
 public class PokemonBase : ScriptableObject
