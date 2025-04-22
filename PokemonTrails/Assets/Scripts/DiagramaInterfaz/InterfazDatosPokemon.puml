@@ -1,0 +1,14 @@
+@startuml
+class InterfazDatosPokemon {
+    - spritePokemon : SpriteRenderer
+    - shinyStars : SpriteRenderer
+    - numeroTxt : TextMeshProUGUI
+    - nombreTxt : TextMeshProUGUI
+    - nivelTxt : TextMeshProUGUI
+    - potencialTxt : TextMeshProUGUI
+    - tipo1Img : SpriteRenderer
+    - tipo2Img : SpriteRenderer
+    + MostrarDatos(pokemon:Pokemon) : void
+}
+MonoBehaviour <|-- InterfazDatosPokemon
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+class SistemaMenu {
+    - btnSi : Button
+    - btnNo : Button
+    - panelConfirmacion : GameObject
+    - textoConfirmacion : TextMeshProUGUI
+    - audioManager : AudioManager
+    - onConfirmarNuevaPartida : Action
+    - Start() : void
+    - OnNoButtonClicked() : void
+    - OnSiButtonClicked() : void
+    + ConfirmacionNuevaPartida(onConfirmar:Action) : void
+}
+MonoBehaviour <|-- SistemaMenu
+@enduml

@@ -1,0 +1,27 @@
+@startuml
+class SistemaCaptura {
+    - pokeballObj : GameObject
+    - PkmnEnemigo : GameObject
+    - equipo : Equipo
+    - pokeball : Pokeball
+    - audioManager : AudioManager
+    - spritesPokeballLanzamiento : Sprite[]
+    - spritesPokeballToque : Sprite[]
+    - spritesPokeballCaptura : Sprite[]
+    + IsCapturando : bool <<get>>
+    - toques : int = 0
+    - Start() : void
+    + resetPokeball() : void
+    + LanzarPokeball() : void
+    - ProcesoCaptura() : IEnumerator
+    - AnimacionLanzarPokeballCoroutine() : IEnumerator
+    - AnimacionDarToquesCoroutine() : IEnumerator
+    - AnimacionRecuperarPokemonCoroutine() : IEnumerator
+    - AnimacionCapturaCoroutine() : IEnumerator
+    + CargarSpritesPokeball() : void
+    + CargarPokeball() : void
+    + CalcularProbabilidadCaptura(pkmnACapturar:Pokemon) : void
+    + ExitoCaptura() : bool
+}
+MonoBehaviour <|-- SistemaCaptura
+@enduml

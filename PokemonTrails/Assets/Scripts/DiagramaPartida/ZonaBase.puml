@@ -1,0 +1,19 @@
+@startuml
+class ZonaBase {
+    - spriteZona : Sprite
+    - tiposZona : Type[]
+    - pokemonLegendario : PokemonBase[]
+    - fondoCombate : tipoCombate
+    + SpriteZona : Sprite <<get>>
+    + TiposZona : Type[] <<get>>
+    + PokemonLegendario : PokemonBase[] <<get>>
+    + FondoCombate : tipoCombate <<get>>
+}
+enum tipoCombate {
+    bosque,
+    cueva,
+    hielo,
+}
+ScriptableObject <|-- ZonaBase
+ZonaBase +-- tipoCombate
+@enduml

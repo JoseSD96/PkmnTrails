@@ -1,0 +1,19 @@
+@startuml
+class Equipo {
+    + pokemones : List<Pokemon>
+    + pc : PC
+    + GetSaveData() : EquipoSaveData
+    + RestoreState(saveData:EquipoSaveData) : void
+    + GetPokemonVivo() : Pokemon
+    + GetMediaNivel() : int
+    + GetPokemonByIndex(index:int) : Pokemon
+    + AddPokemon(pokemon:Pokemon) : void
+    + EliminarPokemon(index:int) : void
+    + IntercambiarPokemones(indexA:int, indexB:int) : void
+    + IntercambiarConPC(indexEquipo:int, pc:PC, indexPC:int, cajaPC:int) : void
+}
+class EquipoSaveData {
+    + pokemones : List<PokemonSaveData>
+}
+MonoBehaviour <|-- Equipo
+@enduml

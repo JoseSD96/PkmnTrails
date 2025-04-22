@@ -1,0 +1,32 @@
+@startuml
+class Pokemon {
+    - _base : PokemonBase
+    - nivel : int
+    + Base : PokemonBase <<get>> <<set>>
+    + Nivel : int <<get>> <<set>>
+    + Experiencia : int <<get>> <<set>>
+    + Potencial : int <<get>> <<set>>
+    + HP : int <<get>> <<set>>
+    + isShiny : bool <<get>> <<set>>
+    + Init(potencial:int, isShiny:bool) : void
+    + GetSaveData() : PokemonSaveData
+    + Pokemon()
+    + Pokemon(pkmn:PokemonBase, potencial:int, isShiny:bool, nivel:int)
+    + Pokemon(data:PokemonSaveData)
+    + MaxHP : int <<get>>
+    + Ataque : int <<get>>
+    + Defensa : int <<get>>
+    + ExperienciaParaNivel(nivelObjetivo:int) : int
+    + ExperienciaParaSubirNivel() : int
+    + ComprobarSubirNivel() : void
+    + ComprobarEvolucion() : void
+}
+class PokemonSaveData {
+    + numero : int
+    + hp : int
+    + nivel : int
+    + experiencia : int
+    + potencial : int
+    + isShiny : bool
+}
+@enduml

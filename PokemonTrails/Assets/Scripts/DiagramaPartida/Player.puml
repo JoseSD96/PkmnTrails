@@ -1,0 +1,23 @@
+@startuml
+class Player <<sealed>> {
+    + playerName : string
+    + trainer : Trainer
+    + equipo : Equipo
+    + pc : PC
+    - pokedex : List<int>
+    + Pokedex : List<int> <<get>>
+    - Update() : void
+    + CaptureState() : object
+    + RestoreState(state:object) : void
+}
+class PlayerSaveData {
+    + playerName : string
+    + trainerName : string
+    + equipo : EquipoSaveData
+    + pc : PCSaveData
+    + pokedex : List<int>
+    + PlayerSaveData(playerName:string, trainerName:string, equipo:EquipoSaveData, pc:PCSaveData, pokedex:List<int>)
+}
+MonoBehaviour <|-- Player
+ISavable <|-- Player
+@enduml

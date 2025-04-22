@@ -1,0 +1,11 @@
+@startuml
+class SavableEntity {
+    - uniqueId : string = ""
+    {static} - globalLookup : Dictionary<string, SavableEntity>
+    + UniqueId : string <<get>>
+    + CaptureState() : object
+    + RestoreState(state:object) : void
+    - IsUnique(candidate:string) : bool
+}
+MonoBehaviour <|-- SavableEntity
+@enduml

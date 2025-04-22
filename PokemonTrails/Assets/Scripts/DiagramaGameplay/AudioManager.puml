@@ -1,0 +1,13 @@
+@startuml
+class AudioManager {
+    + musicaSource : AudioSource
+    + efectosSource : AudioSource
+    + PlayMusicaExploracion() : void
+    + PlayMusicaCombateNormal() : void
+    + PlayMusicaPC() : void
+    + PlayMusicaCombateLegendario() : void
+    + PlayMusicaMenuInicio() : void
+    + PlayEfecto(carpeta:string, nombreEfecto:string) : void
+}
+MonoBehaviour <|-- AudioManager
+@enduml

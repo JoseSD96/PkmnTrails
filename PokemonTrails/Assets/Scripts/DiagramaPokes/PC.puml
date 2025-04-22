@@ -1,0 +1,42 @@
+@startuml
+class PC {
+    + cajas : Dictionary<int, List<Pokemon>>
+    + textoCajaActual : TextMeshProUGUI
+    + textoNumero : TextMeshProUGUI
+    + textoNombre : TextMeshProUGUI
+    + textoNivel : TextMeshProUGUI
+    + textoPotencial : TextMeshProUGUI
+    + indiceSeleccionado : int
+    + cajaActual : int = 0
+    + caja : GameObject
+    + btnOpciones : GameObject
+    + panelDatos : GameObject
+    - botonesCajaActual : List<GameObject>
+    + interfazEquipo : InterfazEquipo
+    + panelEquipo : RectTransform
+    + botonesPanelEquipo : GameObject[]
+    + esperandoIntercambioConEquipo : bool = false
+    - Awake() : void
+    - Start() : void
+    + GetCajaConHueco() : int
+    + AddPokemon(pokemon:Pokemon) : void
+    + MostrarCaja(numCaja:int) : void
+    + CambiarCaja(direccion:int) : void
+    + SeleccionarPokemon(indice:int) : void
+    + LimpiarSeleccion() : void
+    + EliminarPokemonDeCajaActual(index:int) : void
+    + IntercambiarConEquipo() : void
+    + IniciarIntercambioConEquipo() : void
+    + GetSaveData() : PCSaveData
+    + RestoreState(saveData:PCSaveData) : void
+    + OcultarInterfazEquipoEnPC() : void
+    + ActualizarPanelEquipoSimple(botones:GameObject[], equipo:Equipo, indiceSeleccionado:int) : void
+    + SacarDelPC() : void
+    + DepositarEnPC() : void
+    + TogglePanelEquipo() : void
+}
+class PCSaveData {
+    + cajas : List<List<PokemonSaveData>>
+}
+MonoBehaviour <|-- PC
+@enduml

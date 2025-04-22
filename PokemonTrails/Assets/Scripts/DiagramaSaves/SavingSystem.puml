@@ -1,0 +1,19 @@
+@startuml
+class SavingSystem {
+    + {static} i : SavingSystem <<get>>
+    - Awake() : void
+    - gameState : Dictionary<string, object>
+    + CaptureEntityStates(savableEntities:List<SavableEntity>) : void
+    + RestoreEntityStates(savableEntities:List<SavableEntity>) : void
+    + Save(saveFile:string) : void
+    + Load(saveFile:string) : void
+    + Delete(saveFile:string) : void
+    - CaptureState(state:Dictionary<string, object>) : void
+    - RestoreState(state:Dictionary<string, object>) : void
+    - SaveFile(saveFile:string, state:Dictionary<string, object>) : void
+    - LoadFile(saveFile:string) : Dictionary<string, object>
+    - GetPath(saveFile:string) : string
+    + CheckIfSaveExists(saveFile:string) : bool
+}
+MonoBehaviour <|-- SavingSystem
+@enduml

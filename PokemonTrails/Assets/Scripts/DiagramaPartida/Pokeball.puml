@@ -1,0 +1,13 @@
+@startuml
+class Pokeball {
+    - spritesLanzamiento : Sprite[]
+    - spritesToque : Sprite[]
+    - spritesCaptura : Sprite[]
+    - ratioCaptura : float
+    + SpritesLanzamiento : Sprite[] <<get>>
+    + SpritesToque : Sprite[] <<get>>
+    + SpritesCaptura : Sprite[] <<get>>
+    + RatioCaptura : float <<get>>
+}
+ScriptableObject <|-- Pokeball
+@enduml

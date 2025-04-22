@@ -1,0 +1,18 @@
+@startuml
+class CambiadorSprites {
+    + trainerName : string
+    + walkRepetitions : int = 5
+    + player : Player
+    - walkCoroutine : Coroutine
+    - spriteRendererEntrenador : SpriteRenderer
+    - spriteRendererPkmn : SpriteRenderer
+    - isWalking : bool = false
+    - Start() : void
+    - SetIdle() : void
+    + StartWalking(onFinish:System.Action) : void
+    - WalkAnimation(onFinish:System.Action) : IEnumerator
+    - SetSearch() : IEnumerator
+    + Search() : void
+}
+MonoBehaviour <|-- CambiadorSprites
+@enduml

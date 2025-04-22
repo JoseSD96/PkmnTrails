@@ -1,0 +1,13 @@
+@startuml
+class Trainer {
+    - nombre : string
+    - spriteIdle : Sprite
+    - spriteExploracion : Sprite
+    - spritesAndar : Sprite[]
+    + Nombre : string <<get>>
+    + SpriteIdle : Sprite <<get>>
+    + SpriteExploracion : Sprite <<get>>
+    + SpritesAndar : Sprite[] <<get>>
+}
+ScriptableObject <|-- Trainer
+@enduml

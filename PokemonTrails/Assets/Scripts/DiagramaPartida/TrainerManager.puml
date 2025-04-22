@@ -1,0 +1,7 @@
+@startuml
+class TrainerManager {
+    {static} - skins : Dictionary<string, Trainer>
+    + {static} Init() : void
+    + {static} GetTrainer(nombre:string) : Trainer
+}
+@enduml
