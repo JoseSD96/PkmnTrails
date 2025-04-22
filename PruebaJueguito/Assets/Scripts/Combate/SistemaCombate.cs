@@ -65,7 +65,6 @@ public class SistemaCombate : MonoBehaviour
         fondoCombate.GetComponent<Image>().sprite = Resources.Load<Sprite>("Combate/FondosCombate/" + tipoCombate.ToString());
     }
 
-
     public void CapturarPokemon()
     {
         Atk1.interactable = false;
@@ -74,7 +73,6 @@ public class SistemaCombate : MonoBehaviour
         huirBtn.interactable = false;
         StartCoroutine(CapturaCoroutine());
     }
-
     private IEnumerator CapturaCoroutine()
     {
         sistemaCaptura.LanzarPokeball();
