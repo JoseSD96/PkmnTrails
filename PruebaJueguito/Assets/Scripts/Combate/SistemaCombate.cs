@@ -19,6 +19,7 @@ public class SistemaCombate : MonoBehaviour
     [SerializeField] AudioManager audioManager;
     [SerializeField] GameObject velocidadJugador;
     [SerializeField] GameObject velocidadEnemigo;
+    [SerializeField] SpriteRenderer tu;
     private ControladorPartida partida;
     private SistemaCaptura sistemaCaptura;
 
@@ -33,10 +34,10 @@ public class SistemaCombate : MonoBehaviour
         partida = controller;
         this.equipo = equipo;
         this.salvaje = salvaje;
-
         this.sistemaCaptura = sistemaCaptura;
 
         isFinish = false;
+        isAttaking = false; // Asegúrate de resetear esto
 
         Atk1.onClick.RemoveAllListeners();
         Atk2.onClick.RemoveAllListeners();
@@ -45,8 +46,13 @@ public class SistemaCombate : MonoBehaviour
         Atk1.onClick.AddListener(GetAtkType);
         Atk2.onClick.AddListener(GetAtkType);
         capturarBtn.onClick.AddListener(CapturarPokemon);
-
+        tu.sprite = partida.jugador.trainer.SpriteExploracion;
         SetupBattle(zonaBase.FondoCombate);
+
+        Atk1.interactable = true;
+        Atk2.interactable = true;
+        huirBtn.interactable = true;
+        capturarBtn.interactable = true;
     }
 
     public void SetupBattle(ZonaBase.tipoCombate tipoCombate)
@@ -74,10 +80,7 @@ public class SistemaCombate : MonoBehaviour
         sistemaCaptura.LanzarPokeball();
         while (sistemaCaptura.IsCapturando)
             yield return null;
-        Atk1.interactable = true;
-        Atk2.interactable = true;
-        capturarBtn.interactable = true;
-        huirBtn.interactable = true;
+
 
         if (sistemaCaptura.ExitoCaptura())
         {
@@ -85,7 +88,14 @@ public class SistemaCombate : MonoBehaviour
         }
         else
         {
-            StartCoroutine(TurnoEnemigo());
+            yield return StartCoroutine(TurnoEnemigo());
+            if (!isFinish)
+            {
+                Atk1.interactable = true;
+                Atk2.interactable = true;
+                capturarBtn.interactable = true;
+                huirBtn.interactable = true;
+            }
         }
     }
 
@@ -163,18 +173,28 @@ public class SistemaCombate : MonoBehaviour
             yield return StartCoroutine(TurnoJugador());
             if (!isFinish)
                 yield return StartCoroutine(TurnoEnemigo());
+            if (!isFinish)
+            {
+                Atk1.interactable = true;
+                Atk2.interactable = true;
+                huirBtn.interactable = true;
+                capturarBtn.interactable = true;
+            }
         }
         else
         {
             yield return StartCoroutine(TurnoEnemigo());
             if (!isFinish)
                 yield return StartCoroutine(TurnoJugador());
+            if (!isFinish)
+            {
+                Atk1.interactable = true;
+                Atk2.interactable = true;
+                huirBtn.interactable = true;
+                capturarBtn.interactable = true;
+            }
         }
         isAttaking = false;
-        Atk1.interactable = true;
-        Atk2.interactable = true;
-        huirBtn.interactable = true;
-        capturarBtn.interactable = true;
     }
 
     IEnumerator TerminarCombate()
@@ -231,6 +251,12 @@ public class SistemaCombate : MonoBehaviour
             pkmnEnemigoHUD.enabled = false;
             isAttaking = false;
             isFinish = true;
+
+            Atk1.interactable = false;
+            Atk2.interactable = false;
+            capturarBtn.interactable = false;
+            huirBtn.interactable = false;
+
             StartCoroutine(TerminarCombate());
         }
 
@@ -250,6 +276,10 @@ public class SistemaCombate : MonoBehaviour
             pkmnJugadorHUD.AnimacionDerrota();
             pkmnJugadorHUD.enabled = false;
             isFinish = true;
+            Atk1.interactable = false;
+            Atk2.interactable = false;
+            capturarBtn.interactable = false;
+            huirBtn.interactable = false;
             StartCoroutine(TerminarCombate());
         }
 

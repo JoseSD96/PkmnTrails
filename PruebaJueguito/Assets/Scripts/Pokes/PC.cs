@@ -213,8 +213,18 @@ public class PC : MonoBehaviour
 
     public void IniciarIntercambioConEquipo()
     {
-        esperandoIntercambioConEquipo = true;
-        MostrarInterfazEquipoEnPC();
+        float yAbajo = 0f;
+        // Solo baja el panel si está arriba
+        if (Mathf.Abs(panelEquipo.anchoredPosition.y - yAbajo) > 1f)
+        {
+            esperandoIntercambioConEquipo = true;
+            TogglePanelEquipo();
+        }
+        else
+        {
+            esperandoIntercambioConEquipo = true;
+            // Ya está desplegado, solo marca el flag
+        }
     }
 
     public PCSaveData GetSaveData()
@@ -252,13 +262,6 @@ public class PC : MonoBehaviour
             }
             cajas[i] = listaCaja;
         }
-    }
-
-    public void MostrarInterfazEquipoEnPC()
-    {
-        ActualizarPanelEquipoSimple(botonesPanelEquipo, interfazEquipo.Equipo, interfazEquipo.indiceSeleccionado);
-        btnOpciones.SetActive(true);
-        panelEquipo.DOLocalMoveY(0, 0.4f);
     }
 
     public void OcultarInterfazEquipoEnPC()
@@ -346,6 +349,32 @@ public class PC : MonoBehaviour
         else
         {
             Debug.Log("No puedes dejar el equipo vacío.");
+        }
+    }
+
+    public void TogglePanelEquipo()
+    {
+        float yActual = panelEquipo.anchoredPosition.y;
+        float yArriba = 440f;
+        float yAbajo = 0f;
+        float duracion = 0.4f;
+
+        // Siempre actualiza el panel de equipo
+        ActualizarPanelEquipoSimple(botonesPanelEquipo, interfazEquipo.Equipo, interfazEquipo.indiceSeleccionado);
+
+        if (Mathf.Abs(yActual - yArriba) < 1f)
+        {
+            // Si está arriba, baja el panel y activa opciones
+            panelEquipo.DOLocalMoveY(yAbajo, duracion);
+            btnOpciones.SetActive(true);
+        }
+        else
+        {
+            // Si está abajo, sube el panel, desactiva opciones y limpia selección/intercambio
+            panelEquipo.DOLocalMoveY(yArriba, duracion);
+            btnOpciones.SetActive(false);
+            LimpiarSeleccion();
+            esperandoIntercambioConEquipo = false;
         }
     }
 }

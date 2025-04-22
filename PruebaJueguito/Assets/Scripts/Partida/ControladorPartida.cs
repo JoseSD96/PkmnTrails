@@ -37,7 +37,7 @@ public class ControladorPartida : MonoBehaviour
     [SerializeField] Canvas interfazSeleccionPersonaje;
     [SerializeField] Camera camaraSeleccionPersonaje;
 
-    [SerializeField] Player jugador;
+    [SerializeField] public Player jugador;
     [SerializeField] GameObject zonaActual;
 
     private void Start()
@@ -299,7 +299,7 @@ public class ControladorPartida : MonoBehaviour
 
     public void MostrarPanelEquipo()
     {
-        sistemaPC.MostrarInterfazEquipoEnPC();
+        sistemaPC.TogglePanelEquipo();
     }
 
     public void MeterPokemonPC()

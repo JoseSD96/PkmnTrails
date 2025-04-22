@@ -113,7 +113,7 @@ public class SistemaCaptura : MonoBehaviour
         });
 
         secuencia.Append(pokeballObj.transform.DOLocalMoveX(0f, 0.1f));
-        secuencia.Join(pokeballObj.transform.DOLocalMoveY(20f, 0.1f));
+        secuencia.Join(pokeballObj.transform.DOLocalMoveY(29.6f, 0.1f));
 
         yield return secuencia.WaitForCompletion();
     }
