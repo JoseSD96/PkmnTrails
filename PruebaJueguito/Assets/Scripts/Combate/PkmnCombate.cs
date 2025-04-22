@@ -11,10 +11,16 @@ public class PkmnCombate : MonoBehaviour
     public Pokemon Pkmn { get; set; }
     Vector3 PosInicial;
     Color colorInicial;
+    private readonly Vector3 sombraOffset = new Vector3(0f, -0.25f, 0.1f);
+
     private void Awake()
     {
         PosInicial = objetoPkmn.transform.localPosition;
         colorInicial = objetoPkmn.GetComponent<SpriteRenderer>().color;
+
+        // Asegura que la sombra sea hija del Pokémon y esté en la posición correcta
+        shadow.transform.SetParent(objetoPkmn.transform);
+        shadow.transform.localPosition = sombraOffset;
     }
 
     public void Setup(Pokemon pkmn)
@@ -55,16 +61,15 @@ public class PkmnCombate : MonoBehaviour
         if (!isEnemy)
         {
             objetoPkmn.transform.localPosition = new Vector3(PosInicial.x, -256f);
-            shadow.transform.localPosition = new Vector3(0f, -256f + -0.2f); // Sombra debajo
         }
         else
         {
             objetoPkmn.transform.localPosition = new Vector3(PosInicial.x, 256f);
-            shadow.transform.localPosition = new Vector3(0f, 256f + -0.2f);
         }
 
         objetoPkmn.transform.DOLocalMoveY(PosInicial.y, 2f);
-        shadow.transform.DOLocalMoveY(PosInicial.y + -0.2f, 2f);
+
+        // La sombra siempre sigue al Pokémon, no hace falta animarla por separado
 
         if (Pkmn.isShiny)
         {
@@ -77,17 +82,14 @@ public class PkmnCombate : MonoBehaviour
         var secuencia = DOTween.Sequence();
         if (!isEnemy)
         {
-            secuencia.Append(objetoPkmn.GetComponent<SpriteRenderer>().transform.DOLocalMoveY(PosInicial.y + 5f, 0.25f));
-            secuencia.Join(shadow.transform.DOLocalMoveY(PosInicial.y + 5f + -0.2f, 0.25f));
+            secuencia.Append(objetoPkmn.transform.DOLocalMoveY(PosInicial.y + 5f, 0.25f));
         }
         else
         {
-            secuencia.Append(objetoPkmn.GetComponent<SpriteRenderer>().transform.DOLocalMoveY(PosInicial.y - 5f, 0.25f));
-            secuencia.Join(shadow.transform.DOLocalMoveY(PosInicial.y - 5f + -0.2f, 0.25f));
+            secuencia.Append(objetoPkmn.transform.DOLocalMoveY(PosInicial.y - 5f, 0.25f));
         }
-
-        secuencia.Append(objetoPkmn.GetComponent<SpriteRenderer>().transform.DOLocalMoveY(PosInicial.y, 0.25f));
-        secuencia.Join(shadow.transform.DOLocalMoveY(PosInicial.y + -0.2f, 0.25f));
+        secuencia.Append(objetoPkmn.transform.DOLocalMoveY(PosInicial.y, 0.25f));
+        // La sombra sigue al Pokémon automáticamente
     }
 
     public void AnimacionGolpe()
@@ -111,7 +113,7 @@ public class PkmnCombate : MonoBehaviour
         shadow.DOFade(1f, 0.5f);
 
         objetoPkmn.transform.localPosition = PosInicial;
-        shadow.transform.localPosition = new Vector3(0f, PosInicial.y + -0.2f);
+        // La sombra se mantiene en sombraOffset automáticamente
 
         objetoPkmn.GetComponent<SpriteRenderer>().color = colorInicial;
 

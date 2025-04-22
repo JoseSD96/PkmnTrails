@@ -62,7 +62,11 @@ public class PC : MonoBehaviour
             if (btn != null)
             {
                 btn.onClick.RemoveAllListeners();
-                btn.onClick.AddListener(() => interfazEquipo.SeleccionarPokemon(index));
+                btn.onClick.AddListener(() =>
+                {
+                    interfazEquipo.SeleccionarPokemon(index);
+                    ActualizarPanelEquipoSimple(botonesPanelEquipo, interfazEquipo.Equipo, interfazEquipo.indiceSeleccionado);
+                });
             }
         }
     }

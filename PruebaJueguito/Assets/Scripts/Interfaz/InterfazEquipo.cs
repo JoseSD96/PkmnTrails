@@ -41,7 +41,7 @@ public class InterfazEquipo : MonoBehaviour
 
     public void IniciarIntercambio()
     {
-        if (equipo.pokemones.Count > 2)
+        if (equipo.pokemones.Count > 1)
         {
             modoIntercambio = true;
             indiceIntercambio = indiceSeleccionado;
@@ -58,6 +58,7 @@ public class InterfazEquipo : MonoBehaviour
                 equipo.IntercambiarPokemones(indiceIntercambio, indice);
                 modoIntercambio = false;
                 indiceIntercambio = -1;
+                
                 ActualizarInterfaz();
             }
             return;

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 845d05a7b31a90548bd867fb01085e26, type: 3}
-  m_Name: Pokeball
+  m_Name: PokeBall
   m_EditorClassIdentifier: 
   spritesLanzamiento:
   - {fileID: 5888315422345105727, guid: a94077c1227a88144aac13d76b09996e, type: 3}
@@ -36,3 +36,4 @@ MonoBehaviour:
   - {fileID: -6686840648376083744, guid: a94077c1227a88144aac13d76b09996e, type: 3}
   - {fileID: 8094064486911001696, guid: a94077c1227a88144aac13d76b09996e, type: 3}
   - {fileID: -8361436788831895035, guid: a94077c1227a88144aac13d76b09996e, type: 3}
+  ratioCaptura: 1.5

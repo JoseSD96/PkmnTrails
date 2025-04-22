@@ -18,6 +18,14 @@ public class SistemaCaptura : MonoBehaviour
 
     private int toques = 0;
 
+
+    private void Start()
+    {
+        pokeballObj.SetActive(false);
+        CargarSpritesPokeball();
+        CargarPokeball();
+    }
+
     public void resetPokeball()
     {
         pokeballObj.SetActive(false);
@@ -34,6 +42,7 @@ public class SistemaCaptura : MonoBehaviour
     {
         IsCapturando = true;
         CargarPokeball();
+        CargarSpritesPokeball();
 
         yield return AnimacionLanzarPokeballCoroutine();
 
@@ -130,26 +139,26 @@ public class SistemaCaptura : MonoBehaviour
                     audioManager.PlayEfecto("Captura", "pokeToque");
                     pokeballObj.GetComponent<SpriteRenderer>().sprite = spritesPokeballToque[0];
                 });
-                secuencia.Append(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
-                secuencia.Join(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
+                secuencia.Append(pokeballObj.transform.DOLocalMoveY(29.6f, 0.2f));
+                secuencia.Join(pokeballObj.transform.DOLocalMoveY(29.6f, 0.2f));
                 secuencia.AppendCallback(() =>
                 {
                     pokeballObj.GetComponent<SpriteRenderer>().sprite = spritesPokeballToque[1];
                 });
-                secuencia.Append(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
-                secuencia.Join(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
+                secuencia.Append(pokeballObj.transform.DOLocalMoveY(29.6f, 0.2f));
+                secuencia.Join(pokeballObj.transform.DOLocalMoveY(29.6f, 0.2f));
                 secuencia.AppendCallback(() =>
                 {
                     pokeballObj.GetComponent<SpriteRenderer>().sprite = spritesPokeballToque[2];
                 });
-                secuencia.Append(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
-                secuencia.Join(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
+                secuencia.Append(pokeballObj.transform.DOLocalMoveY(29.6f, 0.2f));
+                secuencia.Join(pokeballObj.transform.DOLocalMoveY(29.6f, 0.2f));
                 secuencia.AppendCallback(() =>
                 {
                     pokeballObj.GetComponent<SpriteRenderer>().sprite = spritesPokeballToque[3];
                 });
-                secuencia.Append(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
-                secuencia.Join(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
+                secuencia.Append(pokeballObj.transform.DOLocalMoveY(29.6f, 0.2f));
+                secuencia.Join(pokeballObj.transform.DOLocalMoveY(29.6f, 0.2f));
                 secuencia.AppendCallback(() =>
                 {
                     pokeballObj.GetComponent<SpriteRenderer>().sprite = spritesPokeballToque[4];
@@ -207,26 +216,26 @@ public class SistemaCaptura : MonoBehaviour
         yield return secuencia.WaitForCompletion();
     }
 
-    public void CargarPokeball()
+    public void CargarSpritesPokeball()
     {
         spritesPokeballLanzamiento = pokeball.SpritesLanzamiento;
         spritesPokeballToque = pokeball.SpritesToque;
         spritesPokeballCaptura = pokeball.SpritesCaptura;
     }
 
-    public float CargarProbabilidadPokeball()
+    public void CargarPokeball()
     {
         if (equipo.GetMediaNivel() < 20)
         {
-            return 1f;
+            pokeball = Resources.Load<Pokeball>("Pokeballs/PokeBall");
         }
         else if (equipo.GetMediaNivel() < 40)
         {
-            return 1.5f;
+            pokeball = Resources.Load<Pokeball>("Pokeballs/SuperBall");
         }
         else
         {
-            return 2f;
+            pokeball = Resources.Load<Pokeball>("Pokeballs/UltraBall");
         }
     }
 
@@ -236,7 +245,7 @@ public class SistemaCaptura : MonoBehaviour
         int currentHP = pkmnACapturar.HP;
         int rate = pkmnACapturar.Base.RatioCaptura;
 
-        int a = (int)(((3 * maxHP - 2 * currentHP) * rate * CargarProbabilidadPokeball()) / (3.0 * maxHP));
+        int a = (int)(((3 * maxHP - 2 * currentHP) * rate * pokeball.RatioCaptura) / (3.0 * maxHP));
 
         double b = 0;
         if (a > 0)

@@ -119,7 +119,7 @@ public class ControladorPartida : MonoBehaviour
         {
             if (equipo.pokemones[i].HP < equipo.pokemones[i].MaxHP)
             {
-                int cantidadCurar = Mathf.Max(1, (int)(equipo.pokemones[i].MaxHP * 0.05f));
+                int cantidadCurar = Mathf.Max(1, (int)(equipo.pokemones[i].MaxHP * 0.1f));
                 equipo.pokemones[i].HP += cantidadCurar;
 
                 if (equipo.pokemones[i].HP > equipo.pokemones[i].MaxHP)
