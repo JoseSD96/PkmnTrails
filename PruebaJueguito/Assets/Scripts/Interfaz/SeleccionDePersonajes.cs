@@ -7,6 +7,7 @@ public class SeleccionDePersonajes : MonoBehaviour
     [SerializeField] private Button[] PokemonButtons;
     [SerializeField] private ControladorPartida controladorPartida;
     [SerializeField] private Button botonAceptar;
+    [SerializeField] AudioManager audioManager;
 
     private int trainerSeleccionado = -1;
     private int pokemonSeleccionado = -1;
@@ -31,6 +32,7 @@ public class SeleccionDePersonajes : MonoBehaviour
             PokemonButtons[i].onClick.AddListener(() => SeleccionarPokemon(index));
         }
         botonAceptar.onClick.AddListener(ConfirmarSeleccion);
+        botonAceptar.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
         botonAceptar.interactable = false;
         ActualizarColoresTrainers();
         ActualizarColoresPokemons();

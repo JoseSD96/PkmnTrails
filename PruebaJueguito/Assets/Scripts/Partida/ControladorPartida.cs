@@ -53,6 +53,7 @@ public class ControladorPartida : MonoBehaviour
 
     public void MostrarMenuInicio()
     {
+        audioManager.PlayMusicaMenuInicio();
         mainCamera.enabled = false;
         CamaraBatalla.enabled = false;
         CamaraEquipo.enabled = false;
@@ -131,7 +132,6 @@ public class ControladorPartida : MonoBehaviour
 
     public void TerminarCombate()
     {
-        audioManager.PlayEfecto("Combate", "huir");
         if (interfaz != null)
             interfaz.BloquearAvanzarTemporalmente();
         ActivarExploracion();
@@ -147,9 +147,10 @@ public class ControladorPartida : MonoBehaviour
         ActivarExploracion();
     }
 
-    void ActivarExploracion()
+    void ActivarExploracion(bool cambiarMusica = true)
     {
-        audioManager.PlayMusicaExploracion();
+        if (cambiarMusica)
+            audioManager.PlayMusicaExploracion();
         SavingSystem.i.Save("Save");
         var cambiadorSprites = FindFirstObjectByType<CambiadorSprites>();
         if (cambiadorSprites != null)
@@ -212,7 +213,7 @@ public class ControladorPartida : MonoBehaviour
     public void SalirPantallaEquipo()
     {
         sistemaEquipo.LimpiarSeleccion();
-        ActivarExploracion();
+        ActivarExploracion(false);
     }
 
     public void SalirPantallaDatos()
@@ -229,6 +230,7 @@ public class ControladorPartida : MonoBehaviour
 
     public void PantallaPC()
     {
+        audioManager.PlayEfecto("Menus", "abrirPC");
         mainCamera.enabled = false;
         CamaraEquipo.enabled = false;
         CamaraDatos.enabled = false;
@@ -245,10 +247,12 @@ public class ControladorPartida : MonoBehaviour
 
         sistemaPC.MostrarCaja(sistemaPC.cajaActual);
         sistemaPC.LimpiarSeleccion();
+        audioManager.PlayMusicaPC();
     }
 
     public void SalirPantallaPC()
     {
+        audioManager.PlayEfecto("Menus", "CerrarPC");
         sistemaPC.LimpiarSeleccion();
         sistemaPC.OcultarInterfazEquipoEnPC();
 

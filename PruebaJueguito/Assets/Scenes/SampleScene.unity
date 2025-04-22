@@ -3859,6 +3859,7 @@ MonoBehaviour:
   btnNo: {fileID: 809023654}
   panelConfirmacion: {fileID: 1825605210}
   textoConfirmacion: {fileID: 1742071212}
+  audioManager: {fileID: 422484391}
 --- !u!1001 &313833409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15484,6 +15485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sistemaMenu: {fileID: 310676960}
   zonaActual: {fileID: 11400000, guid: 4f1fa3af38afc484e8e8f7e0806f3d62, type: 2}
+  audioManager: {fileID: 422484391}
   avanzarButton: {fileID: 121641476}
   explorarButton: {fileID: 665625654}
   equipoButton: {fileID: 1292373476}
@@ -20008,6 +20010,7 @@ MonoBehaviour:
   - {fileID: 203901015}
   controladorPartida: {fileID: 1253567913}
   botonAceptar: {fileID: 335265418}
+  audioManager: {fileID: 422484391}
 --- !u!1 &1841220040
 GameObject:
   m_ObjectHideFlags: 0

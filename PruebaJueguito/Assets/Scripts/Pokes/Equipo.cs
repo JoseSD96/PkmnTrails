@@ -77,7 +77,10 @@ public class Equipo : MonoBehaviour
     {
         if (index >= 0 && index < pokemones.Count)
         {
-            pokemones.RemoveAt(index);
+            if (pokemones.Count > 1)
+            {
+                pokemones.RemoveAt(index);
+            }
         }
     }
 

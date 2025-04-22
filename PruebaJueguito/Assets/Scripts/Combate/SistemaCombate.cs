@@ -33,7 +33,7 @@ public class SistemaCombate : MonoBehaviour
         partida = controller;
         this.equipo = equipo;
         this.salvaje = salvaje;
-        
+
         this.sistemaCaptura = sistemaCaptura;
 
         isFinish = false;
@@ -94,8 +94,28 @@ public class SistemaCombate : MonoBehaviour
         if (!isAttaking && !isFinish)
         {
             isAttaking = true;
+
             GameObject botonPresionado = EventSystem.current.currentSelectedGameObject;
-            string tipo = botonPresionado.GetComponent<Button>().image.sprite.name;
+            if (botonPresionado == null)
+            {
+                Debug.LogError("No se ha detectado ningún botón presionado.");
+                isAttaking = false;
+                return;
+            }
+            Button btn = botonPresionado.GetComponent<Button>();
+            if (btn == null || btn.image == null || btn.image.sprite == null)
+            {
+                Debug.LogError("El botón no tiene imagen o sprite asignado.");
+                isAttaking = false;
+                return;
+            }
+            string tipo = btn.image.sprite.name;
+
+            Atk1.interactable = false;
+            Atk2.interactable = false;
+            capturarBtn.interactable = false;
+            huirBtn.interactable = false;
+
             AtkType = StringToType(tipo.Split("_")[0]);
             int velEnemigo = Random.Range(1, 51);
             int velJugador = Random.Range(1, 51);
@@ -159,8 +179,11 @@ public class SistemaCombate : MonoBehaviour
 
     IEnumerator TerminarCombate()
     {
-
         yield return new WaitForSeconds(0.5f);
+        Atk1.interactable = false;
+        Atk2.interactable = false;
+        capturarBtn.interactable = false;
+        huirBtn.interactable = false;
         partida.TerminarCombate();
     }
 
@@ -173,6 +196,10 @@ public class SistemaCombate : MonoBehaviour
         }
         yield return new WaitForSeconds(0.8f);
         sistemaCaptura.resetPokeball();
+        Atk1.interactable = false;
+        Atk2.interactable = false;
+        capturarBtn.interactable = false;
+        huirBtn.interactable = false;
         partida.TerminarCombate(pkmnEnemigo.Pkmn);
     }
 
@@ -235,7 +262,7 @@ public class SistemaCombate : MonoBehaviour
     {
         float modificadores = Random.Range(0.85f, 1f);
         float efectividad = CalcularEfectividad(tipo, defensor.Base.Tipo1, defensor.Base.Tipo2);
-        if (efectividad == 0.5f)
+        if (efectividad <= 0.5f)
         {
             audioManager.PlayEfecto("Combate", "pocoEfica");
         }
@@ -243,7 +270,7 @@ public class SistemaCombate : MonoBehaviour
         {
             audioManager.PlayEfecto("Combate", "Neutro");
         }
-        else if (efectividad == 2f)
+        else if (efectividad >= 2f)
         {
             audioManager.PlayEfecto("Combate", "superEficazHit");
         }

@@ -13,6 +13,8 @@ public class ControldorInterfaz : MonoBehaviour
 
     public ZonaBase zonaActual;
 
+    [SerializeField] AudioManager audioManager;
+
     private bool explorado = false;
     private int animacionesPendientes = 0;
 
@@ -82,7 +84,7 @@ public class ControldorInterfaz : MonoBehaviour
         huirButton.onClick.AddListener(OnHuirButtonClick);
         btnDatos.onClick.AddListener(OnDatosButtonClick);
         btnVolverDatos.onClick.AddListener(OnVolverDatosButtonClick);
-        btnSalirPC.onClick.AddListener(OnSalirEquipoButtonClick);
+        btnSalirPC.onClick.AddListener(OnSalirPCButtonClick);
         btnCajaSiguiente.onClick.AddListener(OnCajaSiguienteButtonClick);
         btnCajaAnterior.onClick.AddListener(OnCajaAnteriorButtonClick);
         PCButton.onClick.AddListener(OnPCButtonClick);
@@ -95,6 +97,27 @@ public class ControldorInterfaz : MonoBehaviour
         btnMostrarEquipo.onClick.AddListener(OnMostrarEquipoButtonClick);
         btnContinuar.onClick.AddListener(OnContinuarButtonClick);
         btnNuevaPartida.onClick.AddListener(OnNuevaPartidaButtonClick);
+
+        avanzarButton.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        explorarButton.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        equipoButton.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        salirEquipoButton.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        btnDatos.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        btnVolverDatos.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        btnSalirPC.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        btnCajaSiguiente.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        btnCajaAnterior.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        PCButton.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        btnEliminarEquipo.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        btnEliminarPC.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        btnCambiarEquipo.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        btnCambarConEquipoPC.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        btnSacarPc.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        btnMeterPC.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        btnMostrarEquipo.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        btnContinuar.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        btnNuevaPartida.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        huirButton.onClick.AddListener(() => audioManager.PlayEfecto("Combate", "huir"));
 
         if (inicio)
         {
@@ -114,6 +137,11 @@ public class ControldorInterfaz : MonoBehaviour
             btnContinuar.interactable = false;
         }
 
+    }
+
+    private void OnSalirPCButtonClick()
+    {
+        controladorPartida.SalirPantallaPC();
     }
 
     private void OnNuevaPartidaButtonClick()

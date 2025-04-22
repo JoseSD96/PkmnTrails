@@ -90,6 +90,9 @@ public class CombateHUD : MonoBehaviour
                 iconoCapturado.enabled = false;
             }
         }
+
+        ResetAnimacionEntrada();
+
         AnimacionEntrada();
     }
 
@@ -136,4 +139,29 @@ public class CombateHUD : MonoBehaviour
         secuencia.Join(extra.DOFade(0f, 0.5f));
     }
 
+    public void ResetAnimacionEntrada()
+    {
+        // Posición fuera de pantalla
+        if (!pokemonCombate.isEnemy)
+            transform.localPosition = new Vector3(posInicial.x, 250f);
+        else
+            transform.localPosition = new Vector3(posInicial.x, -250f);
+
+        // Opacidad a 0
+        var colorExtra = extra.color;
+        colorExtra.a = 0f;
+        extra.color = colorExtra;
+
+        var colorBtn1 = atk1.image.color;
+        colorBtn1.a = 0f;
+        atk1.image.color = colorBtn1;
+
+        var colorBtn2 = atk2.image.color;
+        colorBtn2.a = 0f;
+        atk2.image.color = colorBtn2;
+
+        var colorBtnHuir = huirBtn.image.color;
+        colorBtnHuir.a = 0f;
+        huirBtn.image.color = colorBtnHuir;
+    }
 }

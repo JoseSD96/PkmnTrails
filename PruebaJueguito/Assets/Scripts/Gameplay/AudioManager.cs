@@ -28,9 +28,31 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void PlayMusicaPC()
+    {
+        AudioClip audio = Resources.Load<AudioClip>("Sonido/Musica/PC/PC");
+        if (audio != null)
+        {
+            musicaSource.clip = audio;
+            musicaSource.loop = true;
+            musicaSource.Play();
+        }
+    }
+
     public void PlayMusicaCombateLegendario()
     {
         AudioClip audio = Resources.Load<AudioClip>("Sonido/Musica/CombateContraLegendario/legendario");
+        if (audio != null)
+        {
+            musicaSource.clip = audio;
+            musicaSource.loop = true;
+            musicaSource.Play();
+        }
+    }
+
+    public void PlayMusicaMenuInicio()
+    {
+        AudioClip audio = Resources.Load<AudioClip>("Sonido/Musica/MenuInicio/Menu");
         if (audio != null)
         {
             musicaSource.clip = audio;

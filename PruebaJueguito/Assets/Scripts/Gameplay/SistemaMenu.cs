@@ -9,6 +9,7 @@ public class SistemaMenu : MonoBehaviour
     [SerializeField] private Button btnNo;
     [SerializeField] private GameObject panelConfirmacion;
     [SerializeField] private TextMeshProUGUI textoConfirmacion;
+    [SerializeField] AudioManager audioManager;
     private Action onConfirmarNuevaPartida;
     void Start()
     {
@@ -25,6 +26,7 @@ public class SistemaMenu : MonoBehaviour
 
     private void OnNoButtonClicked()
     {
+        audioManager.PlayEfecto("Menus", "menuBoton");
         panelConfirmacion.SetActive(false);
         btnSi.interactable = false;
         btnNo.interactable = false;
@@ -32,6 +34,7 @@ public class SistemaMenu : MonoBehaviour
 
     private void OnSiButtonClicked()
     {
+        audioManager.PlayEfecto("Menus", "menuBoton");
         SavingSystem.i.Delete("Save");
         panelConfirmacion.SetActive(false);
         onConfirmarNuevaPartida?.Invoke();
