@@ -14,6 +14,9 @@ public class InterfazEquipo : MonoBehaviour
 
     public int indiceSeleccionado = -1;
 
+    private bool modoIntercambio = false;
+    private int indiceIntercambio = -1;
+
     void Start()
     {
         botonesOpcion.SetActive(false);
@@ -36,13 +39,38 @@ public class InterfazEquipo : MonoBehaviour
         ActualizarInterfaz();
     }
 
+    public void IniciarIntercambio()
+    {
+        modoIntercambio = true;
+        indiceIntercambio = indiceSeleccionado;
+        LimpiarSeleccion();
+    }
+
     public void SeleccionarPokemon(int indice)
     {
+        if (modoIntercambio)
+        {
+            if (indiceIntercambio != -1 && indice != indiceIntercambio && indice < equipo.pokemones.Count)
+            {
+                equipo.IntercambiarPokemones(indiceIntercambio, indice);
+                modoIntercambio = false;
+                indiceIntercambio = -1;
+                ActualizarInterfaz();
+            }
+            return;
+        }
+
         if (indice < equipo.pokemones.Count && equipo.pokemones[indice] != null)
         {
             PokemonSeleccionado = equipo.pokemones[indice];
             indiceSeleccionado = indice;
             botonesOpcion.SetActive(true);
+
+            if (equipo.pc != null && equipo.pc.esperandoIntercambioConEquipo)
+            {
+                equipo.pc.IntercambiarConEquipo();
+                equipo.pc.esperandoIntercambioConEquipo = false;
+            }
         }
         else
         {
@@ -65,6 +93,10 @@ public class InterfazEquipo : MonoBehaviour
 
     public void ActualizarInterfaz()
     {
+
+        if (botones == null || equipo == null || equipo.pokemones == null)
+            return;
+
         for (int i = 0; i < botones.Length; i++)
         {
 

@@ -80,6 +80,30 @@ public class Equipo : MonoBehaviour
             pokemones.RemoveAt(index);
         }
     }
+
+    public void IntercambiarPokemones(int indexA, int indexB)
+    {
+        if (indexA >= 0 && indexA < pokemones.Count && indexB >= 0 && indexB < pokemones.Count && indexA != indexB)
+        {
+            var temp = pokemones[indexA];
+            pokemones[indexA] = pokemones[indexB];
+            pokemones[indexB] = temp;
+        }
+    }
+
+    public void IntercambiarConPC(int indexEquipo, PC pc, int indexPC, int cajaPC)
+    {
+        if (indexEquipo >= 0 && indexEquipo < pokemones.Count && pc != null && pc.cajas.ContainsKey(cajaPC))
+        {
+            var caja = pc.cajas[cajaPC];
+            if (indexPC >= 0 && indexPC < caja.Count)
+            {
+                var temp = pokemones[indexEquipo];
+                pokemones[indexEquipo] = caja[indexPC];
+                caja[indexPC] = temp;
+            }
+        }
+    }
 }
 
 [Serializable]

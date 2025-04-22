@@ -39,6 +39,15 @@ public class Pokemon
 
     }
 
+    public Pokemon(PokemonBase pkmn, int potencial, bool isShiny, int nivel)
+    {
+        _base = pkmn;
+        Potencial = potencial;
+        this.isShiny = isShiny;
+        this.nivel = nivel;
+        HP = MaxHP;
+    }
+
     public Pokemon(PokemonSaveData data)
     {
         _base = PokemonBaseManager.GetPokemon(data.numero);

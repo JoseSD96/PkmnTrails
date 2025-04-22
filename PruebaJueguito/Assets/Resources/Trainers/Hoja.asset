@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5b2e71cbdb69d4b8ff31c9d7315550, type: 3}
+  m_Name: Hoja
+  m_EditorClassIdentifier: 
+  nombre: Hoja
+  spriteIdle: {fileID: -7716486795554239337, guid: d201906dfb1e250459e562451cd35b4f, type: 3}
+  spriteExploracion: {fileID: 5781445747943558089, guid: d201906dfb1e250459e562451cd35b4f, type: 3}
+  spritesAndar:
+  - {fileID: -2450514321936213949, guid: d201906dfb1e250459e562451cd35b4f, type: 3}
+  - {fileID: -8836365005895674108, guid: d201906dfb1e250459e562451cd35b4f, type: 3}
+  - {fileID: 5350574393042959420, guid: d201906dfb1e250459e562451cd35b4f, type: 3}
+  - {fileID: 833906559529328329, guid: d201906dfb1e250459e562451cd35b4f, type: 3}

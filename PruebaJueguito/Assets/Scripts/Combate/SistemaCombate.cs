@@ -16,7 +16,7 @@ public class SistemaCombate : MonoBehaviour
     [SerializeField] Button Atk2;
     [SerializeField] Button huirBtn;
     [SerializeField] Button capturarBtn;
-
+    [SerializeField] AudioManager audioManager;
     [SerializeField] GameObject velocidadJugador;
     [SerializeField] GameObject velocidadEnemigo;
     private ControladorPartida partida;
@@ -33,7 +33,7 @@ public class SistemaCombate : MonoBehaviour
         partida = controller;
         this.equipo = equipo;
         this.salvaje = salvaje;
-
+        
         this.sistemaCaptura = sistemaCaptura;
 
         isFinish = false;
@@ -150,7 +150,7 @@ public class SistemaCombate : MonoBehaviour
             if (!isFinish)
                 yield return StartCoroutine(TurnoJugador());
         }
-
+        isAttaking = false;
         Atk1.interactable = true;
         Atk2.interactable = true;
         huirBtn.interactable = true;
@@ -235,6 +235,18 @@ public class SistemaCombate : MonoBehaviour
     {
         float modificadores = Random.Range(0.85f, 1f);
         float efectividad = CalcularEfectividad(tipo, defensor.Base.Tipo1, defensor.Base.Tipo2);
+        if (efectividad == 0.5f)
+        {
+            audioManager.PlayEfecto("Combate", "pocoEfica");
+        }
+        else if (efectividad == 1f)
+        {
+            audioManager.PlayEfecto("Combate", "Neutro");
+        }
+        else if (efectividad == 2f)
+        {
+            audioManager.PlayEfecto("Combate", "superEficazHit");
+        }
         float dmg = ((2 * atacante.Nivel / 5 + 2) * 60 * atacante.Ataque / defensor.Defensa / 50 + 2) * modificadores * efectividad;
         int damage = Mathf.FloorToInt(dmg);
         if (damage <= 0)

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5b2e71cbdb69d4b8ff31c9d7315550, type: 3}
+  m_Name: Oro
+  m_EditorClassIdentifier: 
+  nombre: Oro
+  spriteIdle: {fileID: 8824840667056272569, guid: c9dfc9ad633ace24baf1afd15d9456cc, type: 3}
+  spriteExploracion: {fileID: -1354001049172586680, guid: c9dfc9ad633ace24baf1afd15d9456cc, type: 3}
+  spritesAndar:
+  - {fileID: 5817318897652788794, guid: c9dfc9ad633ace24baf1afd15d9456cc, type: 3}
+  - {fileID: 6637238965760731270, guid: c9dfc9ad633ace24baf1afd15d9456cc, type: 3}
+  - {fileID: 7057006599135162458, guid: c9dfc9ad633ace24baf1afd15d9456cc, type: 3}
+  - {fileID: 2073096866019254892, guid: c9dfc9ad633ace24baf1afd15d9456cc, type: 3}

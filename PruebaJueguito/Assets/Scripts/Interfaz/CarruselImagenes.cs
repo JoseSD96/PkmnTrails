@@ -79,7 +79,7 @@ public class CarruselImagenes : MonoBehaviour
             ZonaBase zonaSiguiente;
             bool esLegendaria = false;
 
-            if (!ultimaFueLegendaria && Random.Range(0, 500) == 0)
+            if (!ultimaFueLegendaria && Random.Range(0, 101) < 2)
             {
                 zonaSiguiente = zonasLegendariasDisponibles[Random.Range(0, zonasLegendariasDisponibles.Length)];
                 esLegendaria = true;

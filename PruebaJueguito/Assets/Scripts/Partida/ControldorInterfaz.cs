@@ -9,6 +9,8 @@ public class ControldorInterfaz : MonoBehaviour
     private CambiadorSprites cambiadorSprites;
     private ControladorPartida controladorPartida;
 
+    public SistemaMenu sistemaMenu;
+
     public ZonaBase zonaActual;
 
     private bool explorado = false;
@@ -26,11 +28,19 @@ public class ControldorInterfaz : MonoBehaviour
 
     public Button btnVolverDatos;
     public Button salirEquipoButton;
+    public Button btnCambiarEquipo;
 
     public Button btnEliminarPC;
     public Button btnSalirPC;
     public Button btnCajaSiguiente;
     public Button btnCajaAnterior;
+    public Button btnCambarConEquipoPC;
+    public Button btnSacarPc;
+    public Button btnMeterPC;
+    public Button btnMostrarEquipo;
+
+    public Button btnContinuar;
+    public Button btnNuevaPartida;
 
     public Button huirButton;
 
@@ -56,6 +66,14 @@ public class ControldorInterfaz : MonoBehaviour
         PCButton.onClick.RemoveAllListeners();
         btnEliminarEquipo.onClick.RemoveAllListeners();
         btnEliminarPC.onClick.RemoveAllListeners();
+        btnCambiarEquipo.onClick.RemoveAllListeners();
+        btnCambarConEquipoPC.onClick.RemoveAllListeners();
+        btnSacarPc.onClick.RemoveAllListeners();
+        btnMeterPC.onClick.RemoveAllListeners();
+        btnMostrarEquipo.onClick.RemoveAllListeners();
+        btnContinuar.onClick.RemoveAllListeners();
+        btnNuevaPartida.onClick.RemoveAllListeners();
+
 
         avanzarButton.onClick.AddListener(OnAvanzarButtonClick);
         explorarButton.onClick.AddListener(OnExplorarButtonClick);
@@ -70,6 +88,13 @@ public class ControldorInterfaz : MonoBehaviour
         PCButton.onClick.AddListener(OnPCButtonClick);
         btnEliminarEquipo.onClick.AddListener(OnEliminarEquipoButtonClick);
         btnEliminarPC.onClick.AddListener(OnEliminarPCButtonClick);
+        btnCambiarEquipo.onClick.AddListener(OnCambiarEquipoButtonClick);
+        btnCambarConEquipoPC.onClick.AddListener(OnCambiarConEquipoPCButtonClick);
+        btnSacarPc.onClick.AddListener(OnSacarPCButtonClick);
+        btnMeterPC.onClick.AddListener(OnMeterPCButtonClick);
+        btnMostrarEquipo.onClick.AddListener(OnMostrarEquipoButtonClick);
+        btnContinuar.onClick.AddListener(OnContinuarButtonClick);
+        btnNuevaPartida.onClick.AddListener(OnNuevaPartidaButtonClick);
 
         if (inicio)
         {
@@ -80,6 +105,53 @@ public class ControldorInterfaz : MonoBehaviour
             explorarButton.interactable = true;
         }
 
+        if (SavingSystem.i.CheckIfSaveExists("Save"))
+        {
+            btnContinuar.interactable = true;
+        }
+        else
+        {
+            btnContinuar.interactable = false;
+        }
+
+    }
+
+    private void OnNuevaPartidaButtonClick()
+    {
+        sistemaMenu.ConfirmacionNuevaPartida(() =>
+        {
+            controladorPartida.MostrarSeleccionDePersonaje();
+        });
+    }
+
+    private void OnContinuarButtonClick()
+    {
+        controladorPartida.ContinuarPartida();
+    }
+
+    private void OnMostrarEquipoButtonClick()
+    {
+        controladorPartida.MostrarPanelEquipo();
+    }
+
+    private void OnMeterPCButtonClick()
+    {
+        controladorPartida.MeterPokemonPC();
+    }
+
+    private void OnSacarPCButtonClick()
+    {
+        controladorPartida.SacarPokemonPC();
+    }
+
+    private void OnCambiarConEquipoPCButtonClick()
+    {
+        controladorPartida.CambiarPokemonPC();
+    }
+
+    private void OnCambiarEquipoButtonClick()
+    {
+        controladorPartida.CambiarPokemon();
     }
 
     private void OnEliminarPCButtonClick()
@@ -117,7 +189,6 @@ public class ControldorInterfaz : MonoBehaviour
         if (animacionesPendientes > 0) return;
 
         explorado = false;
-        explorarButton.interactable = false;
 
         animacionesPendientes = 2;
 
@@ -126,7 +197,9 @@ public class ControldorInterfaz : MonoBehaviour
         controladorPartida.CurarPokemon();
 
         avanzarButton.interactable = false;
+        explorarButton.interactable = false;
         equipoButton.interactable = false;
+        PCButton.interactable = false;
     }
 
     public void OnAnimacionTerminada()
@@ -137,6 +210,7 @@ public class ControldorInterfaz : MonoBehaviour
             avanzarButton.interactable = true;
             explorarButton.interactable = true;
             equipoButton.interactable = true;
+            PCButton.interactable = true;
         }
     }
 

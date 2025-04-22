@@ -9,6 +9,7 @@ public class SistemaCaptura : MonoBehaviour
     [SerializeField] private GameObject PkmnEnemigo;
     [SerializeField] private Equipo equipo;
     [SerializeField] Pokeball pokeball;
+    [SerializeField] private AudioManager audioManager;
     private Sprite[] spritesPokeballLanzamiento;
     private Sprite[] spritesPokeballToque;
     private Sprite[] spritesPokeballCaptura;
@@ -48,6 +49,7 @@ public class SistemaCaptura : MonoBehaviour
             else
             {
                 yield return AnimacionRecuperarPokemonCoroutine();
+
                 pokeballObj.SetActive(false);
             }
         }
@@ -62,7 +64,7 @@ public class SistemaCaptura : MonoBehaviour
     private IEnumerator AnimacionLanzarPokeballCoroutine()
     {
         pokeballObj.SetActive(true);
-
+        audioManager.PlayEfecto("Captura", "vueloPokeball");
         var secuencia = DOTween.Sequence();
 
         secuencia.AppendCallback(() =>
@@ -123,35 +125,36 @@ public class SistemaCaptura : MonoBehaviour
         {
             for (int i = 0; i < toques; i++)
             {
-
                 secuencia.AppendCallback(() =>
                 {
+                    audioManager.PlayEfecto("Captura", "pokeToque");
                     pokeballObj.GetComponent<SpriteRenderer>().sprite = spritesPokeballToque[0];
                 });
-                secuencia.Append(pokeballObj.transform.DOLocalMoveY(0f, 0.1f));
-                secuencia.Join(pokeballObj.transform.DOLocalMoveY(0f, 0.1f));
+                secuencia.Append(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
+                secuencia.Join(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
                 secuencia.AppendCallback(() =>
                 {
                     pokeballObj.GetComponent<SpriteRenderer>().sprite = spritesPokeballToque[1];
                 });
-                secuencia.Append(pokeballObj.transform.DOLocalMoveY(0f, 0.1f));
-                secuencia.Join(pokeballObj.transform.DOLocalMoveY(0f, 0.1f));
+                secuencia.Append(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
+                secuencia.Join(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
                 secuencia.AppendCallback(() =>
                 {
                     pokeballObj.GetComponent<SpriteRenderer>().sprite = spritesPokeballToque[2];
                 });
-                secuencia.Append(pokeballObj.transform.DOLocalMoveY(0f, 0.1f));
-                secuencia.Join(pokeballObj.transform.DOLocalMoveY(0f, 0.1f));
+                secuencia.Append(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
+                secuencia.Join(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
                 secuencia.AppendCallback(() =>
                 {
                     pokeballObj.GetComponent<SpriteRenderer>().sprite = spritesPokeballToque[3];
                 });
-                secuencia.Append(pokeballObj.transform.DOLocalMoveY(0f, 0.1f));
-                secuencia.Join(pokeballObj.transform.DOLocalMoveY(0f, 0.1f));
+                secuencia.Append(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
+                secuencia.Join(pokeballObj.transform.DOLocalMoveY(0f, 0.2f));
                 secuencia.AppendCallback(() =>
                 {
                     pokeballObj.GetComponent<SpriteRenderer>().sprite = spritesPokeballToque[4];
                 });
+
             }
 
             yield return secuencia.WaitForCompletion();
@@ -160,6 +163,7 @@ public class SistemaCaptura : MonoBehaviour
 
     private IEnumerator AnimacionRecuperarPokemonCoroutine()
     {
+        audioManager.PlayEfecto("Captura", "escapePokeball");
         var secuencia = DOTween.Sequence();
 
         // Cambia el sprite de la pokeball antes de desaparecer
@@ -187,6 +191,7 @@ public class SistemaCaptura : MonoBehaviour
 
     private IEnumerator AnimacionCapturaCoroutine()
     {
+        audioManager.PlayEfecto("Captura", "captura");
         var secuencia = DOTween.Sequence();
 
         for (int i = 0; i < spritesPokeballCaptura.Length; i++)

@@ -4,6 +4,7 @@ using DG.Tweening;
 public class PkmnCombate : MonoBehaviour
 {
     [SerializeField] public bool isEnemy;
+    [SerializeField] AudioManager audioManager;
     public GameObject objetoPkmn;
 
     public Pokemon Pkmn { get; set; }
@@ -60,6 +61,10 @@ public class PkmnCombate : MonoBehaviour
         }
 
         objetoPkmn.transform.DOLocalMoveY(PosInicial.y, 2f);
+        if (Pkmn.isShiny)
+        {
+            audioManager.PlayEfecto("Combate", "shiny");
+        }
     }
 
     public void AnimacionAtaque()
@@ -86,6 +91,7 @@ public class PkmnCombate : MonoBehaviour
 
     public void AnimacionDerrota()
     {
+        audioManager.PlayEfecto("Combate", "pkmnDerrotado");
         var secuencia = DOTween.Sequence();
         secuencia.Append(objetoPkmn.GetComponent<SpriteRenderer>().DOFade(0f, 0.5f));
     }

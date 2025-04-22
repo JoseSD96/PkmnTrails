@@ -98,4 +98,9 @@ public class SavingSystem : MonoBehaviour
     {
         return Path.Combine(Application.persistentDataPath, saveFile);
     }
+
+    public bool CheckIfSaveExists(string saveFile)
+    {
+        return File.Exists(GetPath(saveFile));
+    }
 }

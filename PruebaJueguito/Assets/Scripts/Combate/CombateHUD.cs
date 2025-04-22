@@ -13,13 +13,14 @@ public class CombateHUD : MonoBehaviour
     [SerializeField] Image ShinyStars;
     [SerializeField] Image tipo1;
     [SerializeField] Image tipo2;
+    [SerializeField] SpriteRenderer iconoCapturado;
     [SerializeField] Button atk1;
     [SerializeField] Button atk2;
     [SerializeField] Button huirBtn;
     [SerializeField] Image extra;
 
     PkmnCombate pokemonCombate;
-
+    [SerializeField] Player jugador;
     Vector3 posInicial;
     private void Awake()
     {
@@ -76,6 +77,18 @@ public class CombateHUD : MonoBehaviour
             }
             atk1.image.sprite = Resources.Load<Sprite>("Combate/tipos/" + tipo1Txt);
             atk2.image.sprite = Resources.Load<Sprite>("Combate/tipos/" + tipo2Txt);
+        }
+        
+        if(pokemonCombate.isEnemy)
+        {
+            if (jugador.Pokedex.Contains(pokemonCombate.Pkmn.Base.Num))
+            {
+                iconoCapturado.enabled = true;
+            }
+            else
+            {
+                iconoCapturado.enabled = false;
+            }
         }
         AnimacionEntrada();
     }

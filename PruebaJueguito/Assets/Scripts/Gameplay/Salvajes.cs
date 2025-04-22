@@ -29,7 +29,7 @@ public class Salvajes : MonoBehaviour
 
             pokemonSalvaje.Base = legendario;
             pokemonSalvaje.Nivel = legendario.MinLvl;
-            pokemonSalvaje.Init(Random.Range(20, 32), Random.Range(0, 1501) < 5);
+            pokemonSalvaje.Init(Random.Range(20, 32), Random.Range(0, 100) < 5);
             return pokemonSalvaje;
         }
         else
@@ -46,7 +46,7 @@ public class Salvajes : MonoBehaviour
 
             pokemonSalvaje.Base = baseElegida;
             pokemonSalvaje.Nivel = nivel;
-            pokemonSalvaje.Init(Random.Range(0, 32), Random.Range(0, 100) < 5);
+            pokemonSalvaje.Init(Random.Range(0, 32), Random.Range(0, 100) < 2);
 
             return pokemonSalvaje;
         }

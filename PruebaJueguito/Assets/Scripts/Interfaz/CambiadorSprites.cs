@@ -27,14 +27,21 @@ public class CambiadorSprites : MonoBehaviour
         }
 
         spriteRendererEntrenador.sprite = player.trainer.SpriteIdle;
-        var pkmn = player.equipo.GetPokemonByIndex(0);
-        if (pkmn.isShiny)
+        var pkmn = player.equipo != null ? player.equipo.GetPokemonByIndex(0) : null;
+        if (pkmn != null)
         {
-            spriteRendererPkmn.sprite = pkmn.Base.SpriteIdleShiny;
+            if (pkmn.isShiny)
+            {
+                spriteRendererPkmn.sprite = pkmn.Base.SpriteIdleShiny;
+            }
+            else
+            {
+                spriteRendererPkmn.sprite = pkmn.Base.SpriteIdle;
+            }
         }
         else
         {
-            spriteRendererPkmn.sprite = pkmn.Base.SpriteIdle;
+            spriteRendererPkmn.sprite = null;
         }
         isWalking = false;
     }
@@ -53,14 +60,21 @@ public class CambiadorSprites : MonoBehaviour
         while (walkCounter < walkRepetitions)
         {
             spriteRendererEntrenador.sprite = player.trainer.SpritesAndar[currentFrame];
-            var pkmn = player.equipo.GetPokemonByIndex(0);
-            if (pkmn.isShiny)
+            var pkmn = player.equipo != null ? player.equipo.GetPokemonByIndex(0) : null;
+            if (pkmn != null)
             {
-                spriteRendererPkmn.sprite = pkmn.Base.SpritesAndarShiny[currentFrame];
+                if (pkmn.isShiny)
+                {
+                    spriteRendererPkmn.sprite = pkmn.Base.SpritesAndarShiny[currentFrame];
+                }
+                else
+                {
+                    spriteRendererPkmn.sprite = pkmn.Base.SpritesAndar[currentFrame];
+                }
             }
             else
             {
-                spriteRendererPkmn.sprite = pkmn.Base.SpritesAndar[currentFrame];
+                spriteRendererPkmn.sprite = null;
             }
             currentFrame = (currentFrame + 1) % 4;
             if (currentFrame == 0)
@@ -78,14 +92,21 @@ public class CambiadorSprites : MonoBehaviour
     IEnumerator SetSearch()
     {
         spriteRendererEntrenador.sprite = player.trainer.SpriteExploracion;
-        var pkmn = player.equipo.GetPokemonByIndex(0);
-        if (pkmn.isShiny)
+        var pkmn = player.equipo != null ? player.equipo.GetPokemonByIndex(0) : null;
+        if (pkmn != null)
         {
-            spriteRendererPkmn.sprite = pkmn.Base.SpriteExploracionShiny;
+            if (pkmn.isShiny)
+            {
+                spriteRendererPkmn.sprite = pkmn.Base.SpriteExploracionShiny;
+            }
+            else
+            {
+                spriteRendererPkmn.sprite = pkmn.Base.SpriteExploracion;
+            }
         }
         else
         {
-            spriteRendererPkmn.sprite = pkmn.Base.SpriteExploracion;
+            spriteRendererPkmn.sprite = null;
         }
         yield return new WaitForSeconds(2f);
         SetIdle();
