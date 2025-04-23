@@ -1,6 +1,0 @@
-@startuml
-interface ISavable {
-    CaptureState() : object
-    RestoreState(state:object) : void
-}
-@enduml

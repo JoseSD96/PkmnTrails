@@ -1,9 +1,0 @@
-@startuml
-class ZonaManager {
-    + {static} Instance : ZonaManager <<get>>
-    + ZonaActual : ZonaBase <<get>>
-    - Awake() : void
-    + SetZonaActual(zona:ZonaBase) : void
-}
-MonoBehaviour <|-- ZonaManager
-@enduml

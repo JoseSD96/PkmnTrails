@@ -1,9 +1,0 @@
-@startuml
-class XPBar {
-    + slider : Slider
-    + hpBar : Image
-    + SetXPNecesaria(xp:int) : void
-    + setXP(xp:int) : void
-}
-MonoBehaviour <|-- XPBar
-@enduml

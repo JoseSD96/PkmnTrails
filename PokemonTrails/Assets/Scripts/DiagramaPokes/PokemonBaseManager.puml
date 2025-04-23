@@ -1,7 +1,0 @@
-@startuml
-class PokemonBaseManager {
-    {static} - pokemones : Dictionary<int, PokemonBase>
-    + {static} Init() : void
-    + {static} GetPokemon(num:int) : PokemonBase
-}
-@enduml
