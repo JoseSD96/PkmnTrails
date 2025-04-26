@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 32
+  m_EditorClassIdentifier: 
+  num: 32
+  nombre: "Nidoran\u2642"
+  tipo1: 17
+  tipo2: 0
+  idle: {fileID: -2327099801042382639, guid: 292d6d81f7394f948a0d31681ff21ca1, type: 3}
+  idleShiny: {fileID: -2327099801042382639, guid: c7cabaa9b3b8a2f46865aae5354ba8de, type: 3}
+  explorar: {fileID: -8677407403030864520, guid: 292d6d81f7394f948a0d31681ff21ca1, type: 3}
+  explorarShiny: {fileID: -8677407403030864520, guid: c7cabaa9b3b8a2f46865aae5354ba8de, type: 3}
+  andar:
+  - {fileID: -8342523794497652602, guid: 292d6d81f7394f948a0d31681ff21ca1, type: 3}
+  - {fileID: 8489728964204836599, guid: 292d6d81f7394f948a0d31681ff21ca1, type: 3}
+  - {fileID: 2887216501860516749, guid: 292d6d81f7394f948a0d31681ff21ca1, type: 3}
+  - {fileID: 1452222617355478527, guid: 292d6d81f7394f948a0d31681ff21ca1, type: 3}
+  andarShiny:
+  - {fileID: -8342523794497652602, guid: c7cabaa9b3b8a2f46865aae5354ba8de, type: 3}
+  - {fileID: 8489728964204836599, guid: c7cabaa9b3b8a2f46865aae5354ba8de, type: 3}
+  - {fileID: 2887216501860516749, guid: c7cabaa9b3b8a2f46865aae5354ba8de, type: 3}
+  - {fileID: 1452222617355478527, guid: c7cabaa9b3b8a2f46865aae5354ba8de, type: 3}
+  hp: 46
+  atk: 57
+  def: 40
+  lvlEvo: 16
+  evolucion:
+  - {fileID: 11400000, guid: f6041367b246dae4d83f0b2e39c6b4d9, type: 2}
+  minLvl: 1
+  ratioCaptura: 235
+  tipoExp: 0
+  exBase: 55
+  SpriteTipo1: {fileID: -5005990984189769374, guid: e92ae9ff3784b7240b609f27cb3756ca, type: 3}
+  SpriteTipo2: {fileID: 0}

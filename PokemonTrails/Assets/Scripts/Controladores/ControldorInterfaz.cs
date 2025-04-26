@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class ControldorInterfaz : MonoBehaviour
 {
-    private CarruselImagenes carruselImagenes;
-    private CambiadorSprites cambiadorSprites;
-    private ControladorPartida controladorPartida;
+    public CarruselImagenes carruselImagenes;
+    public CambiadorSprites cambiadorSprites;
+    public ControladorPartida controladorPartida;
 
     public SistemaMenu sistemaMenu;
 
@@ -24,6 +24,9 @@ public class ControldorInterfaz : MonoBehaviour
     public Button explorarButton;
     public Button equipoButton;
     public Button PCButton;
+    public Button PokedexButton;
+
+    public Button SalirPokedexButton;
 
     public Button btnDatos;
     public Button btnEliminarEquipo;
@@ -45,16 +48,6 @@ public class ControldorInterfaz : MonoBehaviour
     public Button btnNuevaPartida;
 
     public Button huirButton;
-
-    /// <summary>
-    /// Inicializa referencias a otros componentes en el mismo GameObject.
-    /// </summary>
-    void Awake()
-    {
-        carruselImagenes = GetComponent<CarruselImagenes>();
-        cambiadorSprites = GetComponent<CambiadorSprites>();
-        controladorPartida = GetComponent<ControladorPartida>();
-    }
 
     /// <summary>
     /// Configura los listeners de los botones y su comportamiento al iniciar la escena.
@@ -82,7 +75,8 @@ public class ControldorInterfaz : MonoBehaviour
         btnMostrarEquipo.onClick.RemoveAllListeners();
         btnContinuar.onClick.RemoveAllListeners();
         btnNuevaPartida.onClick.RemoveAllListeners();
-
+        PokedexButton.onClick.RemoveAllListeners();
+        SalirPokedexButton.onClick.RemoveAllListeners();
 
         avanzarButton.onClick.AddListener(OnAvanzarButtonClick);
         explorarButton.onClick.AddListener(OnExplorarButtonClick);
@@ -104,6 +98,9 @@ public class ControldorInterfaz : MonoBehaviour
         btnMostrarEquipo.onClick.AddListener(OnMostrarEquipoButtonClick);
         btnContinuar.onClick.AddListener(OnContinuarButtonClick);
         btnNuevaPartida.onClick.AddListener(OnNuevaPartidaButtonClick);
+        PokedexButton.onClick.AddListener(OnPokedexButtonClick);
+        SalirPokedexButton.onClick.AddListener(OnSalirPokedexButtonClick);
+
 
         avanzarButton.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
         explorarButton.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
@@ -125,6 +122,8 @@ public class ControldorInterfaz : MonoBehaviour
         btnContinuar.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
         btnNuevaPartida.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
         huirButton.onClick.AddListener(() => audioManager.PlayEfecto("Combate", "huir"));
+        PokedexButton.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
+        SalirPokedexButton.onClick.AddListener(() => audioManager.PlayEfecto("Menus", "menuBoton"));
 
         if (inicio)
         {
@@ -144,6 +143,16 @@ public class ControldorInterfaz : MonoBehaviour
             btnContinuar.interactable = false;
         }
 
+    }
+
+    private void OnSalirPokedexButtonClick()
+    {
+        controladorPartida.SalirPokedex();
+    }
+
+    private void OnPokedexButtonClick()
+    {
+        controladorPartida.MostrarPokedex();
     }
 
     /// <summary>

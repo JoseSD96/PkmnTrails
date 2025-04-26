@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 65
+  m_EditorClassIdentifier: 
+  num: 65
+  nombre: Alakazam
+  tipo1: 13
+  tipo2: 0
+  idle: {fileID: -2424990852047621890, guid: d3c727f0cf76705419c5643d2a9a0c5f, type: 3}
+  idleShiny: {fileID: -2424990852047621890, guid: deecc96a418db394b978d8c7c582d023, type: 3}
+  explorar: {fileID: -9019232288760593082, guid: d3c727f0cf76705419c5643d2a9a0c5f, type: 3}
+  explorarShiny: {fileID: -9019232288760593082, guid: deecc96a418db394b978d8c7c582d023, type: 3}
+  andar:
+  - {fileID: 342035083793026567, guid: d3c727f0cf76705419c5643d2a9a0c5f, type: 3}
+  - {fileID: -6930860342194447969, guid: d3c727f0cf76705419c5643d2a9a0c5f, type: 3}
+  - {fileID: -7468750232490391225, guid: d3c727f0cf76705419c5643d2a9a0c5f, type: 3}
+  - {fileID: -7137193428843847391, guid: d3c727f0cf76705419c5643d2a9a0c5f, type: 3}
+  andarShiny:
+  - {fileID: 342035083793026567, guid: deecc96a418db394b978d8c7c582d023, type: 3}
+  - {fileID: -6930860342194447969, guid: deecc96a418db394b978d8c7c582d023, type: 3}
+  - {fileID: -7468750232490391225, guid: deecc96a418db394b978d8c7c582d023, type: 3}
+  - {fileID: -7137193428843847391, guid: deecc96a418db394b978d8c7c582d023, type: 3}
+  hp: 55
+  atk: 135
+  def: 95
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 36
+  ratioCaptura: 50
+  tipoExp: 0
+  exBase: 225
+  SpriteTipo1: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}
+  SpriteTipo2: {fileID: 0}

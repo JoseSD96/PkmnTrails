@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 120
+  m_EditorClassIdentifier: 
+  num: 120
+  nombre: Staryu
+  tipo1: 2
+  tipo2: 0
+  idle: {fileID: 56988173231975912, guid: 4f77dc774ff24a5438829fab74c299a7, type: 3}
+  idleShiny: {fileID: 56988173231975912, guid: 5dc2530f8de85d4478fd0f12b7ac404f, type: 3}
+  explorar: {fileID: 6543828301127956074, guid: 4f77dc774ff24a5438829fab74c299a7, type: 3}
+  explorarShiny: {fileID: 6543828301127956074, guid: 5dc2530f8de85d4478fd0f12b7ac404f, type: 3}
+  andar:
+  - {fileID: 2059657891580213193, guid: 4f77dc774ff24a5438829fab74c299a7, type: 3}
+  - {fileID: -4548759005104050816, guid: 4f77dc774ff24a5438829fab74c299a7, type: 3}
+  - {fileID: -2513446532123216280, guid: 4f77dc774ff24a5438829fab74c299a7, type: 3}
+  - {fileID: -2562146526263923246, guid: 4f77dc774ff24a5438829fab74c299a7, type: 3}
+  andarShiny:
+  - {fileID: 2059657891580213193, guid: 5dc2530f8de85d4478fd0f12b7ac404f, type: 3}
+  - {fileID: -4548759005104050816, guid: 5dc2530f8de85d4478fd0f12b7ac404f, type: 3}
+  - {fileID: -2513446532123216280, guid: 5dc2530f8de85d4478fd0f12b7ac404f, type: 3}
+  - {fileID: -2562146526263923246, guid: 5dc2530f8de85d4478fd0f12b7ac404f, type: 3}
+  hp: 30
+  atk: 70
+  def: 55
+  lvlEvo: 25
+  evolucion:
+  - {fileID: 11400000, guid: 1576c0c7b154dd94a8ae829d690d91d2, type: 2}
+  minLvl: 1
+  ratioCaptura: 225
+  tipoExp: 1
+  exBase: 68
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: 0}

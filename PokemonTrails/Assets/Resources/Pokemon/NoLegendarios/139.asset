@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 139
+  m_EditorClassIdentifier: 
+  num: 139
+  nombre: Omastar
+  tipo1: 14
+  tipo2: 2
+  idle: {fileID: -7306059153192052465, guid: 17e35e8d28597904b9c4784789b1775f, type: 3}
+  idleShiny: {fileID: -7306059153192052465, guid: 6334e1f1f869cf04d8b857959716ab50, type: 3}
+  explorar: {fileID: -6220480056146528268, guid: 17e35e8d28597904b9c4784789b1775f, type: 3}
+  explorarShiny: {fileID: -6220480056146528268, guid: 6334e1f1f869cf04d8b857959716ab50, type: 3}
+  andar:
+  - {fileID: 2851330645685986430, guid: 17e35e8d28597904b9c4784789b1775f, type: 3}
+  - {fileID: -1237127179544287910, guid: 17e35e8d28597904b9c4784789b1775f, type: 3}
+  - {fileID: -7612409042569296492, guid: 17e35e8d28597904b9c4784789b1775f, type: 3}
+  - {fileID: 8438757961934461261, guid: 17e35e8d28597904b9c4784789b1775f, type: 3}
+  andarShiny:
+  - {fileID: 2851330645685986430, guid: 6334e1f1f869cf04d8b857959716ab50, type: 3}
+  - {fileID: -1237127179544287910, guid: 6334e1f1f869cf04d8b857959716ab50, type: 3}
+  - {fileID: -7612409042569296492, guid: 6334e1f1f869cf04d8b857959716ab50, type: 3}
+  - {fileID: 8438757961934461261, guid: 6334e1f1f869cf04d8b857959716ab50, type: 3}
+  hp: 70
+  atk: 115
+  def: 125
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 40
+  ratioCaptura: 45
+  tipoExp: 2
+  exBase: 173
+  SpriteTipo1: {fileID: -2182124076254010665, guid: 62ea7f7259a4b424ca10cb0fd9c073d8, type: 3}
+  SpriteTipo2: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 80
+  m_EditorClassIdentifier: 
+  num: 80
+  nombre: Slowbro
+  tipo1: 2
+  tipo2: 13
+  idle: {fileID: -636169420500465653, guid: 58f9a9d3fbd33684c9bbc17a72e36c94, type: 3}
+  idleShiny: {fileID: -636169420500465653, guid: cec9f3e85188ffa468e532564f8034bf, type: 3}
+  explorar: {fileID: -1898231248904157349, guid: 58f9a9d3fbd33684c9bbc17a72e36c94, type: 3}
+  explorarShiny: {fileID: -1898231248904157349, guid: cec9f3e85188ffa468e532564f8034bf, type: 3}
+  andar:
+  - {fileID: -12251524363802438, guid: 58f9a9d3fbd33684c9bbc17a72e36c94, type: 3}
+  - {fileID: 1560369558507088719, guid: 58f9a9d3fbd33684c9bbc17a72e36c94, type: 3}
+  - {fileID: 3228358656787488486, guid: 58f9a9d3fbd33684c9bbc17a72e36c94, type: 3}
+  - {fileID: -5229924400676152098, guid: 58f9a9d3fbd33684c9bbc17a72e36c94, type: 3}
+  andarShiny:
+  - {fileID: -12251524363802438, guid: cec9f3e85188ffa468e532564f8034bf, type: 3}
+  - {fileID: 1560369558507088719, guid: cec9f3e85188ffa468e532564f8034bf, type: 3}
+  - {fileID: 3228358656787488486, guid: cec9f3e85188ffa468e532564f8034bf, type: 3}
+  - {fileID: -5229924400676152098, guid: cec9f3e85188ffa468e532564f8034bf, type: 3}
+  hp: 95
+  atk: 100
+  def: 110
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 37
+  ratioCaptura: 75
+  tipoExp: 2
+  exBase: 172
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}

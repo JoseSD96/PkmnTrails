@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 50
+  m_EditorClassIdentifier: 
+  num: 50
+  nombre: Diglett
+  tipo1: 16
+  tipo2: 0
+  idle: {fileID: -4220897937868510013, guid: 7c471c8fcb0b78c4dbccfbf59d943ca6, type: 3}
+  idleShiny: {fileID: -4220897937868510013, guid: 0c880ab18c2ab1a41aa461a0aac869a9, type: 3}
+  explorar: {fileID: -2260867723879135211, guid: 7c471c8fcb0b78c4dbccfbf59d943ca6, type: 3}
+  explorarShiny: {fileID: -2260867723879135211, guid: 0c880ab18c2ab1a41aa461a0aac869a9, type: 3}
+  andar:
+  - {fileID: -8316946054532446553, guid: 7c471c8fcb0b78c4dbccfbf59d943ca6, type: 3}
+  - {fileID: -5128324911267613165, guid: 7c471c8fcb0b78c4dbccfbf59d943ca6, type: 3}
+  - {fileID: 4484410705477044790, guid: 7c471c8fcb0b78c4dbccfbf59d943ca6, type: 3}
+  - {fileID: 7370380074527549183, guid: 7c471c8fcb0b78c4dbccfbf59d943ca6, type: 3}
+  andarShiny:
+  - {fileID: -8316946054532446553, guid: 0c880ab18c2ab1a41aa461a0aac869a9, type: 3}
+  - {fileID: -5128324911267613165, guid: 0c880ab18c2ab1a41aa461a0aac869a9, type: 3}
+  - {fileID: 4484410705477044790, guid: 0c880ab18c2ab1a41aa461a0aac869a9, type: 3}
+  - {fileID: 7370380074527549183, guid: 0c880ab18c2ab1a41aa461a0aac869a9, type: 3}
+  hp: 10
+  atk: 55
+  def: 45
+  lvlEvo: 26
+  evolucion:
+  - {fileID: 11400000, guid: 22b694eaf45d38942843e8684e72df1f, type: 2}
+  minLvl: 1
+  ratioCaptura: 255
+  tipoExp: 2
+  exBase: 53
+  SpriteTipo1: {fileID: -3878557786174838139, guid: 15b6f5b649c3dc840a961d3f87c45c27, type: 3}
+  SpriteTipo2: {fileID: 0}

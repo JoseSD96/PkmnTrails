@@ -9,6 +9,10 @@ public class ControladorPartida : MonoBehaviour
     [SerializeField] SistemaCaptura sistemaCaptura;
     [SerializeField] InterfazDatosPokemon sistemaDatos;
     [SerializeField] InterfazEquipo sistemaEquipo;
+    [SerializeField] PokedexManager pokedexManager;
+
+    private List<Camera> todasLasCamaras;
+    private List<Canvas> todasLasInterfaces;
 
     [SerializeField] SistemaMenu sistemaMenu;
 
@@ -37,6 +41,9 @@ public class ControladorPartida : MonoBehaviour
     [SerializeField] Canvas interfazSeleccionPersonaje;
     [SerializeField] Camera camaraSeleccionPersonaje;
 
+    [SerializeField] Canvas interfazPokedex;
+    [SerializeField] Camera camaraPokedex;
+
     [SerializeField] public Player jugador;
     [SerializeField] GameObject zonaActual;
 
@@ -48,13 +55,32 @@ public class ControladorPartida : MonoBehaviour
         MostrarMenuInicio();
     }
 
-    /// <summary>
-    /// Se ejecuta antes de Start. Inicializa los managers de entrenadores y Pokémon base.
-    /// </summary>
     private void Awake()
     {
         TrainerManager.Init();
         PokemonBaseManager.Init();
+
+        todasLasCamaras = new List<Camera> {
+            mainCamera, CamaraBatalla, CamaraEquipo, CamaraDatos, CamaraPC, CamaraMenuInicio, camaraSeleccionPersonaje, camaraPokedex
+        };
+        todasLasInterfaces = new List<Canvas> {
+            interfazExploracion, interfazBatalla, interfazEquipo, interfazDatos, interfazPC, interfazMenuInicio, interfazSeleccionPersonaje, interfazPokedex
+        };
+    }
+
+    // Método auxiliar para activar solo la cámara deseada
+    private void ActivarSoloEstaCamara(Camera camara)
+    {
+        foreach (var c in todasLasCamaras)
+            c.enabled = (c == camara);
+        CambiarAudioListener(camara);
+    }
+
+    // Método auxiliar para activar solo la interfaz deseada
+    private void ActivarSoloEstaInterfaz(Canvas interfaz)
+    {
+        foreach (var i in todasLasInterfaces)
+            i.gameObject.SetActive(i == interfaz);
     }
 
     /// <summary>
@@ -64,22 +90,23 @@ public class ControladorPartida : MonoBehaviour
     public void MostrarMenuInicio()
     {
         audioManager.PlayMusicaMenuInicio();
-        mainCamera.enabled = false;
-        CamaraBatalla.enabled = false;
-        CamaraEquipo.enabled = false;
-        CamaraDatos.enabled = false;
-        CamaraPC.enabled = false;
-        CamaraMenuInicio.enabled = true;
+        ActivarSoloEstaCamara(CamaraMenuInicio);
+        ActivarSoloEstaInterfaz(interfazMenuInicio);
+    }
 
-        interfazMenuInicio.gameObject.SetActive(true);
-        interfazExploracion.gameObject.SetActive(false);
-        interfazBatalla.gameObject.SetActive(false);
-        interfazEquipo.gameObject.SetActive(false);
-        interfazDatos.gameObject.SetActive(false);
-        interfazPC.gameObject.SetActive(false);
+    public void MostrarPokedex()
+    {
+        pokedexManager.ActualizarIluminacionPokemons();
+        audioManager.PlayMusicaPC();
+        ActivarSoloEstaCamara(camaraPokedex);
+        ActivarSoloEstaInterfaz(interfazPokedex);
 
-        CambiarAudioListener(CamaraMenuInicio);
+        CambiarAudioListener(camaraPokedex);
+    }
 
+    public void SalirPokedex()
+    {
+        ActivarExploracion(true);
     }
 
     /// <summary>
@@ -88,17 +115,9 @@ public class ControladorPartida : MonoBehaviour
     /// </summary>
     public void IniciarCombate()
     {
-        mainCamera.enabled = false;
-        CamaraBatalla.enabled = true;
-        CamaraEquipo.enabled = false;
-        CamaraDatos.enabled = false;
-        CamaraPC.enabled = false;
+        ActivarSoloEstaCamara(CamaraBatalla);
 
-        interfazExploracion.gameObject.SetActive(false);
-        interfazBatalla.gameObject.SetActive(true);
-        interfazEquipo.gameObject.SetActive(false);
-        interfazDatos.gameObject.SetActive(false);
-        interfazPC.gameObject.SetActive(false);
+        ActivarSoloEstaInterfaz(interfazBatalla);
 
         CambiarAudioListener(CamaraBatalla);
 
@@ -164,9 +183,9 @@ public class ControladorPartida : MonoBehaviour
     /// <param name="pkmn">Pokémon capturado.</param>
     public void TerminarCombate(Pokemon pkmn)
     {
-        if (jugador.Pokedex.Contains(pkmn.Base.Num) == false)
+        if (jugador.pokedex.pokemones.Contains(pkmn.Base.Num) == false)
         {
-            jugador.Pokedex.Add(pkmn.Base.Num);
+            jugador.pokedex.pokemones.Add(pkmn.Base.Num);
         }
         jugador.equipo.AddPokemon(pkmn);
         ActivarExploracion();
@@ -186,21 +205,9 @@ public class ControladorPartida : MonoBehaviour
         if (cambiadorSprites != null)
             cambiadorSprites.SendMessage("SetIdle");
 
-        mainCamera.enabled = true;
-        CamaraBatalla.enabled = false;
-        CamaraEquipo.enabled = false;
-        CamaraDatos.enabled = false;
-        CamaraPC.enabled = false;
-        CamaraMenuInicio.enabled = false;
-        camaraSeleccionPersonaje.enabled = false;
+        ActivarSoloEstaCamara(mainCamera);
 
-        interfazPC.gameObject.SetActive(false);
-        interfazExploracion.gameObject.SetActive(true);
-        interfazBatalla.gameObject.SetActive(false);
-        interfazEquipo.gameObject.SetActive(false);
-        interfazDatos.gameObject.SetActive(false);
-        interfazMenuInicio.gameObject.SetActive(false);
-        interfazSeleccionPersonaje.gameObject.SetActive(false);
+        ActivarSoloEstaInterfaz(interfazExploracion);
 
         CambiarAudioListener(mainCamera);
     }
@@ -210,17 +217,8 @@ public class ControladorPartida : MonoBehaviour
     /// </summary>
     public void PantallaEquipo()
     {
-        mainCamera.enabled = false;
-        CamaraEquipo.enabled = true;
-        CamaraBatalla.enabled = false;
-        CamaraDatos.enabled = false;
-        CamaraPC.enabled = false;
-
-        interfazPC.gameObject.SetActive(false);
-        interfazExploracion.gameObject.SetActive(false);
-        interfazBatalla.gameObject.SetActive(false);
-        interfazDatos.gameObject.SetActive(false);
-        interfazEquipo.gameObject.SetActive(true);
+        ActivarSoloEstaCamara(CamaraEquipo);
+        ActivarSoloEstaInterfaz(interfazEquipo);
 
         CambiarAudioListener(CamaraEquipo);
     }
@@ -231,17 +229,8 @@ public class ControladorPartida : MonoBehaviour
     public void PantallaDatos()
     {
         sistemaDatos.MostrarDatos(sistemaEquipo.PokemonSeleccionado);
-        mainCamera.enabled = false;
-        CamaraEquipo.enabled = false;
-        CamaraDatos.enabled = true;
-        CamaraBatalla.enabled = false;
-        CamaraPC.enabled = false;
-
-        interfazPC.gameObject.SetActive(false);
-        interfazExploracion.gameObject.SetActive(false);
-        interfazBatalla.gameObject.SetActive(false);
-        interfazEquipo.gameObject.SetActive(false);
-        interfazDatos.gameObject.SetActive(true);
+        ActivarSoloEstaCamara(CamaraDatos);
+        ActivarSoloEstaInterfaz(interfazDatos);
 
         CambiarAudioListener(CamaraDatos);
     }
@@ -279,17 +268,8 @@ public class ControladorPartida : MonoBehaviour
     public void PantallaPC()
     {
         audioManager.PlayEfecto("Menus", "abrirPC");
-        mainCamera.enabled = false;
-        CamaraEquipo.enabled = false;
-        CamaraDatos.enabled = false;
-        CamaraBatalla.enabled = false;
-        CamaraPC.enabled = true;
-
-        interfazPC.gameObject.SetActive(true);
-        interfazExploracion.gameObject.SetActive(false);
-        interfazBatalla.gameObject.SetActive(false);
-        interfazEquipo.gameObject.SetActive(false);
-        interfazDatos.gameObject.SetActive(false);
+        ActivarSoloEstaCamara(CamaraPC);
+        ActivarSoloEstaInterfaz(interfazPC);
 
         CambiarAudioListener(CamaraPC);
 
@@ -397,6 +377,7 @@ public class ControladorPartida : MonoBehaviour
         CamaraPC.GetComponent<AudioListener>().enabled = false;
         CamaraMenuInicio.GetComponent<AudioListener>().enabled = false;
         camaraSeleccionPersonaje.GetComponent<AudioListener>().enabled = false;
+        camaraPokedex.GetComponent<AudioListener>().enabled = false;
 
         camaraActiva.GetComponent<AudioListener>().enabled = true;
     }
@@ -435,16 +416,13 @@ public class ControladorPartida : MonoBehaviour
         int potencialInicial = Random.Range(20, 32);
         bool isShiny = Random.Range(0, 100) < 10;
         jugador.equipo.AddPokemon(new Pokemon(pokemonInicial, potencialInicial, isShiny, 5));
-        jugador.Pokedex.Add(pokemonInicial.Num);
+        jugador.pokedex.pokemones.Add(pokemonInicial.Num);
 
         var cambiadorSprites = FindFirstObjectByType<CambiadorSprites>();
         if (cambiadorSprites != null)
             cambiadorSprites.SendMessage("SetIdle");
 
-        interfazSeleccionPersonaje.gameObject.SetActive(false);
-        camaraSeleccionPersonaje.enabled = false;
-        mainCamera.enabled = true;
-        interfazExploracion.gameObject.SetActive(true);
+        ActivarExploracion(true);
 
         CambiarAudioListener(mainCamera);
     }
@@ -454,21 +432,8 @@ public class ControladorPartida : MonoBehaviour
     /// </summary>
     public void MostrarSeleccionDePersonaje()
     {
-        mainCamera.enabled = false;
-        CamaraBatalla.enabled = false;
-        CamaraEquipo.enabled = false;
-        CamaraDatos.enabled = false;
-        CamaraPC.enabled = false;
-        CamaraMenuInicio.enabled = false;
-        camaraSeleccionPersonaje.enabled = true;
-
-        interfazMenuInicio.gameObject.SetActive(false);
-        interfazExploracion.gameObject.SetActive(false);
-        interfazBatalla.gameObject.SetActive(false);
-        interfazEquipo.gameObject.SetActive(false);
-        interfazDatos.gameObject.SetActive(false);
-        interfazPC.gameObject.SetActive(false);
-        interfazSeleccionPersonaje.gameObject.SetActive(true);
+        ActivarSoloEstaCamara(camaraSeleccionPersonaje);
+        ActivarSoloEstaInterfaz(interfazSeleccionPersonaje);
 
         CambiarAudioListener(camaraSeleccionPersonaje);
     }

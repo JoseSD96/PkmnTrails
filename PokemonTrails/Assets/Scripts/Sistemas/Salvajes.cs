@@ -14,7 +14,7 @@ public class Salvajes : MonoBehaviour
     /// </summary>
     private void Awake()
     {
-        todosLosPokemon = Resources.LoadAll<PokemonBase>("Pokemon").ToList();
+        todosLosPokemon = Resources.LoadAll<PokemonBase>("Pokemon/NoLegendarios").ToList();
     }
 
     /// <summary>

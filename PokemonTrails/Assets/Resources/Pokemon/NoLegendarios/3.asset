@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 3
+  m_EditorClassIdentifier: 
+  num: 3
+  nombre: Venusaur
+  tipo1: 12
+  tipo2: 17
+  idle: {fileID: -3195096107856480575, guid: 98816318489d56f4eb36baf4a8ad1ad3, type: 3}
+  idleShiny: {fileID: -2056522955057112756, guid: 91277068cadd81f45a2386053b6a1e6b, type: 3}
+  explorar: {fileID: 7548575709873148824, guid: 98816318489d56f4eb36baf4a8ad1ad3, type: 3}
+  explorarShiny: {fileID: 7548575709873148824, guid: 91277068cadd81f45a2386053b6a1e6b, type: 3}
+  andar:
+  - {fileID: -7445202056400055729, guid: 98816318489d56f4eb36baf4a8ad1ad3, type: 3}
+  - {fileID: -756236195968398408, guid: 98816318489d56f4eb36baf4a8ad1ad3, type: 3}
+  - {fileID: 2723619769320014437, guid: 98816318489d56f4eb36baf4a8ad1ad3, type: 3}
+  - {fileID: -1130910151371943994, guid: 98816318489d56f4eb36baf4a8ad1ad3, type: 3}
+  andarShiny:
+  - {fileID: -7445202056400055729, guid: 91277068cadd81f45a2386053b6a1e6b, type: 3}
+  - {fileID: -756236195968398408, guid: 91277068cadd81f45a2386053b6a1e6b, type: 3}
+  - {fileID: 2723619769320014437, guid: 91277068cadd81f45a2386053b6a1e6b, type: 3}
+  - {fileID: -1130910151371943994, guid: 91277068cadd81f45a2386053b6a1e6b, type: 3}
+  hp: 80
+  atk: 100
+  def: 100
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 32
+  ratioCaptura: 45
+  tipoExp: 0
+  exBase: 236
+  SpriteTipo1: {fileID: 7932798033344189819, guid: d6d579d0526b1aa46bd061d6721fea3f, type: 3}
+  SpriteTipo2: {fileID: -5005990984189769374, guid: e92ae9ff3784b7240b609f27cb3756ca, type: 3}

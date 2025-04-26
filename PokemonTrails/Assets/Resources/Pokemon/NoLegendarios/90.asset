@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 90
+  m_EditorClassIdentifier: 
+  num: 90
+  nombre: Shellder
+  tipo1: 2
+  tipo2: 0
+  idle: {fileID: 8681219018546161869, guid: e83b3eb35aa666241b4efa177d010472, type: 3}
+  idleShiny: {fileID: 8681219018546161869, guid: 8d80a9da0b657aa46a889f4ed5c40d72, type: 3}
+  explorar: {fileID: -6804251310938326637, guid: e83b3eb35aa666241b4efa177d010472, type: 3}
+  explorarShiny: {fileID: -6804251310938326637, guid: 8d80a9da0b657aa46a889f4ed5c40d72, type: 3}
+  andar:
+  - {fileID: -8106496344041930491, guid: e83b3eb35aa666241b4efa177d010472, type: 3}
+  - {fileID: -2392504836586313768, guid: e83b3eb35aa666241b4efa177d010472, type: 3}
+  - {fileID: -3728836177823565753, guid: e83b3eb35aa666241b4efa177d010472, type: 3}
+  - {fileID: -2433005436746390458, guid: e83b3eb35aa666241b4efa177d010472, type: 3}
+  andarShiny:
+  - {fileID: -8106496344041930491, guid: 8d80a9da0b657aa46a889f4ed5c40d72, type: 3}
+  - {fileID: -2392504836586313768, guid: 8d80a9da0b657aa46a889f4ed5c40d72, type: 3}
+  - {fileID: -3728836177823565753, guid: 8d80a9da0b657aa46a889f4ed5c40d72, type: 3}
+  - {fileID: -2433005436746390458, guid: 8d80a9da0b657aa46a889f4ed5c40d72, type: 3}
+  hp: 30
+  atk: 65
+  def: 100
+  lvlEvo: 25
+  evolucion:
+  - {fileID: 11400000, guid: b97bd096aa8d25a4e9db5a602f7fe524, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 1
+  exBase: 61
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: 0}

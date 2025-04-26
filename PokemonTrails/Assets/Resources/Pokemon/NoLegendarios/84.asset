@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 84
+  m_EditorClassIdentifier: 
+  num: 84
+  nombre: Doduo
+  tipo1: 11
+  tipo2: 18
+  idle: {fileID: 2325241329094383604, guid: d95259c0bb8684a4a912a64591d2ef11, type: 3}
+  idleShiny: {fileID: 2325241329094383604, guid: 7860f6989e6315d4ca576e4709b0cdaf, type: 3}
+  explorar: {fileID: 2891811068388236156, guid: d95259c0bb8684a4a912a64591d2ef11, type: 3}
+  explorarShiny: {fileID: 2891811068388236156, guid: 7860f6989e6315d4ca576e4709b0cdaf, type: 3}
+  andar:
+  - {fileID: -5605977661652386891, guid: d95259c0bb8684a4a912a64591d2ef11, type: 3}
+  - {fileID: -399638792649667915, guid: d95259c0bb8684a4a912a64591d2ef11, type: 3}
+  - {fileID: 3827186396144664755, guid: d95259c0bb8684a4a912a64591d2ef11, type: 3}
+  - {fileID: -2923615160157628054, guid: d95259c0bb8684a4a912a64591d2ef11, type: 3}
+  andarShiny:
+  - {fileID: -5605977661652386891, guid: 7860f6989e6315d4ca576e4709b0cdaf, type: 3}
+  - {fileID: -399638792649667915, guid: 7860f6989e6315d4ca576e4709b0cdaf, type: 3}
+  - {fileID: 3827186396144664755, guid: 7860f6989e6315d4ca576e4709b0cdaf, type: 3}
+  - {fileID: -2923615160157628054, guid: 7860f6989e6315d4ca576e4709b0cdaf, type: 3}
+  hp: 35
+  atk: 85
+  def: 45
+  lvlEvo: 31
+  evolucion:
+  - {fileID: 11400000, guid: a7e12022f80816f4b91dad8c78d173e3, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 2
+  exBase: 62
+  SpriteTipo1: {fileID: 4606157284126940538, guid: bcea1507ef7c2e5439b7d3f5e0aecd67, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

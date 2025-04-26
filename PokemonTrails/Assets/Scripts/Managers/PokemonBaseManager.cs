@@ -13,7 +13,7 @@ public class PokemonBaseManager
     public static void Init()
     {
         pokemones = new Dictionary<int, PokemonBase>();
-        var pkmns = Resources.LoadAll<PokemonBase>("Pokemon");
+        var pkmns = Resources.LoadAll<PokemonBase>("Pokemon/NoLegendarios");
         var pokemonesLegendarios = Resources.LoadAll<PokemonBase>("Pokemon/Legendarios");
         foreach (var pkmn in pkmns)
         {

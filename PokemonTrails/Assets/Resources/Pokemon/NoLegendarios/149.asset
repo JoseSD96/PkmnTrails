@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 149
+  m_EditorClassIdentifier: 
+  num: 149
+  nombre: Dragonite
+  tipo1: 4
+  tipo2: 18
+  idle: {fileID: 252709408773594176, guid: 11c0b478e1e52094b9bf38ff346710be, type: 3}
+  idleShiny: {fileID: 252709408773594176, guid: 22893c8bd0b17e7479dc5f4ca3a3b3b6, type: 3}
+  explorar: {fileID: 8557018382024059977, guid: 11c0b478e1e52094b9bf38ff346710be, type: 3}
+  explorarShiny: {fileID: 8557018382024059977, guid: 22893c8bd0b17e7479dc5f4ca3a3b3b6, type: 3}
+  andar:
+  - {fileID: 8212785800852811552, guid: 11c0b478e1e52094b9bf38ff346710be, type: 3}
+  - {fileID: 1247477161668435822, guid: 11c0b478e1e52094b9bf38ff346710be, type: 3}
+  - {fileID: 9114130093276416740, guid: 11c0b478e1e52094b9bf38ff346710be, type: 3}
+  - {fileID: 2881134948754491966, guid: 11c0b478e1e52094b9bf38ff346710be, type: 3}
+  andarShiny:
+  - {fileID: 8212785800852811552, guid: 22893c8bd0b17e7479dc5f4ca3a3b3b6, type: 3}
+  - {fileID: 1247477161668435822, guid: 22893c8bd0b17e7479dc5f4ca3a3b3b6, type: 3}
+  - {fileID: 9114130093276416740, guid: 22893c8bd0b17e7479dc5f4ca3a3b3b6, type: 3}
+  - {fileID: 2881134948754491966, guid: 22893c8bd0b17e7479dc5f4ca3a3b3b6, type: 3}
+  hp: 91
+  atk: 134
+  def: 100
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 55
+  ratioCaptura: 45
+  tipoExp: 1
+  exBase: 270
+  SpriteTipo1: {fileID: 3428391033546482049, guid: 5a2f331be01955f439717de9078ff9db, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

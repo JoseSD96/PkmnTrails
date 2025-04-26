@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 95
+  m_EditorClassIdentifier: 
+  num: 95
+  nombre: Onix
+  tipo1: 14
+  tipo2: 16
+  idle: {fileID: -842793366621679739, guid: 76a9fa15c152a4a4d96f63317d8d6866, type: 3}
+  idleShiny: {fileID: -842793366621679739, guid: b471932d5f55faa45bdd1fdc957b020c, type: 3}
+  explorar: {fileID: 6911170025439150730, guid: 76a9fa15c152a4a4d96f63317d8d6866, type: 3}
+  explorarShiny: {fileID: 6911170025439150730, guid: b471932d5f55faa45bdd1fdc957b020c, type: 3}
+  andar:
+  - {fileID: 9121639243769698822, guid: 76a9fa15c152a4a4d96f63317d8d6866, type: 3}
+  - {fileID: 4773469867278926845, guid: 76a9fa15c152a4a4d96f63317d8d6866, type: 3}
+  - {fileID: 3781611179943345907, guid: 76a9fa15c152a4a4d96f63317d8d6866, type: 3}
+  - {fileID: 8971081462689716094, guid: 76a9fa15c152a4a4d96f63317d8d6866, type: 3}
+  andarShiny:
+  - {fileID: 9121639243769698822, guid: b471932d5f55faa45bdd1fdc957b020c, type: 3}
+  - {fileID: 4773469867278926845, guid: b471932d5f55faa45bdd1fdc957b020c, type: 3}
+  - {fileID: 3781611179943345907, guid: b471932d5f55faa45bdd1fdc957b020c, type: 3}
+  - {fileID: 8971081462689716094, guid: b471932d5f55faa45bdd1fdc957b020c, type: 3}
+  hp: 35
+  atk: 45
+  def: 160
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 45
+  tipoExp: 2
+  exBase: 77
+  SpriteTipo1: {fileID: -2182124076254010665, guid: 62ea7f7259a4b424ca10cb0fd9c073d8, type: 3}
+  SpriteTipo2: {fileID: -3878557786174838139, guid: 15b6f5b649c3dc840a961d3f87c45c27, type: 3}

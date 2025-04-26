@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 54
+  m_EditorClassIdentifier: 
+  num: 54
+  nombre: Psyduck
+  tipo1: 2
+  tipo2: 0
+  idle: {fileID: -4377249704931530320, guid: a2f8faf5d940c0848aadf579e3d2201c, type: 3}
+  idleShiny: {fileID: -4377249704931530320, guid: 9efe494884f51834997f5c94823f7ee1, type: 3}
+  explorar: {fileID: 7550814374562576207, guid: a2f8faf5d940c0848aadf579e3d2201c, type: 3}
+  explorarShiny: {fileID: 7550814374562576207, guid: 9efe494884f51834997f5c94823f7ee1, type: 3}
+  andar:
+  - {fileID: -4024484359726051546, guid: a2f8faf5d940c0848aadf579e3d2201c, type: 3}
+  - {fileID: -2513967707839044131, guid: a2f8faf5d940c0848aadf579e3d2201c, type: 3}
+  - {fileID: 3857545879334763212, guid: a2f8faf5d940c0848aadf579e3d2201c, type: 3}
+  - {fileID: -6009983724261518004, guid: a2f8faf5d940c0848aadf579e3d2201c, type: 3}
+  andarShiny:
+  - {fileID: -4024484359726051546, guid: 9efe494884f51834997f5c94823f7ee1, type: 3}
+  - {fileID: -2513967707839044131, guid: 9efe494884f51834997f5c94823f7ee1, type: 3}
+  - {fileID: 3857545879334763212, guid: 9efe494884f51834997f5c94823f7ee1, type: 3}
+  - {fileID: -6009983724261518004, guid: 9efe494884f51834997f5c94823f7ee1, type: 3}
+  hp: 50
+  atk: 65
+  def: 50
+  lvlEvo: 33
+  evolucion:
+  - {fileID: 11400000, guid: d738672bd7d51de419e94039a1cf35ff, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 2
+  exBase: 64
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: 0}

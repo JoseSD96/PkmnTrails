@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 132
+  m_EditorClassIdentifier: 
+  num: 132
+  nombre: Ditto
+  tipo1: 11
+  tipo2: 0
+  idle: {fileID: 3357537204990187631, guid: d8b8374afc63c6145b09e500e03c722c, type: 3}
+  idleShiny: {fileID: 3357537204990187631, guid: 7e926aee696f8be4c9b4057d1c17d940, type: 3}
+  explorar: {fileID: -1955910287166466303, guid: d8b8374afc63c6145b09e500e03c722c, type: 3}
+  explorarShiny: {fileID: -1955910287166466303, guid: 7e926aee696f8be4c9b4057d1c17d940, type: 3}
+  andar:
+  - {fileID: 3772491411584437863, guid: d8b8374afc63c6145b09e500e03c722c, type: 3}
+  - {fileID: 5833715512573227766, guid: d8b8374afc63c6145b09e500e03c722c, type: 3}
+  - {fileID: -945374195134925592, guid: d8b8374afc63c6145b09e500e03c722c, type: 3}
+  - {fileID: 6211003886318334285, guid: d8b8374afc63c6145b09e500e03c722c, type: 3}
+  andarShiny:
+  - {fileID: 3772491411584437863, guid: 7e926aee696f8be4c9b4057d1c17d940, type: 3}
+  - {fileID: 5833715512573227766, guid: 7e926aee696f8be4c9b4057d1c17d940, type: 3}
+  - {fileID: -945374195134925592, guid: 7e926aee696f8be4c9b4057d1c17d940, type: 3}
+  - {fileID: 6211003886318334285, guid: 7e926aee696f8be4c9b4057d1c17d940, type: 3}
+  hp: 60
+  atk: 60
+  def: 60
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 35
+  tipoExp: 2
+  exBase: 101
+  SpriteTipo1: {fileID: 4606157284126940538, guid: bcea1507ef7c2e5439b7d3f5e0aecd67, type: 3}
+  SpriteTipo2: {fileID: 0}

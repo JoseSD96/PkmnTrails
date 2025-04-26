@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 105
+  m_EditorClassIdentifier: 
+  num: 105
+  nombre: Marowak
+  tipo1: 16
+  tipo2: 0
+  idle: {fileID: -4009605339070602978, guid: 90b47e8fe9d84b841b1688ae0708a083, type: 3}
+  idleShiny: {fileID: -4009605339070602978, guid: 8bf8763183392734b968d1f79383a4d7, type: 3}
+  explorar: {fileID: -7667338796545448477, guid: 90b47e8fe9d84b841b1688ae0708a083, type: 3}
+  explorarShiny: {fileID: -7667338796545448477, guid: 8bf8763183392734b968d1f79383a4d7, type: 3}
+  andar:
+  - {fileID: -4540853413529303573, guid: 90b47e8fe9d84b841b1688ae0708a083, type: 3}
+  - {fileID: -8060543885736575753, guid: 90b47e8fe9d84b841b1688ae0708a083, type: 3}
+  - {fileID: -2173684554998023664, guid: 90b47e8fe9d84b841b1688ae0708a083, type: 3}
+  - {fileID: -5300992483222630770, guid: 90b47e8fe9d84b841b1688ae0708a083, type: 3}
+  andarShiny:
+  - {fileID: -4540853413529303573, guid: 8bf8763183392734b968d1f79383a4d7, type: 3}
+  - {fileID: -8060543885736575753, guid: 8bf8763183392734b968d1f79383a4d7, type: 3}
+  - {fileID: -2173684554998023664, guid: 8bf8763183392734b968d1f79383a4d7, type: 3}
+  - {fileID: -5300992483222630770, guid: 8bf8763183392734b968d1f79383a4d7, type: 3}
+  hp: 60
+  atk: 80
+  def: 110
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 28
+  ratioCaptura: 75
+  tipoExp: 2
+  exBase: 149
+  SpriteTipo1: {fileID: -3878557786174838139, guid: 15b6f5b649c3dc840a961d3f87c45c27, type: 3}
+  SpriteTipo2: {fileID: 0}

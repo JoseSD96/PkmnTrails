@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 91
+  m_EditorClassIdentifier: 
+  num: 91
+  nombre: Cloyster
+  tipo1: 2
+  tipo2: 9
+  idle: {fileID: -498136288564093766, guid: 201e7d87efbd5d9438d275eae4ab00c5, type: 3}
+  idleShiny: {fileID: -498136288564093766, guid: 14c987f465d252a4db15f906ced1d26a, type: 3}
+  explorar: {fileID: 5330240625144610811, guid: 201e7d87efbd5d9438d275eae4ab00c5, type: 3}
+  explorarShiny: {fileID: 5330240625144610811, guid: 14c987f465d252a4db15f906ced1d26a, type: 3}
+  andar:
+  - {fileID: 7574868845470480144, guid: 201e7d87efbd5d9438d275eae4ab00c5, type: 3}
+  - {fileID: -9127515394935913679, guid: 201e7d87efbd5d9438d275eae4ab00c5, type: 3}
+  - {fileID: 7131579173657668132, guid: 201e7d87efbd5d9438d275eae4ab00c5, type: 3}
+  - {fileID: -5500007661205264002, guid: 201e7d87efbd5d9438d275eae4ab00c5, type: 3}
+  andarShiny:
+  - {fileID: 7574868845470480144, guid: 14c987f465d252a4db15f906ced1d26a, type: 3}
+  - {fileID: -9127515394935913679, guid: 14c987f465d252a4db15f906ced1d26a, type: 3}
+  - {fileID: 7131579173657668132, guid: 14c987f465d252a4db15f906ced1d26a, type: 3}
+  - {fileID: -5500007661205264002, guid: 14c987f465d252a4db15f906ced1d26a, type: 3}
+  hp: 50
+  atk: 95
+  def: 180
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 25
+  ratioCaptura: 60
+  tipoExp: 1
+  exBase: 184
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: -856085545168688419, guid: d8e3894f455edc740b8c7ffd27ea0c67, type: 3}

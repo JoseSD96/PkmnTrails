@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 8
+  m_EditorClassIdentifier: 
+  num: 8
+  nombre: Wartortle
+  tipo1: 2
+  tipo2: 0
+  idle: {fileID: 1569140488810215767, guid: b70adf1e76a2ec84b80e01e624a86e04, type: 3}
+  idleShiny: {fileID: 1569140488810215767, guid: 77918d8c8982be0448dcff0c74170bbc, type: 3}
+  explorar: {fileID: 9017144684986263881, guid: b70adf1e76a2ec84b80e01e624a86e04, type: 3}
+  explorarShiny: {fileID: 9017144684986263881, guid: 77918d8c8982be0448dcff0c74170bbc, type: 3}
+  andar:
+  - {fileID: 6634140453015416475, guid: b70adf1e76a2ec84b80e01e624a86e04, type: 3}
+  - {fileID: -1708485391442783509, guid: b70adf1e76a2ec84b80e01e624a86e04, type: 3}
+  - {fileID: 5348354176940859421, guid: b70adf1e76a2ec84b80e01e624a86e04, type: 3}
+  - {fileID: -4120665954249841151, guid: b70adf1e76a2ec84b80e01e624a86e04, type: 3}
+  andarShiny:
+  - {fileID: 6634140453015416475, guid: 77918d8c8982be0448dcff0c74170bbc, type: 3}
+  - {fileID: -1708485391442783509, guid: 77918d8c8982be0448dcff0c74170bbc, type: 3}
+  - {fileID: 5348354176940859421, guid: 77918d8c8982be0448dcff0c74170bbc, type: 3}
+  - {fileID: -4120665954249841151, guid: 77918d8c8982be0448dcff0c74170bbc, type: 3}
+  hp: 59
+  atk: 65
+  def: 80
+  lvlEvo: 36
+  evolucion:
+  - {fileID: 11400000, guid: caab5f802b19985439ae5fd1bc275be4, type: 2}
+  minLvl: 16
+  ratioCaptura: 45
+  tipoExp: 0
+  exBase: 142
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: 0}

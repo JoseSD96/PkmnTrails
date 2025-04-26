@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 111
+  m_EditorClassIdentifier: 
+  num: 111
+  nombre: Rhyhorn
+  tipo1: 16
+  tipo2: 14
+  idle: {fileID: -1669546137982850990, guid: 0c02c262278a946479d895b3d6cd4334, type: 3}
+  idleShiny: {fileID: -1669546137982850990, guid: 9845a75933cdff34ebf333db0775161a, type: 3}
+  explorar: {fileID: 5439830150786037213, guid: 0c02c262278a946479d895b3d6cd4334, type: 3}
+  explorarShiny: {fileID: 5439830150786037213, guid: 9845a75933cdff34ebf333db0775161a, type: 3}
+  andar:
+  - {fileID: 5076463607808620515, guid: 0c02c262278a946479d895b3d6cd4334, type: 3}
+  - {fileID: 7351173536484306606, guid: 0c02c262278a946479d895b3d6cd4334, type: 3}
+  - {fileID: 2327826092506337084, guid: 0c02c262278a946479d895b3d6cd4334, type: 3}
+  - {fileID: 7472606267292663286, guid: 0c02c262278a946479d895b3d6cd4334, type: 3}
+  andarShiny:
+  - {fileID: 5076463607808620515, guid: 9845a75933cdff34ebf333db0775161a, type: 3}
+  - {fileID: 7351173536484306606, guid: 9845a75933cdff34ebf333db0775161a, type: 3}
+  - {fileID: 2327826092506337084, guid: 9845a75933cdff34ebf333db0775161a, type: 3}
+  - {fileID: 7472606267292663286, guid: 9845a75933cdff34ebf333db0775161a, type: 3}
+  hp: 80
+  atk: 85
+  def: 95
+  lvlEvo: 42
+  evolucion:
+  - {fileID: 11400000, guid: 9e85727bdaffa514b97b90f9d7830200, type: 2}
+  minLvl: 1
+  ratioCaptura: 120
+  tipoExp: 1
+  exBase: 69
+  SpriteTipo1: {fileID: -3878557786174838139, guid: 15b6f5b649c3dc840a961d3f87c45c27, type: 3}
+  SpriteTipo2: {fileID: -2182124076254010665, guid: 62ea7f7259a4b424ca10cb0fd9c073d8, type: 3}

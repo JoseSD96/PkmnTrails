@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 100
+  m_EditorClassIdentifier: 
+  num: 100
+  nombre: Voltorb
+  tipo1: 5
+  tipo2: 0
+  idle: {fileID: -274229859237487096, guid: d4bcf78338e8f4c40aca616941ae233e, type: 3}
+  idleShiny: {fileID: -274229859237487096, guid: b735983104d21754cbe74eaa6297edb8, type: 3}
+  explorar: {fileID: 7842903803761320186, guid: d4bcf78338e8f4c40aca616941ae233e, type: 3}
+  explorarShiny: {fileID: 7842903803761320186, guid: b735983104d21754cbe74eaa6297edb8, type: 3}
+  andar:
+  - {fileID: -1570951689616593671, guid: d4bcf78338e8f4c40aca616941ae233e, type: 3}
+  - {fileID: 1057721457099159890, guid: d4bcf78338e8f4c40aca616941ae233e, type: 3}
+  - {fileID: -966109131029301021, guid: d4bcf78338e8f4c40aca616941ae233e, type: 3}
+  - {fileID: 1113532011671082415, guid: d4bcf78338e8f4c40aca616941ae233e, type: 3}
+  andarShiny:
+  - {fileID: -1570951689616593671, guid: b735983104d21754cbe74eaa6297edb8, type: 3}
+  - {fileID: 1057721457099159890, guid: b735983104d21754cbe74eaa6297edb8, type: 3}
+  - {fileID: -966109131029301021, guid: b735983104d21754cbe74eaa6297edb8, type: 3}
+  - {fileID: 1113532011671082415, guid: b735983104d21754cbe74eaa6297edb8, type: 3}
+  hp: 40
+  atk: 55
+  def: 55
+  lvlEvo: 30
+  evolucion:
+  - {fileID: 11400000, guid: ea267a0679d9d224fb656f0f282e305a, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 2
+  exBase: 66
+  SpriteTipo1: {fileID: 5820286478268577726, guid: f1d7827866e38664fb759c583947fb9a, type: 3}
+  SpriteTipo2: {fileID: 0}

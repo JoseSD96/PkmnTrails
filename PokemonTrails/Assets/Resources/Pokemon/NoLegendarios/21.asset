@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 21
+  m_EditorClassIdentifier: 
+  num: 21
+  nombre: Spearow
+  tipo1: 11
+  tipo2: 18
+  idle: {fileID: 1901591877592882046, guid: 5263661e0b2a43f44a907d169061e155, type: 3}
+  idleShiny: {fileID: 1901591877592882046, guid: 7d8e65245ea2b36429841314e0bf8024, type: 3}
+  explorar: {fileID: 350392015962585373, guid: 5263661e0b2a43f44a907d169061e155, type: 3}
+  explorarShiny: {fileID: 350392015962585373, guid: 7d8e65245ea2b36429841314e0bf8024, type: 3}
+  andar:
+  - {fileID: -3002708872259871270, guid: 5263661e0b2a43f44a907d169061e155, type: 3}
+  - {fileID: -7778463425972329638, guid: 5263661e0b2a43f44a907d169061e155, type: 3}
+  - {fileID: -74675193871694992, guid: 5263661e0b2a43f44a907d169061e155, type: 3}
+  - {fileID: -3281687121954098197, guid: 5263661e0b2a43f44a907d169061e155, type: 3}
+  andarShiny:
+  - {fileID: -3002708872259871270, guid: 7d8e65245ea2b36429841314e0bf8024, type: 3}
+  - {fileID: -7778463425972329638, guid: 7d8e65245ea2b36429841314e0bf8024, type: 3}
+  - {fileID: -74675193871694992, guid: 7d8e65245ea2b36429841314e0bf8024, type: 3}
+  - {fileID: -3281687121954098197, guid: 7d8e65245ea2b36429841314e0bf8024, type: 3}
+  hp: 40
+  atk: 60
+  def: 31
+  lvlEvo: 20
+  evolucion:
+  - {fileID: 11400000, guid: 59577e2e49f67a242a41a8b683da29c8, type: 2}
+  minLvl: 1
+  ratioCaptura: 255
+  tipoExp: 2
+  exBase: 52
+  SpriteTipo1: {fileID: 4606157284126940538, guid: bcea1507ef7c2e5439b7d3f5e0aecd67, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

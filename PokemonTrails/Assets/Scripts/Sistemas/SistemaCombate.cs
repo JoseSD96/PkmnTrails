@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using TMPro; 
+using TMPro;
 
 public class SistemaCombate : MonoBehaviour
 {
@@ -46,7 +46,7 @@ public class SistemaCombate : MonoBehaviour
         this.sistemaCaptura = sistemaCaptura;
 
         isFinish = false;
-        isAttaking = false; 
+        isAttaking = false;
         Atk1.onClick.RemoveAllListeners();
         Atk2.onClick.RemoveAllListeners();
         capturarBtn.onClick.RemoveAllListeners();
@@ -240,11 +240,7 @@ public class SistemaCombate : MonoBehaviour
     /// </summary>
     private IEnumerator TerminarCombateCapturado()
     {
-        foreach (var pkmn in equipo.pokemones)
-        {
-            pkmn.Experiencia += pkmnEnemigo.Pkmn.ExperienciaParaNivel(pkmnEnemigo.Pkmn.Nivel) / 5;
-            pkmn.ComprobarSubirNivel();
-        }
+
         yield return new WaitForSeconds(0.8f);
         sistemaCaptura.resetPokeball();
         Atk1.interactable = false;
@@ -252,6 +248,18 @@ public class SistemaCombate : MonoBehaviour
         capturarBtn.interactable = false;
         huirBtn.interactable = false;
         partida.TerminarCombate(pkmnEnemigo.Pkmn);
+    }
+
+    private void GanarExp()
+    {
+        foreach (var pkmn in equipo.pokemones)
+        {
+            if (pkmn.Nivel < 100)
+            {
+                pkmn.Experiencia += pkmnEnemigo.Pkmn.Base.ExBase * pkmnEnemigo.Pkmn.Nivel / 5;
+                pkmn.ComprobarSubirNivel();
+            }
+        }
     }
 
     /// <summary>
@@ -280,11 +288,7 @@ public class SistemaCombate : MonoBehaviour
 
         if (isFainted)
         {
-            foreach (var pkmn in equipo.pokemones)
-            {
-                pkmn.Experiencia += pkmnEnemigo.Pkmn.ExperienciaParaNivel(pkmnEnemigo.Pkmn.Nivel) / 5;
-                pkmn.ComprobarSubirNivel();
-            }
+            GanarExp();
             pkmnEnemigo.AnimacionDerrota();
             pkmnEnemigoHUD.AnimacionDerrota();
             pkmnEnemigoHUD.enabled = false;

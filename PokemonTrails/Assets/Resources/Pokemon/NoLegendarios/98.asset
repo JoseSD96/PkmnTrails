@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 98
+  m_EditorClassIdentifier: 
+  num: 98
+  nombre: Krabby
+  tipo1: 2
+  tipo2: 0
+  idle: {fileID: 1967367632850218020, guid: ad3453436b20188479c88a355757f91d, type: 3}
+  idleShiny: {fileID: 1967367632850218020, guid: a04634ada57bdc7498413e4c2557cdce, type: 3}
+  explorar: {fileID: 1434915219155311826, guid: ad3453436b20188479c88a355757f91d, type: 3}
+  explorarShiny: {fileID: 1434915219155311826, guid: a04634ada57bdc7498413e4c2557cdce, type: 3}
+  andar:
+  - {fileID: 1876059431417127244, guid: ad3453436b20188479c88a355757f91d, type: 3}
+  - {fileID: -5049280385377582290, guid: ad3453436b20188479c88a355757f91d, type: 3}
+  - {fileID: -4017286678193421952, guid: ad3453436b20188479c88a355757f91d, type: 3}
+  - {fileID: -8598526292246712664, guid: ad3453436b20188479c88a355757f91d, type: 3}
+  andarShiny:
+  - {fileID: 1876059431417127244, guid: a04634ada57bdc7498413e4c2557cdce, type: 3}
+  - {fileID: -5049280385377582290, guid: a04634ada57bdc7498413e4c2557cdce, type: 3}
+  - {fileID: -4017286678193421952, guid: a04634ada57bdc7498413e4c2557cdce, type: 3}
+  - {fileID: -8598526292246712664, guid: a04634ada57bdc7498413e4c2557cdce, type: 3}
+  hp: 30
+  atk: 105
+  def: 90
+  lvlEvo: 28
+  evolucion:
+  - {fileID: 11400000, guid: 6c8ea2dc504c19f4dbd02fbe7bf1cbfe, type: 2}
+  minLvl: 1
+  ratioCaptura: 225
+  tipoExp: 2
+  exBase: 65
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: 0}

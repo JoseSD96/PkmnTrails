@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 22
+  m_EditorClassIdentifier: 
+  num: 22
+  nombre: Fearow
+  tipo1: 11
+  tipo2: 18
+  idle: {fileID: 7347064243726936421, guid: 5656e67d7f91fa545a3bea7fb91725c5, type: 3}
+  idleShiny: {fileID: 7347064243726936421, guid: 4854353f64f425942b819b32fea71440, type: 3}
+  explorar: {fileID: 4256261088393900427, guid: 5656e67d7f91fa545a3bea7fb91725c5, type: 3}
+  explorarShiny: {fileID: 4256261088393900427, guid: 4854353f64f425942b819b32fea71440, type: 3}
+  andar:
+  - {fileID: -4274776094582173021, guid: 5656e67d7f91fa545a3bea7fb91725c5, type: 3}
+  - {fileID: 8902053071940899720, guid: 5656e67d7f91fa545a3bea7fb91725c5, type: 3}
+  - {fileID: 2897095675326003020, guid: 5656e67d7f91fa545a3bea7fb91725c5, type: 3}
+  - {fileID: -2243093003122082079, guid: 5656e67d7f91fa545a3bea7fb91725c5, type: 3}
+  andarShiny:
+  - {fileID: -4274776094582173021, guid: 4854353f64f425942b819b32fea71440, type: 3}
+  - {fileID: 8902053071940899720, guid: 4854353f64f425942b819b32fea71440, type: 3}
+  - {fileID: 2897095675326003020, guid: 4854353f64f425942b819b32fea71440, type: 3}
+  - {fileID: -2243093003122082079, guid: 4854353f64f425942b819b32fea71440, type: 3}
+  hp: 65
+  atk: 90
+  def: 65
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 20
+  ratioCaptura: 90
+  tipoExp: 2
+  exBase: 155
+  SpriteTipo1: {fileID: 4606157284126940538, guid: bcea1507ef7c2e5439b7d3f5e0aecd67, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

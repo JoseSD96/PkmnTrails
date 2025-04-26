@@ -27,6 +27,7 @@ public class PokemonBase : ScriptableObject
     [SerializeField] int minLvl;
     [SerializeField] int ratioCaptura;
     [SerializeField] TipoExp tipoExp;
+    [SerializeField] int exBase;
 
     public Type Tipo1 => tipo1;
     public Type Tipo2 => tipo2;
@@ -44,6 +45,7 @@ public class PokemonBase : ScriptableObject
     public int LvlEvo => lvlEvo;
     public int MinLvl => minLvl;
     public int RatioCaptura => ratioCaptura;
+    public int ExBase => exBase;
 
 
     public Sprite SpriteTipo1;

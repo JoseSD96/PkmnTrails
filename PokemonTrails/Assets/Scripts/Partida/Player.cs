@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-sealed
 
 public class Player : MonoBehaviour, ISavable
 {
@@ -11,19 +10,28 @@ public class Player : MonoBehaviour, ISavable
     public Equipo equipo;
     public PC pc;
 
-    private List<int> pokedex = new List<int>();
-    public List<int> Pokedex => pokedex;
+    public Pokedex pokedex;
 
     /// <summary>
-    /// Actualiza la Pokédex del jugador cada frame, añadiendo los Pokémon del equipo que aún no estén registrados.
+    /// Actualiza la Pokédex del jugador cada frame, añadiendo los Pokémon del equipo y dle PC que aún no estén registrados.
     /// </summary>
     void Update()
     {
         foreach (Pokemon pokemon in equipo.pokemones)
         {
-            if (!pokedex.Contains(pokemon.Base.Num))
+            if (!pokedex.pokemones.Contains(pokemon.Base.Num))
             {
-                pokedex.Add(pokemon.Base.Num);
+                pokedex.pokemones.Add(pokemon.Base.Num);
+            }
+        }
+        for (int i = 0; i < pc.cajas.Count; i++)
+        {
+            foreach (Pokemon pokemon in pc.cajas[i])
+            {
+                if (!pokedex.pokemones.Contains(pokemon.Base.Num))
+                {
+                    pokedex.pokemones.Add(pokemon.Base.Num);
+                }
             }
         }
     }
@@ -34,7 +42,7 @@ public class Player : MonoBehaviour, ISavable
     /// <returns>Objeto serializable con los datos del jugador.</returns>
     public object CaptureState()
     {
-        var saveData = new PlayerSaveData(playerName, trainer.Nombre, equipo.GetSaveData(), pc.GetSaveData(), pokedex);
+        var saveData = new PlayerSaveData(playerName, trainer.Nombre, equipo.GetSaveData(), pc.GetSaveData(), pokedex.GetSaveData());
         return saveData;
     }
 
@@ -59,12 +67,12 @@ public class PlayerSaveData
     public string trainerName;
     public EquipoSaveData equipo;
     public PCSaveData pc;
-    public List<int> pokedex = new List<int>();
+    public PokedexSaveData pokedex;
 
     /// <summary>
     /// Constructor para almacenar todos los datos necesarios del jugador al guardar la partida.
     /// </summary>
-    public PlayerSaveData(string playerName, string trainerName, EquipoSaveData equipo, PCSaveData pc, List<int> pokedex)
+    public PlayerSaveData(string playerName, string trainerName, EquipoSaveData equipo, PCSaveData pc, PokedexSaveData pokedex)
     {
         this.playerName = playerName;
         this.trainerName = trainerName;

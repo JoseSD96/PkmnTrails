@@ -58,6 +58,10 @@ public class Equipo : MonoBehaviour
     /// <returns>Nivel medio del equipo.</returns>
     public int GetMediaNivel()
     {
+        if (pokemones.Count == 0)
+        {
+            return 1;
+        }
         int lvlTotal = 0;
         foreach (var pokemon in pokemones)
         {

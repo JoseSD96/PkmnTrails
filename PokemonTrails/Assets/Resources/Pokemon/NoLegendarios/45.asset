@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 45
+  m_EditorClassIdentifier: 
+  num: 45
+  nombre: Vileplume
+  tipo1: 12
+  tipo2: 17
+  idle: {fileID: -6322180286174405176, guid: f80e610f7bfcb9443aa7b202cfd1b9c4, type: 3}
+  idleShiny: {fileID: -6322180286174405176, guid: eeb9bb9b2896bd34986ce40042387639, type: 3}
+  explorar: {fileID: -8578524044296126551, guid: f80e610f7bfcb9443aa7b202cfd1b9c4, type: 3}
+  explorarShiny: {fileID: -8578524044296126551, guid: eeb9bb9b2896bd34986ce40042387639, type: 3}
+  andar:
+  - {fileID: 7501794658248298405, guid: f80e610f7bfcb9443aa7b202cfd1b9c4, type: 3}
+  - {fileID: -9064856876180834955, guid: f80e610f7bfcb9443aa7b202cfd1b9c4, type: 3}
+  - {fileID: -7935083231780612098, guid: f80e610f7bfcb9443aa7b202cfd1b9c4, type: 3}
+  - {fileID: 1817759454313537101, guid: f80e610f7bfcb9443aa7b202cfd1b9c4, type: 3}
+  andarShiny:
+  - {fileID: 7501794658248298405, guid: eeb9bb9b2896bd34986ce40042387639, type: 3}
+  - {fileID: -9064856876180834955, guid: eeb9bb9b2896bd34986ce40042387639, type: 3}
+  - {fileID: -7935083231780612098, guid: eeb9bb9b2896bd34986ce40042387639, type: 3}
+  - {fileID: 1817759454313537101, guid: eeb9bb9b2896bd34986ce40042387639, type: 3}
+  hp: 75
+  atk: 110
+  def: 90
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 35
+  ratioCaptura: 45
+  tipoExp: 0
+  exBase: 221
+  SpriteTipo1: {fileID: 7932798033344189819, guid: d6d579d0526b1aa46bd061d6721fea3f, type: 3}
+  SpriteTipo2: {fileID: -5005990984189769374, guid: e92ae9ff3784b7240b609f27cb3756ca, type: 3}

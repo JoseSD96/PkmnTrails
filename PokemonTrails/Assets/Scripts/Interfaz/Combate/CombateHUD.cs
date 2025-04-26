@@ -89,7 +89,7 @@ public class CombateHUD : MonoBehaviour
         
         if(pokemonCombate.isEnemy)
         {
-            if (jugador.Pokedex.Contains(pokemonCombate.Pkmn.Base.Num))
+            if (jugador.pokedex.pokemones.Contains(pokemonCombate.Pkmn.Base.Num))
             {
                 iconoCapturado.enabled = true;
             }
