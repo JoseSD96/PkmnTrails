@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 163
+  m_EditorClassIdentifier: 
+  num: 163
+  nombre: Hoothoot
+  tipo1: 11
+  tipo2: 18
+  idle: {fileID: 3814785641372664260, guid: 9fe0c3838c6ad2441b658fe63a2ec01f, type: 3}
+  idleShiny: {fileID: 3814785641372664260, guid: ba74bb4980c213446befeb6b93a1a902, type: 3}
+  explorar: {fileID: -1385156601558885899, guid: 9fe0c3838c6ad2441b658fe63a2ec01f, type: 3}
+  explorarShiny: {fileID: -1385156601558885899, guid: ba74bb4980c213446befeb6b93a1a902, type: 3}
+  andar:
+  - {fileID: -3063678422965288236, guid: 9fe0c3838c6ad2441b658fe63a2ec01f, type: 3}
+  - {fileID: 7225009184071994805, guid: 9fe0c3838c6ad2441b658fe63a2ec01f, type: 3}
+  - {fileID: -5222878593824148909, guid: 9fe0c3838c6ad2441b658fe63a2ec01f, type: 3}
+  - {fileID: -7479128324194207349, guid: 9fe0c3838c6ad2441b658fe63a2ec01f, type: 3}
+  andarShiny:
+  - {fileID: -3063678422965288236, guid: ba74bb4980c213446befeb6b93a1a902, type: 3}
+  - {fileID: 7225009184071994805, guid: ba74bb4980c213446befeb6b93a1a902, type: 3}
+  - {fileID: -5222878593824148909, guid: ba74bb4980c213446befeb6b93a1a902, type: 3}
+  - {fileID: -7479128324194207349, guid: ba74bb4980c213446befeb6b93a1a902, type: 3}
+  hp: 60
+  atk: 36
+  def: 56
+  lvlEvo: 20
+  evolucion:
+  - {fileID: 11400000, guid: af5fbcdcc469ed540ac5b1c4e38d02a8, type: 2}
+  minLvl: 1
+  ratioCaptura: 255
+  tipoExp: 2
+  exBase: 52
+  SpriteTipo1: {fileID: 4606157284126940538, guid: bcea1507ef7c2e5439b7d3f5e0aecd67, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

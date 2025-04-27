@@ -63,6 +63,11 @@ public class Pokemon
         HP = MaxHP;
     }
 
+    public Pokemon(PokemonBase pkmn)
+    {
+        _base = pkmn;
+    }
+
     /// <summary>
     /// Constructor para crear un Pokémon a partir de datos guardados.
     /// </summary>

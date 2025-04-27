@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 156
+  m_EditorClassIdentifier: 
+  num: 156
+  nombre: Quilava
+  tipo1: 7
+  tipo2: 0
+  idle: {fileID: 5615057731582841854, guid: a207c6720abaad94cac6039ca54605b2, type: 3}
+  idleShiny: {fileID: 5615057731582841854, guid: bd1390dbf5d0ac843991addc115f1201, type: 3}
+  explorar: {fileID: 3519103490417610159, guid: a207c6720abaad94cac6039ca54605b2, type: 3}
+  explorarShiny: {fileID: 3519103490417610159, guid: bd1390dbf5d0ac843991addc115f1201, type: 3}
+  andar:
+  - {fileID: 5185681995133323131, guid: a207c6720abaad94cac6039ca54605b2, type: 3}
+  - {fileID: -2231765424287544424, guid: a207c6720abaad94cac6039ca54605b2, type: 3}
+  - {fileID: 3814066392380455190, guid: a207c6720abaad94cac6039ca54605b2, type: 3}
+  - {fileID: -3866645366687555260, guid: a207c6720abaad94cac6039ca54605b2, type: 3}
+  andarShiny:
+  - {fileID: 5185681995133323131, guid: bd1390dbf5d0ac843991addc115f1201, type: 3}
+  - {fileID: -2231765424287544424, guid: bd1390dbf5d0ac843991addc115f1201, type: 3}
+  - {fileID: 3814066392380455190, guid: bd1390dbf5d0ac843991addc115f1201, type: 3}
+  - {fileID: -3866645366687555260, guid: bd1390dbf5d0ac843991addc115f1201, type: 3}
+  hp: 58
+  atk: 80
+  def: 65
+  lvlEvo: 36
+  evolucion:
+  - {fileID: 11400000, guid: 0e2eea970ab86ce4b97e8a720e10d824, type: 2}
+  minLvl: 14
+  ratioCaptura: 45
+  tipoExp: 0
+  exBase: 142
+  SpriteTipo1: {fileID: 8334651344603559088, guid: cab788a1cc7eb3844af4d00747186c07, type: 3}
+  SpriteTipo2: {fileID: 0}

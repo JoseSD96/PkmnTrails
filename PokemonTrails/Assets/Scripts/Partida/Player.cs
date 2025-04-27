@@ -19,18 +19,18 @@ public class Player : MonoBehaviour, ISavable
     {
         foreach (Pokemon pokemon in equipo.pokemones)
         {
-            if (!pokedex.pokemones.Contains(pokemon.Base.Num))
+            if (!pokedex.pokemones.Contains(pokemon.Base))
             {
-                pokedex.pokemones.Add(pokemon.Base.Num);
+                pokedex.pokemones.Add(pokemon.Base);
             }
         }
         for (int i = 0; i < pc.cajas.Count; i++)
         {
             foreach (Pokemon pokemon in pc.cajas[i])
             {
-                if (!pokedex.pokemones.Contains(pokemon.Base.Num))
+                if (!pokedex.pokemones.Contains(pokemon.Base))
                 {
-                    pokedex.pokemones.Add(pokemon.Base.Num);
+                    pokedex.pokemones.Add(pokemon.Base);
                 }
             }
         }

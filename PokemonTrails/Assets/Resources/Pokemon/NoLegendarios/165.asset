@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 165
+  m_EditorClassIdentifier: 
+  num: 165
+  nombre: Ledyba
+  tipo1: 3
+  tipo2: 18
+  idle: {fileID: 2052093870708260198, guid: 4c367c489d30ab34994a6c451b82715b, type: 3}
+  idleShiny: {fileID: 2052093870708260198, guid: 457eab6491121884aa547d88cf475d9b, type: 3}
+  explorar: {fileID: 6757945246349252, guid: 4c367c489d30ab34994a6c451b82715b, type: 3}
+  explorarShiny: {fileID: 6757945246349252, guid: 457eab6491121884aa547d88cf475d9b, type: 3}
+  andar:
+  - {fileID: -8611727959418864957, guid: 4c367c489d30ab34994a6c451b82715b, type: 3}
+  - {fileID: 6170098826716865358, guid: 4c367c489d30ab34994a6c451b82715b, type: 3}
+  - {fileID: -1648858753569988590, guid: 4c367c489d30ab34994a6c451b82715b, type: 3}
+  - {fileID: 7731105731599340100, guid: 4c367c489d30ab34994a6c451b82715b, type: 3}
+  andarShiny:
+  - {fileID: -8611727959418864957, guid: 457eab6491121884aa547d88cf475d9b, type: 3}
+  - {fileID: 6170098826716865358, guid: 457eab6491121884aa547d88cf475d9b, type: 3}
+  - {fileID: -1648858753569988590, guid: 457eab6491121884aa547d88cf475d9b, type: 3}
+  - {fileID: 7731105731599340100, guid: 457eab6491121884aa547d88cf475d9b, type: 3}
+  hp: 40
+  atk: 40
+  def: 80
+  lvlEvo: 18
+  evolucion:
+  - {fileID: 11400000, guid: 81b351b29006bbb41bced6a34abb0b9d, type: 2}
+  minLvl: 1
+  ratioCaptura: 255
+  tipoExp: 3
+  exBase: 53
+  SpriteTipo1: {fileID: -3367932149377307684, guid: 6fd472e56c695804abba7eca29ae7f25, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

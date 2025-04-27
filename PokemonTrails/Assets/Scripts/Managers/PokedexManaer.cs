@@ -45,7 +45,7 @@ public class PokedexManager : MonoBehaviour
 
                 imagenesPokemons.Add(imagen); // Guardamos la referencia
 
-                if (!pokedexCapturados.pokemones.Contains(todosLosPokemons[indexPokemon].Num))
+                if (!pokedexCapturados.pokemones.Contains(todosLosPokemons[indexPokemon]))
                 {
                     Color color = imagen.color;
                     color.a = 0.3f;
@@ -76,7 +76,7 @@ public class PokedexManager : MonoBehaviour
         for (int i = 0; i < imagenesPokemons.Count; i++)
         {
             Image imagen = imagenesPokemons[i];
-            if (!pokedexCapturados.pokemones.Contains(todosLosPokemons[i].Num))
+            if (!pokedexCapturados.pokemones.Contains(todosLosPokemons[i]))
             {
                 Color color = imagen.color;
                 color.a = 0.3f;

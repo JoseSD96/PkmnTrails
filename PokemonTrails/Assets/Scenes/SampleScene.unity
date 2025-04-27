@@ -8214,7 +8214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f134fb2c57565ea4aac8d8b4d72878b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pokemones: 
+  pokemones: []
 --- !u!114 &639854388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8229,7 +8229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   filaPrefab: {fileID: 5293930104911785435, guid: 08f64a6131805d14eb2f92d260de0e5e, type: 3}
   contenedorPokedex: {fileID: 241507904}
-  celdaPrefab: {fileID: 8486872604767528791, guid: b03a293e5f24ab84fb4771c9e2304bd7, type: 3}
+  celdaPrefab: {fileID: 728243786778082504, guid: 0b2b97822d9aadf44ab82a34a427f643, type: 3}
   pokedexCapturados: {fileID: 639854387}
 --- !u!1 &645123604
 GameObject:
@@ -15831,7 +15831,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: -17}
+  m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1219414403
 MonoBehaviour:
@@ -15876,7 +15876,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2130739961}
   m_HandleRect: {fileID: 2130739960}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -18576,8 +18576,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.15021, y: -68.3}
-  m_SizeDelta: {x: 760.78, y: 207.87}
+  m_AnchoredPosition: {x: 0.02, y: 0.29}
+  m_SizeDelta: {x: 681.16, y: 360.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1472058617
 MonoBehaviour:
@@ -19644,8 +19644,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16, y: -15.650024}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchoredPosition: {x: -30.400024, y: -24.5}
+  m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1614167693
 MonoBehaviour:

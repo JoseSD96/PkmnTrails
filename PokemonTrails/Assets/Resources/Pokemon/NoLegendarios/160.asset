@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 160
+  m_EditorClassIdentifier: 
+  num: 160
+  nombre: Feraligatr
+  tipo1: 2
+  tipo2: 0
+  idle: {fileID: -1454547012663849735, guid: f0422a78cc582ee4aa60dc68a62381dc, type: 3}
+  idleShiny: {fileID: -1454547012663849735, guid: a132958c4f3c5fa49b9c242815663e0a, type: 3}
+  explorar: {fileID: 4800740068376416030, guid: f0422a78cc582ee4aa60dc68a62381dc, type: 3}
+  explorarShiny: {fileID: 4800740068376416030, guid: a132958c4f3c5fa49b9c242815663e0a, type: 3}
+  andar:
+  - {fileID: 3458712884590977597, guid: f0422a78cc582ee4aa60dc68a62381dc, type: 3}
+  - {fileID: 2887942603034050863, guid: f0422a78cc582ee4aa60dc68a62381dc, type: 3}
+  - {fileID: 1230582460768798109, guid: f0422a78cc582ee4aa60dc68a62381dc, type: 3}
+  - {fileID: 4696277714412777569, guid: f0422a78cc582ee4aa60dc68a62381dc, type: 3}
+  andarShiny:
+  - {fileID: 3458712884590977597, guid: a132958c4f3c5fa49b9c242815663e0a, type: 3}
+  - {fileID: 2887942603034050863, guid: a132958c4f3c5fa49b9c242815663e0a, type: 3}
+  - {fileID: 1230582460768798109, guid: a132958c4f3c5fa49b9c242815663e0a, type: 3}
+  - {fileID: 4696277714412777569, guid: a132958c4f3c5fa49b9c242815663e0a, type: 3}
+  hp: 85
+  atk: 105
+  def: 100
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 30
+  ratioCaptura: 45
+  tipoExp: 0
+  exBase: 239
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: 0}

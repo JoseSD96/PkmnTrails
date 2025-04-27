@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 166
+  m_EditorClassIdentifier: 
+  num: 166
+  nombre: Ledian
+  tipo1: 3
+  tipo2: 18
+  idle: {fileID: 8917285395890221861, guid: d90335ed795cc8d49adae575771c885c, type: 3}
+  idleShiny: {fileID: 8917285395890221861, guid: c8ecf51f976f336418513ae8f7123482, type: 3}
+  explorar: {fileID: -2890250204262149358, guid: d90335ed795cc8d49adae575771c885c, type: 3}
+  explorarShiny: {fileID: -2890250204262149358, guid: c8ecf51f976f336418513ae8f7123482, type: 3}
+  andar:
+  - {fileID: -593026953864542936, guid: d90335ed795cc8d49adae575771c885c, type: 3}
+  - {fileID: 8960611405210358524, guid: d90335ed795cc8d49adae575771c885c, type: 3}
+  - {fileID: 1226401740789802411, guid: d90335ed795cc8d49adae575771c885c, type: 3}
+  - {fileID: 8072407492606500047, guid: d90335ed795cc8d49adae575771c885c, type: 3}
+  andarShiny:
+  - {fileID: -593026953864542936, guid: c8ecf51f976f336418513ae8f7123482, type: 3}
+  - {fileID: 8960611405210358524, guid: c8ecf51f976f336418513ae8f7123482, type: 3}
+  - {fileID: 1226401740789802411, guid: c8ecf51f976f336418513ae8f7123482, type: 3}
+  - {fileID: 8072407492606500047, guid: c8ecf51f976f336418513ae8f7123482, type: 3}
+  hp: 55
+  atk: 55
+  def: 110
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 18
+  ratioCaptura: 90
+  tipoExp: 3
+  exBase: 137
+  SpriteTipo1: {fileID: -3367932149377307684, guid: 6fd472e56c695804abba7eca29ae7f25, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

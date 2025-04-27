@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 161
+  m_EditorClassIdentifier: 
+  num: 161
+  nombre: Sentret
+  tipo1: 11
+  tipo2: 0
+  idle: {fileID: 4452907775045829111, guid: 07aa40c3404c6c64cadc75ee793d560f, type: 3}
+  idleShiny: {fileID: 4452907775045829111, guid: 70dbbcda09b6b084e8dd5f1371ad661c, type: 3}
+  explorar: {fileID: 3352912910777106701, guid: 07aa40c3404c6c64cadc75ee793d560f, type: 3}
+  explorarShiny: {fileID: 3352912910777106701, guid: 70dbbcda09b6b084e8dd5f1371ad661c, type: 3}
+  andar:
+  - {fileID: 5457224928878295341, guid: 07aa40c3404c6c64cadc75ee793d560f, type: 3}
+  - {fileID: 3781111991651784747, guid: 07aa40c3404c6c64cadc75ee793d560f, type: 3}
+  - {fileID: 2816367491096657548, guid: 07aa40c3404c6c64cadc75ee793d560f, type: 3}
+  - {fileID: -7550267703288227373, guid: 07aa40c3404c6c64cadc75ee793d560f, type: 3}
+  andarShiny:
+  - {fileID: 5457224928878295341, guid: 70dbbcda09b6b084e8dd5f1371ad661c, type: 3}
+  - {fileID: 3781111991651784747, guid: 70dbbcda09b6b084e8dd5f1371ad661c, type: 3}
+  - {fileID: 2816367491096657548, guid: 70dbbcda09b6b084e8dd5f1371ad661c, type: 3}
+  - {fileID: -7550267703288227373, guid: 70dbbcda09b6b084e8dd5f1371ad661c, type: 3}
+  hp: 35
+  atk: 46
+  def: 45
+  lvlEvo: 15
+  evolucion:
+  - {fileID: 11400000, guid: c5875af8ad0cca847afd7b7be32761f0, type: 2}
+  minLvl: 1
+  ratioCaptura: 255
+  tipoExp: 2
+  exBase: 43
+  SpriteTipo1: {fileID: 4606157284126940538, guid: bcea1507ef7c2e5439b7d3f5e0aecd67, type: 3}
+  SpriteTipo2: {fileID: 0}

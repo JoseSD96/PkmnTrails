@@ -86,10 +86,10 @@ public class CombateHUD : MonoBehaviour
             atk1.image.sprite = Resources.Load<Sprite>("Combate/tipos/" + tipo1Txt);
             atk2.image.sprite = Resources.Load<Sprite>("Combate/tipos/" + tipo2Txt);
         }
-        
-        if(pokemonCombate.isEnemy)
+
+        if (pokemonCombate.isEnemy)
         {
-            if (jugador.pokedex.pokemones.Contains(pokemonCombate.Pkmn.Base.Num))
+            if (jugador.pokedex.pokemones.Contains(pokemonCombate.Pkmn.Base))
             {
                 iconoCapturado.enabled = true;
             }

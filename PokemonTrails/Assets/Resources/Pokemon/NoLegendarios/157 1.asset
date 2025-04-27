@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 157 1
+  m_EditorClassIdentifier: 
+  num: 157
+  nombre: Typhlosion (Hisui)
+  tipo1: 7
+  tipo2: 6
+  idle: {fileID: -6488265975129889968, guid: c85f82cd723acf44690889c255b0e28d, type: 3}
+  idleShiny: {fileID: 157538954, guid: 34878d9c87498a3488b12465bd483fa2, type: 3}
+  explorar: {fileID: -8740868904295912356, guid: c85f82cd723acf44690889c255b0e28d, type: 3}
+  explorarShiny: {fileID: -611923896, guid: 34878d9c87498a3488b12465bd483fa2, type: 3}
+  andar:
+  - {fileID: 1275419161417682634, guid: c85f82cd723acf44690889c255b0e28d, type: 3}
+  - {fileID: -2826465543441604111, guid: c85f82cd723acf44690889c255b0e28d, type: 3}
+  - {fileID: -2347438830665342149, guid: c85f82cd723acf44690889c255b0e28d, type: 3}
+  - {fileID: -5010958898138445526, guid: 50aa9c99cc11f894bb86972a565cf26f, type: 3}
+  andarShiny:
+  - {fileID: 271695489, guid: 34878d9c87498a3488b12465bd483fa2, type: 3}
+  - {fileID: 2119003843, guid: 34878d9c87498a3488b12465bd483fa2, type: 3}
+  - {fileID: -620230465, guid: 34878d9c87498a3488b12465bd483fa2, type: 3}
+  - {fileID: -1639414795, guid: 34878d9c87498a3488b12465bd483fa2, type: 3}
+  hp: 73
+  atk: 119
+  def: 85
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 36
+  ratioCaptura: 55
+  tipoExp: 0
+  exBase: 240
+  SpriteTipo1: {fileID: 8334651344603559088, guid: cab788a1cc7eb3844af4d00747186c07, type: 3}
+  SpriteTipo2: {fileID: 4448715427215634006, guid: 4a8254e73c1ad2a41ab3a14c94623e9b, type: 3}

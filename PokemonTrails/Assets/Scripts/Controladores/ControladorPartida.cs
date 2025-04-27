@@ -183,9 +183,9 @@ public class ControladorPartida : MonoBehaviour
     /// <param name="pkmn">Pokémon capturado.</param>
     public void TerminarCombate(Pokemon pkmn)
     {
-        if (jugador.pokedex.pokemones.Contains(pkmn.Base.Num) == false)
+        if (jugador.pokedex.pokemones.Contains(pkmn.Base) == false)
         {
-            jugador.pokedex.pokemones.Add(pkmn.Base.Num);
+            jugador.pokedex.pokemones.Add(pkmn.Base);
         }
         jugador.equipo.AddPokemon(pkmn);
         ActivarExploracion();
@@ -416,7 +416,7 @@ public class ControladorPartida : MonoBehaviour
         int potencialInicial = Random.Range(20, 32);
         bool isShiny = Random.Range(0, 100) < 10;
         jugador.equipo.AddPokemon(new Pokemon(pokemonInicial, potencialInicial, isShiny, 5));
-        jugador.pokedex.pokemones.Add(pokemonInicial.Num);
+        jugador.pokedex.pokemones.Add(pokemonInicial);
 
         var cambiadorSprites = FindFirstObjectByType<CambiadorSprites>();
         if (cambiadorSprites != null)
