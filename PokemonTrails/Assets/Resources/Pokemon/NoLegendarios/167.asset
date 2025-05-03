@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 167
+  m_EditorClassIdentifier: 
+  num: 167
+  nombre: Spinarak
+  tipo1: 3
+  tipo2: 17
+  idle: {fileID: 9052711511322609103, guid: 26a8b7791af9b5242af8ceb5c27c2499, type: 3}
+  idleShiny: {fileID: 9052711511322609103, guid: 1de07b568e05c454abe4e1fa5c99fbbd, type: 3}
+  explorar: {fileID: 4247596946157703230, guid: 26a8b7791af9b5242af8ceb5c27c2499, type: 3}
+  explorarShiny: {fileID: 4247596946157703230, guid: 1de07b568e05c454abe4e1fa5c99fbbd, type: 3}
+  andar:
+  - {fileID: -4491953812155527579, guid: 26a8b7791af9b5242af8ceb5c27c2499, type: 3}
+  - {fileID: -9173937390053598489, guid: 26a8b7791af9b5242af8ceb5c27c2499, type: 3}
+  - {fileID: 7759072893198842127, guid: 26a8b7791af9b5242af8ceb5c27c2499, type: 3}
+  - {fileID: 7518248228118605315, guid: 26a8b7791af9b5242af8ceb5c27c2499, type: 3}
+  andarShiny:
+  - {fileID: -4491953812155527579, guid: 1de07b568e05c454abe4e1fa5c99fbbd, type: 3}
+  - {fileID: -9173937390053598489, guid: 1de07b568e05c454abe4e1fa5c99fbbd, type: 3}
+  - {fileID: 7759072893198842127, guid: 1de07b568e05c454abe4e1fa5c99fbbd, type: 3}
+  - {fileID: 7518248228118605315, guid: 1de07b568e05c454abe4e1fa5c99fbbd, type: 3}
+  hp: 40
+  atk: 60
+  def: 40
+  lvlEvo: 22
+  evolucion:
+  - {fileID: 11400000, guid: f27404e20c181bb4cb1abb69fdd954c4, type: 2}
+  minLvl: 1
+  ratioCaptura: 255
+  tipoExp: 3
+  exBase: 50
+  SpriteTipo1: {fileID: -3367932149377307684, guid: 6fd472e56c695804abba7eca29ae7f25, type: 3}
+  SpriteTipo2: {fileID: -5005990984189769374, guid: e92ae9ff3784b7240b609f27cb3756ca, type: 3}

@@ -18,7 +18,8 @@ public class CombateHUD : MonoBehaviour
     [SerializeField] Button atk2;
     [SerializeField] Button huirBtn;
     [SerializeField] Image extra;
-
+    [SerializeField] TextMeshProUGUI txtEfectividadAtk1;
+    [SerializeField] TextMeshProUGUI txtEfectividadAtk2;
     PkmnCombate pokemonCombate;
     [SerializeField] Player jugador;
     Vector3 posInicial;
@@ -29,21 +30,29 @@ public class CombateHUD : MonoBehaviour
     private void Awake()
     {
         posInicial = transform.localPosition;
-        Color colorExtra = extra.color;
+        var colorExtra = extra.color;
         colorExtra.a = 0f;
         extra.color = colorExtra;
 
-        Color colorBtn1 = atk1.image.color;
+        var colorBtn1 = atk1.image.color;
         colorBtn1.a = 0f;
         atk1.image.color = colorBtn1;
 
-        Color colorBtn2 = atk2.image.color;
+        var colorBtn2 = atk2.image.color;
         colorBtn2.a = 0f;
         atk2.image.color = colorBtn2;
 
-        Color colorBtnHuir = huirBtn.image.color;
+        var colorBtnHuir = huirBtn.image.color;
         colorBtnHuir.a = 0f;
         huirBtn.image.color = colorBtnHuir;
+
+        var color1 = txtEfectividadAtk1.color;
+        color1.a = 0f;
+        txtEfectividadAtk1.color = color1;
+
+        var color2 = txtEfectividadAtk2.color;
+        color2.a = 0f;
+        txtEfectividadAtk2.color = color2;
     }
 
     /// <summary>
@@ -132,6 +141,8 @@ public class CombateHUD : MonoBehaviour
         secuencia.Append(atk1.image.DOFade(1f, 2f));
         secuencia.Join(atk2.image.DOFade(1f, 2f));
         secuencia.Join(extra.DOFade(1f, 2f));
+        secuencia.Join(txtEfectividadAtk1.DOFade(1f, 2f));
+        secuencia.Join(txtEfectividadAtk2.DOFade(1f, 2f));
         secuencia.Join(huirBtn.image.DOFade(1f, 2f));
     }
 
@@ -181,5 +192,13 @@ public class CombateHUD : MonoBehaviour
         var colorBtnHuir = huirBtn.image.color;
         colorBtnHuir.a = 0f;
         huirBtn.image.color = colorBtnHuir;
+
+        var color1 = txtEfectividadAtk1.color;
+        color1.a = 0f;
+        txtEfectividadAtk1.color = color1;
+
+        var color2 = txtEfectividadAtk2.color;
+        color2.a = 0f;
+        txtEfectividadAtk2.color = color2;
     }
 }

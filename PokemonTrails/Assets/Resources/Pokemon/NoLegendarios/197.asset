@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 197
+  m_EditorClassIdentifier: 
+  num: 197
+  nombre: Umbreon
+  tipo1: 15
+  tipo2: 0
+  idle: {fileID: -9089335114788729778, guid: af16ddfe61cd1d449a1190b470a3c6ad, type: 3}
+  idleShiny: {fileID: -9089335114788729778, guid: 2fc2e59a0c470174daca7ec655344b9d, type: 3}
+  explorar: {fileID: -1325330955004279030, guid: af16ddfe61cd1d449a1190b470a3c6ad, type: 3}
+  explorarShiny: {fileID: -1325330955004279030, guid: 2fc2e59a0c470174daca7ec655344b9d, type: 3}
+  andar:
+  - {fileID: 5103133372915937766, guid: af16ddfe61cd1d449a1190b470a3c6ad, type: 3}
+  - {fileID: 6670223783798475717, guid: af16ddfe61cd1d449a1190b470a3c6ad, type: 3}
+  - {fileID: -997143234490618149, guid: af16ddfe61cd1d449a1190b470a3c6ad, type: 3}
+  - {fileID: -3167029190278449149, guid: af16ddfe61cd1d449a1190b470a3c6ad, type: 3}
+  andarShiny:
+  - {fileID: 5103133372915937766, guid: 2fc2e59a0c470174daca7ec655344b9d, type: 3}
+  - {fileID: 6670223783798475717, guid: 2fc2e59a0c470174daca7ec655344b9d, type: 3}
+  - {fileID: -997143234490618149, guid: 2fc2e59a0c470174daca7ec655344b9d, type: 3}
+  - {fileID: -3167029190278449149, guid: 2fc2e59a0c470174daca7ec655344b9d, type: 3}
+  hp: 95
+  atk: 65
+  def: 130
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 30
+  ratioCaptura: 45
+  tipoExp: 2
+  exBase: 184
+  SpriteTipo1: {fileID: -6729511157232288408, guid: 5c82e9f86c291b2429e98339bd58b3ce, type: 3}
+  SpriteTipo2: {fileID: 0}

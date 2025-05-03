@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 237
+  m_EditorClassIdentifier: 
+  num: 237
+  nombre: Hitmontop
+  tipo1: 10
+  tipo2: 0
+  idle: {fileID: 7288948894572023247, guid: 163d980cb5b89b648ac5e3608b41dd79, type: 3}
+  idleShiny: {fileID: 7288948894572023247, guid: 0c9db14794a633f4b95e777c08181c51, type: 3}
+  explorar: {fileID: 5982992076100180786, guid: 163d980cb5b89b648ac5e3608b41dd79, type: 3}
+  explorarShiny: {fileID: 5982992076100180786, guid: 0c9db14794a633f4b95e777c08181c51, type: 3}
+  andar:
+  - {fileID: -211821706190725493, guid: 163d980cb5b89b648ac5e3608b41dd79, type: 3}
+  - {fileID: -2261415738236843937, guid: 163d980cb5b89b648ac5e3608b41dd79, type: 3}
+  - {fileID: 4004080174508518834, guid: 163d980cb5b89b648ac5e3608b41dd79, type: 3}
+  - {fileID: -159645495930949897, guid: 163d980cb5b89b648ac5e3608b41dd79, type: 3}
+  andarShiny:
+  - {fileID: -211821706190725493, guid: 0c9db14794a633f4b95e777c08181c51, type: 3}
+  - {fileID: -2261415738236843937, guid: 0c9db14794a633f4b95e777c08181c51, type: 3}
+  - {fileID: 4004080174508518834, guid: 0c9db14794a633f4b95e777c08181c51, type: 3}
+  - {fileID: -159645495930949897, guid: 0c9db14794a633f4b95e777c08181c51, type: 3}
+  hp: 50
+  atk: 95
+  def: 110
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 20
+  ratioCaptura: 45
+  tipoExp: 2
+  exBase: 159
+  SpriteTipo1: {fileID: -2810909829056618550, guid: f1eb9c19331ad2448b325bdcaccbecb0, type: 3}
+  SpriteTipo2: {fileID: 0}

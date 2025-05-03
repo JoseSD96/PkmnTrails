@@ -33,10 +33,11 @@ MonoBehaviour:
   hp: 35
   atk: 55
   def: 50
-  lvlEvo: 25
+  lvlEvo: 30
   evolucion:
   - {fileID: 11400000, guid: c425b690e73786f479d5ecbc07c7fb5c, type: 2}
-  minLvl: 1
+  - {fileID: 11400000, guid: 135da10ec70af084dbb76524cc3cedd7, type: 2}
+  minLvl: 12
   ratioCaptura: 190
   tipoExp: 2
   exBase: 112

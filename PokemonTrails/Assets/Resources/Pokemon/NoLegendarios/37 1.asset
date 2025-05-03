@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 37 1
+  m_EditorClassIdentifier: 
+  num: 37
+  nombre: Vulpix (Alola)
+  tipo1: 9
+  tipo2: 0
+  idle: {fileID: -2684615213811088134, guid: a60e0ee07f4e4754da1579086be8da68, type: 3}
+  idleShiny: {fileID: -2684615213811088134, guid: 8ebe79bd3118a5c4ab54259bf8f4f46f, type: 3}
+  explorar: {fileID: 1326613467629699223, guid: a60e0ee07f4e4754da1579086be8da68, type: 3}
+  explorarShiny: {fileID: 1326613467629699223, guid: 8ebe79bd3118a5c4ab54259bf8f4f46f, type: 3}
+  andar:
+  - {fileID: 3937000877270384814, guid: a60e0ee07f4e4754da1579086be8da68, type: 3}
+  - {fileID: -5125605991389576580, guid: a60e0ee07f4e4754da1579086be8da68, type: 3}
+  - {fileID: 2529375302158150089, guid: a60e0ee07f4e4754da1579086be8da68, type: 3}
+  - {fileID: 4146233011062147607, guid: a60e0ee07f4e4754da1579086be8da68, type: 3}
+  andarShiny:
+  - {fileID: 3937000877270384814, guid: 8ebe79bd3118a5c4ab54259bf8f4f46f, type: 3}
+  - {fileID: -5125605991389576580, guid: 8ebe79bd3118a5c4ab54259bf8f4f46f, type: 3}
+  - {fileID: 2529375302158150089, guid: 8ebe79bd3118a5c4ab54259bf8f4f46f, type: 3}
+  - {fileID: 4146233011062147607, guid: 8ebe79bd3118a5c4ab54259bf8f4f46f, type: 3}
+  hp: 38
+  atk: 50
+  def: 65
+  lvlEvo: 25
+  evolucion:
+  - {fileID: 11400000, guid: 8455495561da52d42b7800c767e9636e, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 2
+  exBase: 60
+  SpriteTipo1: {fileID: -856085545168688419, guid: d8e3894f455edc740b8c7ffd27ea0c67, type: 3}
+  SpriteTipo2: {fileID: 0}

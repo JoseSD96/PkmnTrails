@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public class SistemaCombate : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class SistemaCombate : MonoBehaviour
     [SerializeField] GameObject velocidadJugador;
     [SerializeField] GameObject velocidadEnemigo;
     [SerializeField] SpriteRenderer tu;
+    [SerializeField] TextMeshProUGUI textoEfectividadAtk1;
+    [SerializeField] TextMeshProUGUI textoEfectividadAtk2;
+
     private ControladorPartida partida;
     private SistemaCaptura sistemaCaptura;
 
@@ -69,12 +73,23 @@ public class SistemaCombate : MonoBehaviour
     /// <param name="tipoCombate">Tipo de fondo de combate según la zona.</param>
     public void SetupBattle(ZonaBase.tipoCombate tipoCombate)
     {
+
         pkmnJugador.Setup(equipo.GetPokemonVivo());
         pkmnEnemigo.Setup(salvaje);
         pkmnJugadorHUD.SetData(pkmnJugador);
         pkmnEnemigoHUD.SetData(pkmnEnemigo);
 
+        if (pkmnJugador.Pkmn.Base.Tipo2 != Type.None)
+        {
+            textoEfectividadAtk2.text = "x" + CalcularEfectividad(pkmnJugador.Pkmn.Base.Tipo2, pkmnEnemigo.Pkmn.Base.Tipo1, pkmnEnemigo.Pkmn.Base.Tipo2);
+        }
+        else
+        {
+            textoEfectividadAtk2.text = "x" + CalcularEfectividad(Type.Normal, pkmnEnemigo.Pkmn.Base.Tipo1, pkmnEnemigo.Pkmn.Base.Tipo2);
+        }
+        textoEfectividadAtk1.text = "x" + CalcularEfectividad(pkmnJugador.Pkmn.Base.Tipo1, pkmnEnemigo.Pkmn.Base.Tipo1, pkmnEnemigo.Pkmn.Base.Tipo2);
         fondoCombate.GetComponent<Image>().sprite = Resources.Load<Sprite>("Combate/FondosCombate/" + tipoCombate.ToString());
+
     }
 
     /// <summary>
@@ -252,12 +267,18 @@ public class SistemaCombate : MonoBehaviour
 
     private void GanarExp()
     {
-        foreach (var pkmn in equipo.pokemones)
+        equipo.pokemones[0].Experiencia += pkmnEnemigo.Pkmn.Base.ExBase * pkmnEnemigo.Pkmn.Nivel / 5;
+        for (int i = 1; i < equipo.pokemones.Count; i++)
         {
+            Pokemon pkmn = equipo.pokemones[i];
             if (pkmn.Nivel < 100)
             {
-                pkmn.Experiencia += pkmnEnemigo.Pkmn.Base.ExBase * pkmnEnemigo.Pkmn.Nivel / 5;
+                pkmn.Experiencia += (pkmnEnemigo.Pkmn.Base.ExBase * pkmnEnemigo.Pkmn.Nivel / 5) / 2;
                 pkmn.ComprobarSubirNivel();
+            }
+            else
+            {
+                pkmn.ComprobarEvolucion();
             }
         }
     }

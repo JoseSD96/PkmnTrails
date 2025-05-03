@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 179
+  m_EditorClassIdentifier: 
+  num: 179
+  nombre: Mareep
+  tipo1: 5
+  tipo2: 0
+  idle: {fileID: 474557630288481065, guid: 776ff6d1b6540b742ae7364509cf7d2f, type: 3}
+  idleShiny: {fileID: 474557630288481065, guid: 5d1e071437d036f4fba6c6bb3cfadd66, type: 3}
+  explorar: {fileID: -3204892623217030142, guid: 776ff6d1b6540b742ae7364509cf7d2f, type: 3}
+  explorarShiny: {fileID: -3204892623217030142, guid: 5d1e071437d036f4fba6c6bb3cfadd66, type: 3}
+  andar:
+  - {fileID: -3891755472367861328, guid: 776ff6d1b6540b742ae7364509cf7d2f, type: 3}
+  - {fileID: -8895236906141785188, guid: 776ff6d1b6540b742ae7364509cf7d2f, type: 3}
+  - {fileID: -3973649608798366925, guid: 776ff6d1b6540b742ae7364509cf7d2f, type: 3}
+  - {fileID: -420595193741969699, guid: 776ff6d1b6540b742ae7364509cf7d2f, type: 3}
+  andarShiny:
+  - {fileID: -3891755472367861328, guid: 5d1e071437d036f4fba6c6bb3cfadd66, type: 3}
+  - {fileID: -8895236906141785188, guid: 5d1e071437d036f4fba6c6bb3cfadd66, type: 3}
+  - {fileID: -3973649608798366925, guid: 5d1e071437d036f4fba6c6bb3cfadd66, type: 3}
+  - {fileID: -420595193741969699, guid: 5d1e071437d036f4fba6c6bb3cfadd66, type: 3}
+  hp: 55
+  atk: 65
+  def: 45
+  lvlEvo: 15
+  evolucion:
+  - {fileID: 11400000, guid: 433f3781b514a7249a44b3599f8911be, type: 2}
+  minLvl: 1
+  ratioCaptura: 235
+  tipoExp: 0
+  exBase: 56
+  SpriteTipo1: {fileID: 5820286478268577726, guid: f1d7827866e38664fb759c583947fb9a, type: 3}
+  SpriteTipo2: {fileID: 0}

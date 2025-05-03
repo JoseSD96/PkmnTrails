@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 238
+  m_EditorClassIdentifier: 
+  num: 238
+  nombre: Smoochum
+  tipo1: 9
+  tipo2: 13
+  idle: {fileID: -1900627163840715316, guid: d81cb38739dd10a49ba5be59a613539d, type: 3}
+  idleShiny: {fileID: -1900627163840715316, guid: a0a2b3dab5338d042a8407d4d2224f65, type: 3}
+  explorar: {fileID: 6475179355372598185, guid: d81cb38739dd10a49ba5be59a613539d, type: 3}
+  explorarShiny: {fileID: 6475179355372598185, guid: a0a2b3dab5338d042a8407d4d2224f65, type: 3}
+  andar:
+  - {fileID: 6909848626492688930, guid: d81cb38739dd10a49ba5be59a613539d, type: 3}
+  - {fileID: -716461226011955313, guid: d81cb38739dd10a49ba5be59a613539d, type: 3}
+  - {fileID: -2046467408810062234, guid: d81cb38739dd10a49ba5be59a613539d, type: 3}
+  - {fileID: 5863660236232951510, guid: d81cb38739dd10a49ba5be59a613539d, type: 3}
+  andarShiny:
+  - {fileID: 6909848626492688930, guid: a0a2b3dab5338d042a8407d4d2224f65, type: 3}
+  - {fileID: -716461226011955313, guid: a0a2b3dab5338d042a8407d4d2224f65, type: 3}
+  - {fileID: -2046467408810062234, guid: a0a2b3dab5338d042a8407d4d2224f65, type: 3}
+  - {fileID: 5863660236232951510, guid: a0a2b3dab5338d042a8407d4d2224f65, type: 3}
+  hp: 45
+  atk: 85
+  def: 65
+  lvlEvo: 30
+  evolucion:
+  - {fileID: 11400000, guid: 6e575ca3c851fa645a9f28651b20ea74, type: 2}
+  minLvl: 1
+  ratioCaptura: 45
+  tipoExp: 2
+  exBase: 61
+  SpriteTipo1: {fileID: -856085545168688419, guid: d8e3894f455edc740b8c7ffd27ea0c67, type: 3}
+  SpriteTipo2: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}

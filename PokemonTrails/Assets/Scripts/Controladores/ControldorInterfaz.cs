@@ -26,6 +26,8 @@ public class ControldorInterfaz : MonoBehaviour
     public Button PCButton;
     public Button PokedexButton;
 
+    public SpriteRenderer shinyCharm;
+
     public Button SalirPokedexButton;
 
     public Button btnDatos;
@@ -134,7 +136,7 @@ public class ControldorInterfaz : MonoBehaviour
             explorarButton.interactable = true;
         }
 
-        if (SavingSystem.i.CheckIfSaveExists("Save"))
+        if (SavingSystem.i.CheckIfSaveExists("Save0.6"))
         {
             btnContinuar.interactable = true;
         }

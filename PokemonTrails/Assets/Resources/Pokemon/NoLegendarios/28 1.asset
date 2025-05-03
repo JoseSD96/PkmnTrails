@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 28 1
+  m_EditorClassIdentifier: 
+  num: 28
+  nombre: Sandslash  (Alola)
+  tipo1: 9
+  tipo2: 1
+  idle: {fileID: 4813144790974399639, guid: ef518ba9a1b6dc24196f26c1a5f6b59e, type: 3}
+  idleShiny: {fileID: 4813144790974399639, guid: e48b348948f531b43b82b6e5f88a93e1, type: 3}
+  explorar: {fileID: -7690021081185987467, guid: ef518ba9a1b6dc24196f26c1a5f6b59e, type: 3}
+  explorarShiny: {fileID: -7690021081185987467, guid: e48b348948f531b43b82b6e5f88a93e1, type: 3}
+  andar:
+  - {fileID: -4523643407364005001, guid: ef518ba9a1b6dc24196f26c1a5f6b59e, type: 3}
+  - {fileID: -4845630409217490401, guid: ef518ba9a1b6dc24196f26c1a5f6b59e, type: 3}
+  - {fileID: 1451022866985842648, guid: ef518ba9a1b6dc24196f26c1a5f6b59e, type: 3}
+  - {fileID: 4377931260624960135, guid: ef518ba9a1b6dc24196f26c1a5f6b59e, type: 3}
+  andarShiny:
+  - {fileID: -4523643407364005001, guid: e48b348948f531b43b82b6e5f88a93e1, type: 3}
+  - {fileID: -4845630409217490401, guid: e48b348948f531b43b82b6e5f88a93e1, type: 3}
+  - {fileID: 1451022866985842648, guid: e48b348948f531b43b82b6e5f88a93e1, type: 3}
+  - {fileID: 4377931260624960135, guid: e48b348948f531b43b82b6e5f88a93e1, type: 3}
+  hp: 75
+  atk: 100
+  def: 120
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 22
+  ratioCaptura: 90
+  tipoExp: 0
+  exBase: 158
+  SpriteTipo1: {fileID: -856085545168688419, guid: d8e3894f455edc740b8c7ffd27ea0c67, type: 3}
+  SpriteTipo2: {fileID: 4226397978021778064, guid: dee16be6095eb474bbabf67738024674, type: 3}

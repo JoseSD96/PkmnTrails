@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 173
+  m_EditorClassIdentifier: 
+  num: 173
+  nombre: Cleffa
+  tipo1: 8
+  tipo2: 0
+  idle: {fileID: 6521240946034043429, guid: 5bc2dd8ea91f50c42b876b9675eba76e, type: 3}
+  idleShiny: {fileID: 6521240946034043429, guid: d135ff8cfc8ba1242be2cf1ed39372c6, type: 3}
+  explorar: {fileID: 3984917881081397275, guid: 5bc2dd8ea91f50c42b876b9675eba76e, type: 3}
+  explorarShiny: {fileID: 3984917881081397275, guid: d135ff8cfc8ba1242be2cf1ed39372c6, type: 3}
+  andar:
+  - {fileID: 4330836634370394704, guid: 5bc2dd8ea91f50c42b876b9675eba76e, type: 3}
+  - {fileID: 7797568415432327845, guid: 5bc2dd8ea91f50c42b876b9675eba76e, type: 3}
+  - {fileID: -1110691703469762898, guid: 5bc2dd8ea91f50c42b876b9675eba76e, type: 3}
+  - {fileID: 6707374076942645228, guid: 5bc2dd8ea91f50c42b876b9675eba76e, type: 3}
+  andarShiny:
+  - {fileID: 4330836634370394704, guid: d135ff8cfc8ba1242be2cf1ed39372c6, type: 3}
+  - {fileID: 7797568415432327845, guid: d135ff8cfc8ba1242be2cf1ed39372c6, type: 3}
+  - {fileID: -1110691703469762898, guid: d135ff8cfc8ba1242be2cf1ed39372c6, type: 3}
+  - {fileID: 6707374076942645228, guid: d135ff8cfc8ba1242be2cf1ed39372c6, type: 3}
+  hp: 50
+  atk: 45
+  def: 55
+  lvlEvo: 12
+  evolucion:
+  - {fileID: 11400000, guid: 81e37870d7ede574dbf790d93ec129ee, type: 2}
+  minLvl: 1
+  ratioCaptura: 150
+  tipoExp: 3
+  exBase: 44
+  SpriteTipo1: {fileID: -2990309890484215505, guid: 89937cfd53b749e4aaa21deb0531704a, type: 3}
+  SpriteTipo2: {fileID: 0}

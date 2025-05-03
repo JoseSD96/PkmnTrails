@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 230
+  m_EditorClassIdentifier: 
+  num: 230
+  nombre: Kingdra
+  tipo1: 2
+  tipo2: 4
+  idle: {fileID: 4447260650422897386, guid: be7d0d13473ba394685319b6434b64fe, type: 3}
+  idleShiny: {fileID: 4447260650422897386, guid: 23a71f2a2e105594195c0498a16c5641, type: 3}
+  explorar: {fileID: 5324582116756561347, guid: be7d0d13473ba394685319b6434b64fe, type: 3}
+  explorarShiny: {fileID: 5324582116756561347, guid: 23a71f2a2e105594195c0498a16c5641, type: 3}
+  andar:
+  - {fileID: -4256598966573401398, guid: be7d0d13473ba394685319b6434b64fe, type: 3}
+  - {fileID: 8157854290748702007, guid: be7d0d13473ba394685319b6434b64fe, type: 3}
+  - {fileID: 6931883140478864336, guid: be7d0d13473ba394685319b6434b64fe, type: 3}
+  - {fileID: 8956935202792528362, guid: be7d0d13473ba394685319b6434b64fe, type: 3}
+  andarShiny:
+  - {fileID: -4256598966573401398, guid: 23a71f2a2e105594195c0498a16c5641, type: 3}
+  - {fileID: 8157854290748702007, guid: 23a71f2a2e105594195c0498a16c5641, type: 3}
+  - {fileID: 6931883140478864336, guid: 23a71f2a2e105594195c0498a16c5641, type: 3}
+  - {fileID: 8956935202792528362, guid: 23a71f2a2e105594195c0498a16c5641, type: 3}
+  hp: 75
+  atk: 95
+  def: 95
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 45
+  ratioCaptura: 45
+  tipoExp: 2
+  exBase: 243
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: 3428391033546482049, guid: 5a2f331be01955f439717de9078ff9db, type: 3}

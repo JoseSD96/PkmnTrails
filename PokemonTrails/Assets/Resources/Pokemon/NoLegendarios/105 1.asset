@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 105 1
+  m_EditorClassIdentifier: 
+  num: 105
+  nombre: Marowak (Alola)
+  tipo1: 7
+  tipo2: 6
+  idle: {fileID: -5404627890212900111, guid: 7cf37225a09c870459947dfc1649d340, type: 3}
+  idleShiny: {fileID: -5404627890212900111, guid: d5c488d3e5f89f44eadcd023e6b20d65, type: 3}
+  explorar: {fileID: -740423895811100769, guid: 7cf37225a09c870459947dfc1649d340, type: 3}
+  explorarShiny: {fileID: -740423895811100769, guid: d5c488d3e5f89f44eadcd023e6b20d65, type: 3}
+  andar:
+  - {fileID: -5703186033808481843, guid: 7cf37225a09c870459947dfc1649d340, type: 3}
+  - {fileID: -7947193412258207802, guid: 7cf37225a09c870459947dfc1649d340, type: 3}
+  - {fileID: 1704865870439287432, guid: 7cf37225a09c870459947dfc1649d340, type: 3}
+  - {fileID: 4007817035148414343, guid: 7cf37225a09c870459947dfc1649d340, type: 3}
+  andarShiny:
+  - {fileID: -5703186033808481843, guid: d5c488d3e5f89f44eadcd023e6b20d65, type: 3}
+  - {fileID: -7947193412258207802, guid: d5c488d3e5f89f44eadcd023e6b20d65, type: 3}
+  - {fileID: 1704865870439287432, guid: d5c488d3e5f89f44eadcd023e6b20d65, type: 3}
+  - {fileID: 4007817035148414343, guid: d5c488d3e5f89f44eadcd023e6b20d65, type: 3}
+  hp: 60
+  atk: 80
+  def: 110
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 28
+  ratioCaptura: 75
+  tipoExp: 2
+  exBase: 249
+  SpriteTipo1: {fileID: 8334651344603559088, guid: cab788a1cc7eb3844af4d00747186c07, type: 3}
+  SpriteTipo2: {fileID: 4448715427215634006, guid: 4a8254e73c1ad2a41ab3a14c94623e9b, type: 3}

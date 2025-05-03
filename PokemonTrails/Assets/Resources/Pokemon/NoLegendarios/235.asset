@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 235
+  m_EditorClassIdentifier: 
+  num: 235
+  nombre: Smeargle
+  tipo1: 11
+  tipo2: 0
+  idle: {fileID: 8125873539691318927, guid: 57f166076a1956146851db4ff235714e, type: 3}
+  idleShiny: {fileID: 8125873539691318927, guid: a4032ca401e341247ab5d1c4a43e2631, type: 3}
+  explorar: {fileID: -7783451788375774990, guid: 57f166076a1956146851db4ff235714e, type: 3}
+  explorarShiny: {fileID: -7783451788375774990, guid: a4032ca401e341247ab5d1c4a43e2631, type: 3}
+  andar:
+  - {fileID: 1145043333349902425, guid: 57f166076a1956146851db4ff235714e, type: 3}
+  - {fileID: -8264188883506407566, guid: 57f166076a1956146851db4ff235714e, type: 3}
+  - {fileID: -9103477661175687216, guid: 57f166076a1956146851db4ff235714e, type: 3}
+  - {fileID: -9114524922238948827, guid: 57f166076a1956146851db4ff235714e, type: 3}
+  andarShiny:
+  - {fileID: 1145043333349902425, guid: a4032ca401e341247ab5d1c4a43e2631, type: 3}
+  - {fileID: -8264188883506407566, guid: a4032ca401e341247ab5d1c4a43e2631, type: 3}
+  - {fileID: -9103477661175687216, guid: a4032ca401e341247ab5d1c4a43e2631, type: 3}
+  - {fileID: -9114524922238948827, guid: a4032ca401e341247ab5d1c4a43e2631, type: 3}
+  hp: 55
+  atk: 20
+  def: 45
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 45
+  tipoExp: 3
+  exBase: 88
+  SpriteTipo1: {fileID: 4606157284126940538, guid: bcea1507ef7c2e5439b7d3f5e0aecd67, type: 3}
+  SpriteTipo2: {fileID: 0}

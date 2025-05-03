@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 169
+  m_EditorClassIdentifier: 
+  num: 169
+  nombre: Crobat
+  tipo1: 17
+  tipo2: 18
+  idle: {fileID: 2948625606695783930, guid: 4ef5ea220b52ed741b4d124b24ca18a2, type: 3}
+  idleShiny: {fileID: 2948625606695783930, guid: 5e49f19885024ee4587ce90b7bb40447, type: 3}
+  explorar: {fileID: 7765198084356327811, guid: 4ef5ea220b52ed741b4d124b24ca18a2, type: 3}
+  explorarShiny: {fileID: 7765198084356327811, guid: 5e49f19885024ee4587ce90b7bb40447, type: 3}
+  andar:
+  - {fileID: -6667939251143831116, guid: 4ef5ea220b52ed741b4d124b24ca18a2, type: 3}
+  - {fileID: -2728658489986264925, guid: 4ef5ea220b52ed741b4d124b24ca18a2, type: 3}
+  - {fileID: -2200324298633673931, guid: 4ef5ea220b52ed741b4d124b24ca18a2, type: 3}
+  - {fileID: 5451944829345432288, guid: 4ef5ea220b52ed741b4d124b24ca18a2, type: 3}
+  andarShiny:
+  - {fileID: -6667939251143831116, guid: 5e49f19885024ee4587ce90b7bb40447, type: 3}
+  - {fileID: -2728658489986264925, guid: 5e49f19885024ee4587ce90b7bb40447, type: 3}
+  - {fileID: -2200324298633673931, guid: 5e49f19885024ee4587ce90b7bb40447, type: 3}
+  - {fileID: 5451944829345432288, guid: 5e49f19885024ee4587ce90b7bb40447, type: 3}
+  hp: 85
+  atk: 90
+  def: 80
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 36
+  ratioCaptura: 90
+  tipoExp: 2
+  exBase: 241
+  SpriteTipo1: {fileID: -5005990984189769374, guid: e92ae9ff3784b7240b609f27cb3756ca, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

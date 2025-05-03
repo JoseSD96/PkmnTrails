@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 185
+  m_EditorClassIdentifier: 
+  num: 185
+  nombre: Sudowoodo
+  tipo1: 14
+  tipo2: 0
+  idle: {fileID: 301741926996656957, guid: 3ad1488207c099d4e840acd24cbf09d7, type: 3}
+  idleShiny: {fileID: 301741926996656957, guid: aafffa03f82e7a440b64dca6d4a1531c, type: 3}
+  explorar: {fileID: -713697732506387597, guid: 3ad1488207c099d4e840acd24cbf09d7, type: 3}
+  explorarShiny: {fileID: -713697732506387597, guid: aafffa03f82e7a440b64dca6d4a1531c, type: 3}
+  andar:
+  - {fileID: 1413301364494036602, guid: 3ad1488207c099d4e840acd24cbf09d7, type: 3}
+  - {fileID: -2239940085300359878, guid: 3ad1488207c099d4e840acd24cbf09d7, type: 3}
+  - {fileID: 208630617507979715, guid: 3ad1488207c099d4e840acd24cbf09d7, type: 3}
+  - {fileID: -7676411469497123449, guid: 3ad1488207c099d4e840acd24cbf09d7, type: 3}
+  andarShiny:
+  - {fileID: 1413301364494036602, guid: aafffa03f82e7a440b64dca6d4a1531c, type: 3}
+  - {fileID: -2239940085300359878, guid: aafffa03f82e7a440b64dca6d4a1531c, type: 3}
+  - {fileID: 208630617507979715, guid: aafffa03f82e7a440b64dca6d4a1531c, type: 3}
+  - {fileID: -7676411469497123449, guid: aafffa03f82e7a440b64dca6d4a1531c, type: 3}
+  hp: 70
+  atk: 100
+  def: 115
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 65
+  tipoExp: 2
+  exBase: 144
+  SpriteTipo1: {fileID: -2182124076254010665, guid: 62ea7f7259a4b424ca10cb0fd9c073d8, type: 3}
+  SpriteTipo2: {fileID: 0}

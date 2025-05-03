@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 236
+  m_EditorClassIdentifier: 
+  num: 236
+  nombre: Tyrogue
+  tipo1: 10
+  tipo2: 0
+  idle: {fileID: 2993109213625420384, guid: 0cd0e63b57106504f97a7031c25c9d6c, type: 3}
+  idleShiny: {fileID: 2993109213625420384, guid: 4642487195848e147b75167921784f38, type: 3}
+  explorar: {fileID: 812605235682126030, guid: 0cd0e63b57106504f97a7031c25c9d6c, type: 3}
+  explorarShiny: {fileID: 812605235682126030, guid: 4642487195848e147b75167921784f38, type: 3}
+  andar:
+  - {fileID: -7589463362538190791, guid: 0cd0e63b57106504f97a7031c25c9d6c, type: 3}
+  - {fileID: -2809154545913925558, guid: 0cd0e63b57106504f97a7031c25c9d6c, type: 3}
+  - {fileID: 339630371027246423, guid: 0cd0e63b57106504f97a7031c25c9d6c, type: 3}
+  - {fileID: 4630369568550180896, guid: 0cd0e63b57106504f97a7031c25c9d6c, type: 3}
+  andarShiny:
+  - {fileID: -7589463362538190791, guid: 4642487195848e147b75167921784f38, type: 3}
+  - {fileID: -2809154545913925558, guid: 4642487195848e147b75167921784f38, type: 3}
+  - {fileID: 339630371027246423, guid: 4642487195848e147b75167921784f38, type: 3}
+  - {fileID: 4630369568550180896, guid: 4642487195848e147b75167921784f38, type: 3}
+  hp: 35
+  atk: 35
+  def: 35
+  lvlEvo: 20
+  evolucion:
+  - {fileID: 11400000, guid: 17c894e99ee0b9341b50142d6bc5aa90, type: 2}
+  - {fileID: 11400000, guid: 77324c346c5878143a8e08f96efbd248, type: 2}
+  - {fileID: 11400000, guid: e9bfe6c2c2b3c7c4d8c6e30259bd6fdc, type: 2}
+  minLvl: 1
+  ratioCaptura: 75
+  tipoExp: 2
+  exBase: 42
+  SpriteTipo1: {fileID: -2810909829056618550, guid: f1eb9c19331ad2448b325bdcaccbecb0, type: 3}
+  SpriteTipo2: {fileID: 0}

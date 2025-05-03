@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 172
+  m_EditorClassIdentifier: 
+  num: 172
+  nombre: Pichu
+  tipo1: 5
+  tipo2: 0
+  idle: {fileID: -3622004801084219193, guid: 2ef46ee27007fa848a1e2b69cf835086, type: 3}
+  idleShiny: {fileID: -3622004801084219193, guid: 54b1ec35e473e694ab287fcc3f2311c8, type: 3}
+  explorar: {fileID: -382809582059461123, guid: 2ef46ee27007fa848a1e2b69cf835086, type: 3}
+  explorarShiny: {fileID: -382809582059461123, guid: 54b1ec35e473e694ab287fcc3f2311c8, type: 3}
+  andar:
+  - {fileID: -4934346932053476932, guid: 2ef46ee27007fa848a1e2b69cf835086, type: 3}
+  - {fileID: 6878983216533922924, guid: 2ef46ee27007fa848a1e2b69cf835086, type: 3}
+  - {fileID: 1223051107533891979, guid: 2ef46ee27007fa848a1e2b69cf835086, type: 3}
+  - {fileID: 1708159996704048741, guid: 2ef46ee27007fa848a1e2b69cf835086, type: 3}
+  andarShiny:
+  - {fileID: -4934346932053476932, guid: 54b1ec35e473e694ab287fcc3f2311c8, type: 3}
+  - {fileID: 6878983216533922924, guid: 54b1ec35e473e694ab287fcc3f2311c8, type: 3}
+  - {fileID: 1223051107533891979, guid: 54b1ec35e473e694ab287fcc3f2311c8, type: 3}
+  - {fileID: 1708159996704048741, guid: 54b1ec35e473e694ab287fcc3f2311c8, type: 3}
+  hp: 20
+  atk: 40
+  def: 35
+  lvlEvo: 12
+  evolucion:
+  - {fileID: 11400000, guid: 2de33ca4b3d56924b8400bc2c04e174d, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 2
+  exBase: 41
+  SpriteTipo1: {fileID: 5820286478268577726, guid: f1d7827866e38664fb759c583947fb9a, type: 3}
+  SpriteTipo2: {fileID: 0}

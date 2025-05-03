@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 186
+  m_EditorClassIdentifier: 
+  num: 186
+  nombre: Politoed
+  tipo1: 2
+  tipo2: 0
+  idle: {fileID: 7473766559968367540, guid: c62e4104a0102f7468ed78bce6160207, type: 3}
+  idleShiny: {fileID: 7473766559968367540, guid: ed72bbb69cca7494da82f73fc387b136, type: 3}
+  explorar: {fileID: -9033420668451326456, guid: c62e4104a0102f7468ed78bce6160207, type: 3}
+  explorarShiny: {fileID: -9033420668451326456, guid: ed72bbb69cca7494da82f73fc387b136, type: 3}
+  andar:
+  - {fileID: 5123113238271895616, guid: c62e4104a0102f7468ed78bce6160207, type: 3}
+  - {fileID: -8615189781802321923, guid: c62e4104a0102f7468ed78bce6160207, type: 3}
+  - {fileID: -7746580944800538929, guid: c62e4104a0102f7468ed78bce6160207, type: 3}
+  - {fileID: -8423736742063021441, guid: c62e4104a0102f7468ed78bce6160207, type: 3}
+  andarShiny:
+  - {fileID: 5123113238271895616, guid: ed72bbb69cca7494da82f73fc387b136, type: 3}
+  - {fileID: -8615189781802321923, guid: ed72bbb69cca7494da82f73fc387b136, type: 3}
+  - {fileID: -7746580944800538929, guid: ed72bbb69cca7494da82f73fc387b136, type: 3}
+  - {fileID: -8423736742063021441, guid: ed72bbb69cca7494da82f73fc387b136, type: 3}
+  hp: 90
+  atk: 90
+  def: 100
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 38
+  ratioCaptura: 45
+  tipoExp: 0
+  exBase: 225
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: 0}

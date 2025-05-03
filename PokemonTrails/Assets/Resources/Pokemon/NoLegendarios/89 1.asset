@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 89 1
+  m_EditorClassIdentifier: 
+  num: 89
+  nombre: Muk (Alola)
+  tipo1: 17
+  tipo2: 15
+  idle: {fileID: 3408246305958006110, guid: 409e81ecc65dbc940a8a59c966810bf3, type: 3}
+  idleShiny: {fileID: 3408246305958006110, guid: a72fc2400b99e254498581156726e121, type: 3}
+  explorar: {fileID: 1573921065179860785, guid: 409e81ecc65dbc940a8a59c966810bf3, type: 3}
+  explorarShiny: {fileID: 1573921065179860785, guid: a72fc2400b99e254498581156726e121, type: 3}
+  andar:
+  - {fileID: -358019308801689684, guid: 409e81ecc65dbc940a8a59c966810bf3, type: 3}
+  - {fileID: -5869264804186134722, guid: 409e81ecc65dbc940a8a59c966810bf3, type: 3}
+  - {fileID: -5705165713511775370, guid: 409e81ecc65dbc940a8a59c966810bf3, type: 3}
+  - {fileID: 1034267786907938573, guid: 409e81ecc65dbc940a8a59c966810bf3, type: 3}
+  andarShiny:
+  - {fileID: -358019308801689684, guid: a72fc2400b99e254498581156726e121, type: 3}
+  - {fileID: -5869264804186134722, guid: a72fc2400b99e254498581156726e121, type: 3}
+  - {fileID: -5705165713511775370, guid: a72fc2400b99e254498581156726e121, type: 3}
+  - {fileID: 1034267786907938573, guid: a72fc2400b99e254498581156726e121, type: 3}
+  hp: 105
+  atk: 105
+  def: 100
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 38
+  ratioCaptura: 75
+  tipoExp: 2
+  exBase: 175
+  SpriteTipo1: {fileID: -5005990984189769374, guid: e92ae9ff3784b7240b609f27cb3756ca, type: 3}
+  SpriteTipo2: {fileID: -6729511157232288408, guid: 5c82e9f86c291b2429e98339bd58b3ce, type: 3}

@@ -16,10 +16,10 @@ MonoBehaviour:
   nombre: Seadra
   tipo1: 2
   tipo2: 0
-  idle: {fileID: -2687112161351385892, guid: 6794caa437847704ea52e140fba537d4, type: 3}
-  idleShiny: {fileID: -2687112161351385892, guid: 7293bd85fc8ec6642b5eb1ec54fbe74c, type: 3}
-  explorar: {fileID: 7841716222114235825, guid: 6794caa437847704ea52e140fba537d4, type: 3}
-  explorarShiny: {fileID: 7841716222114235825, guid: 7293bd85fc8ec6642b5eb1ec54fbe74c, type: 3}
+  idle: {fileID: 7841716222114235825, guid: 6794caa437847704ea52e140fba537d4, type: 3}
+  idleShiny: {fileID: 7841716222114235825, guid: 7293bd85fc8ec6642b5eb1ec54fbe74c, type: 3}
+  explorar: {fileID: -2687112161351385892, guid: 6794caa437847704ea52e140fba537d4, type: 3}
+  explorarShiny: {fileID: -2687112161351385892, guid: 7293bd85fc8ec6642b5eb1ec54fbe74c, type: 3}
   andar:
   - {fileID: 7822720541335387037, guid: 6794caa437847704ea52e140fba537d4, type: 3}
   - {fileID: -7734347518454833291, guid: 6794caa437847704ea52e140fba537d4, type: 3}
@@ -33,8 +33,9 @@ MonoBehaviour:
   hp: 55
   atk: 95
   def: 95
-  lvlEvo: 0
-  evolucion: []
+  lvlEvo: 45
+  evolucion:
+  - {fileID: 11400000, guid: 10c9b4c060d2ba84898759d80166af5c, type: 2}
   minLvl: 32
   ratioCaptura: 75
   tipoExp: 2

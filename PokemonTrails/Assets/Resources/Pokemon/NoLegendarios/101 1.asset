@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 101 1
+  m_EditorClassIdentifier: 
+  num: 101
+  nombre: Electrode (Hisui)
+  tipo1: 5
+  tipo2: 12
+  idle: {fileID: 4191412784257337084, guid: 5296f1942a4ab324dba34a39af853601, type: 3}
+  idleShiny: {fileID: 4191412784257337084, guid: 222cf79426b2eab4281d38bc1516bef7, type: 3}
+  explorar: {fileID: -1259911430426639299, guid: 5296f1942a4ab324dba34a39af853601, type: 3}
+  explorarShiny: {fileID: -1259911430426639299, guid: 222cf79426b2eab4281d38bc1516bef7, type: 3}
+  andar:
+  - {fileID: 791257627235321370, guid: 5296f1942a4ab324dba34a39af853601, type: 3}
+  - {fileID: -3203844581727081941, guid: 5296f1942a4ab324dba34a39af853601, type: 3}
+  - {fileID: -8304223665494096942, guid: 5296f1942a4ab324dba34a39af853601, type: 3}
+  - {fileID: -291418820100121954, guid: 5296f1942a4ab324dba34a39af853601, type: 3}
+  andarShiny:
+  - {fileID: 791257627235321370, guid: 222cf79426b2eab4281d38bc1516bef7, type: 3}
+  - {fileID: -3203844581727081941, guid: 222cf79426b2eab4281d38bc1516bef7, type: 3}
+  - {fileID: -8304223665494096942, guid: 222cf79426b2eab4281d38bc1516bef7, type: 3}
+  - {fileID: -291418820100121954, guid: 222cf79426b2eab4281d38bc1516bef7, type: 3}
+  hp: 60
+  atk: 80
+  def: 80
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 30
+  ratioCaptura: 135
+  tipoExp: 0
+  exBase: 172
+  SpriteTipo1: {fileID: 5820286478268577726, guid: f1d7827866e38664fb759c583947fb9a, type: 3}
+  SpriteTipo2: {fileID: 7932798033344189819, guid: d6d579d0526b1aa46bd061d6721fea3f, type: 3}

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 78 1
+  m_EditorClassIdentifier: 
+  num: 78
+  nombre: Rapidash (Galar)
+  tipo1: 13
+  tipo2: 8
+  idle: {fileID: 5706082619280849404, guid: fe92c02e7cb9dd04ebe888f94563ebe9, type: 3}
+  idleShiny: {fileID: 5706082619280849404, guid: 5cfaeb1e4392600418516619e12aa820, type: 3}
+  explorar: {fileID: 5880823836861594229, guid: fe92c02e7cb9dd04ebe888f94563ebe9, type: 3}
+  explorarShiny: {fileID: 5880823836861594229, guid: 5cfaeb1e4392600418516619e12aa820, type: 3}
+  andar:
+  - {fileID: 2195619681982564276, guid: fe92c02e7cb9dd04ebe888f94563ebe9, type: 3}
+  - {fileID: 6827290260796325058, guid: fe92c02e7cb9dd04ebe888f94563ebe9, type: 3}
+  - {fileID: -4920472166318430066, guid: fe92c02e7cb9dd04ebe888f94563ebe9, type: 3}
+  - {fileID: -5463611339094865900, guid: fe92c02e7cb9dd04ebe888f94563ebe9, type: 3}
+  andarShiny:
+  - {fileID: 2195619681982564276, guid: 5cfaeb1e4392600418516619e12aa820, type: 3}
+  - {fileID: 6827290260796325058, guid: 5cfaeb1e4392600418516619e12aa820, type: 3}
+  - {fileID: -4920472166318430066, guid: 5cfaeb1e4392600418516619e12aa820, type: 3}
+  - {fileID: -5463611339094865900, guid: 5cfaeb1e4392600418516619e12aa820, type: 3}
+  hp: 65
+  atk: 100
+  def: 80
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 40
+  ratioCaptura: 60
+  tipoExp: 2
+  exBase: 175
+  SpriteTipo1: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}
+  SpriteTipo2: {fileID: -2990309890484215505, guid: 89937cfd53b749e4aaa21deb0531704a, type: 3}

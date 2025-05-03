@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 183
+  m_EditorClassIdentifier: 
+  num: 183
+  nombre: Marill
+  tipo1: 2
+  tipo2: 8
+  idle: {fileID: 7072269549588203656, guid: 6b664d464eacff144a4aed93defc8fdb, type: 3}
+  idleShiny: {fileID: 7072269549588203656, guid: 60b5010e7944f96409be54f79db69162, type: 3}
+  explorar: {fileID: -5923845222552614863, guid: 6b664d464eacff144a4aed93defc8fdb, type: 3}
+  explorarShiny: {fileID: -5923845222552614863, guid: 60b5010e7944f96409be54f79db69162, type: 3}
+  andar:
+  - {fileID: -8716347652605325444, guid: 6b664d464eacff144a4aed93defc8fdb, type: 3}
+  - {fileID: -1130749776436693174, guid: 6b664d464eacff144a4aed93defc8fdb, type: 3}
+  - {fileID: 851447844856078816, guid: 6b664d464eacff144a4aed93defc8fdb, type: 3}
+  - {fileID: -5050422649355271736, guid: 6b664d464eacff144a4aed93defc8fdb, type: 3}
+  andarShiny:
+  - {fileID: -8716347652605325444, guid: 60b5010e7944f96409be54f79db69162, type: 3}
+  - {fileID: -1130749776436693174, guid: 60b5010e7944f96409be54f79db69162, type: 3}
+  - {fileID: 851447844856078816, guid: 60b5010e7944f96409be54f79db69162, type: 3}
+  - {fileID: -5050422649355271736, guid: 60b5010e7944f96409be54f79db69162, type: 3}
+  hp: 70
+  atk: 20
+  def: 50
+  lvlEvo: 20
+  evolucion:
+  - {fileID: 11400000, guid: 8c6e60ebdf3dcd94f88cf91ba20ed0d0, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 3
+  exBase: 88
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: -2990309890484215505, guid: 89937cfd53b749e4aaa21deb0531704a, type: 3}

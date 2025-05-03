@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 170
+  m_EditorClassIdentifier: 
+  num: 170
+  nombre: Chinchou
+  tipo1: 2
+  tipo2: 5
+  idle: {fileID: -7497843555917896031, guid: cdd0db72cc301704e97009d7cef87661, type: 3}
+  idleShiny: {fileID: -7497843555917896031, guid: 3c66a8b3506c9e543a168a4629def590, type: 3}
+  explorar: {fileID: 3051605697758140864, guid: cdd0db72cc301704e97009d7cef87661, type: 3}
+  explorarShiny: {fileID: 3051605697758140864, guid: 3c66a8b3506c9e543a168a4629def590, type: 3}
+  andar:
+  - {fileID: -1970379930887470892, guid: cdd0db72cc301704e97009d7cef87661, type: 3}
+  - {fileID: 429794909261577416, guid: cdd0db72cc301704e97009d7cef87661, type: 3}
+  - {fileID: 1132615779146409930, guid: cdd0db72cc301704e97009d7cef87661, type: 3}
+  - {fileID: -1394791594562893256, guid: cdd0db72cc301704e97009d7cef87661, type: 3}
+  andarShiny:
+  - {fileID: -1970379930887470892, guid: 3c66a8b3506c9e543a168a4629def590, type: 3}
+  - {fileID: 429794909261577416, guid: 3c66a8b3506c9e543a168a4629def590, type: 3}
+  - {fileID: 1132615779146409930, guid: 3c66a8b3506c9e543a168a4629def590, type: 3}
+  - {fileID: -1394791594562893256, guid: 3c66a8b3506c9e543a168a4629def590, type: 3}
+  hp: 75
+  atk: 56
+  def: 56
+  lvlEvo: 27
+  evolucion:
+  - {fileID: 11400000, guid: dec6de9383cf60146acefbf5eb7f6108, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 1
+  exBase: 66
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: 5820286478268577726, guid: f1d7827866e38664fb759c583947fb9a, type: 3}

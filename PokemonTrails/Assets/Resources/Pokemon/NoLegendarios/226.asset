@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 226
+  m_EditorClassIdentifier: 
+  num: 226
+  nombre: Mantine
+  tipo1: 2
+  tipo2: 18
+  idle: {fileID: -3356356827765165501, guid: cc66d5cd1c329114e861b56b88d0824f, type: 3}
+  idleShiny: {fileID: -3356356827765165501, guid: 09875c2964473844baccd772f82b74cf, type: 3}
+  explorar: {fileID: 1503795860491721955, guid: cc66d5cd1c329114e861b56b88d0824f, type: 3}
+  explorarShiny: {fileID: 1503795860491721955, guid: 09875c2964473844baccd772f82b74cf, type: 3}
+  andar:
+  - {fileID: -2784830641212167329, guid: cc66d5cd1c329114e861b56b88d0824f, type: 3}
+  - {fileID: 93629433825621326, guid: cc66d5cd1c329114e861b56b88d0824f, type: 3}
+  - {fileID: -4008990353540971728, guid: cc66d5cd1c329114e861b56b88d0824f, type: 3}
+  - {fileID: 8634102630889725921, guid: cc66d5cd1c329114e861b56b88d0824f, type: 3}
+  andarShiny:
+  - {fileID: -2784830641212167329, guid: 09875c2964473844baccd772f82b74cf, type: 3}
+  - {fileID: 93629433825621326, guid: 09875c2964473844baccd772f82b74cf, type: 3}
+  - {fileID: -4008990353540971728, guid: 09875c2964473844baccd772f82b74cf, type: 3}
+  - {fileID: 8634102630889725921, guid: 09875c2964473844baccd772f82b74cf, type: 3}
+  hp: 85
+  atk: 80
+  def: 140
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 25
+  tipoExp: 1
+  exBase: 170
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

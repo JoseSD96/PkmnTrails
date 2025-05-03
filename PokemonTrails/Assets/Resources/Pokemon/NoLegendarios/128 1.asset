@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 128 1
+  m_EditorClassIdentifier: 
+  num: 128
+  nombre: Tauros (Paldea)
+  tipo1: 10
+  tipo2: 0
+  idle: {fileID: -1918069600957842525, guid: b6d46d211eccc4d469ae8b5c4ca4d699, type: 3}
+  idleShiny: {fileID: -1918069600957842525, guid: 9ee7e7e4ab3da0844a5fa7d04dd41368, type: 3}
+  explorar: {fileID: -2299466751132642591, guid: b6d46d211eccc4d469ae8b5c4ca4d699, type: 3}
+  explorarShiny: {fileID: -2299466751132642591, guid: 9ee7e7e4ab3da0844a5fa7d04dd41368, type: 3}
+  andar:
+  - {fileID: 2097768115825352941, guid: b6d46d211eccc4d469ae8b5c4ca4d699, type: 3}
+  - {fileID: 1934581703915297717, guid: b6d46d211eccc4d469ae8b5c4ca4d699, type: 3}
+  - {fileID: 3167017644697145462, guid: b6d46d211eccc4d469ae8b5c4ca4d699, type: 3}
+  - {fileID: -6159089019442595235, guid: b6d46d211eccc4d469ae8b5c4ca4d699, type: 3}
+  andarShiny:
+  - {fileID: 2097768115825352941, guid: 9ee7e7e4ab3da0844a5fa7d04dd41368, type: 3}
+  - {fileID: 1934581703915297717, guid: 9ee7e7e4ab3da0844a5fa7d04dd41368, type: 3}
+  - {fileID: 3167017644697145462, guid: 9ee7e7e4ab3da0844a5fa7d04dd41368, type: 3}
+  - {fileID: -6159089019442595235, guid: 9ee7e7e4ab3da0844a5fa7d04dd41368, type: 3}
+  hp: 75
+  atk: 110
+  def: 105
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 45
+  tipoExp: 1
+  exBase: 172
+  SpriteTipo1: {fileID: -2810909829056618550, guid: f1eb9c19331ad2448b325bdcaccbecb0, type: 3}
+  SpriteTipo2: {fileID: 0}

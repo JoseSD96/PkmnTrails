@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 103 1
+  m_EditorClassIdentifier: 
+  num: 103
+  nombre: Exeggutor (Galar)
+  tipo1: 12
+  tipo2: 4
+  idle: {fileID: -3933710187778592721, guid: fc61df69bc1d4cc478c0679444551912, type: 3}
+  idleShiny: {fileID: -3933710187778592721, guid: 27132cc4b64c13d4fa7bf915517302f3, type: 3}
+  explorar: {fileID: 1164210053425713636, guid: fc61df69bc1d4cc478c0679444551912, type: 3}
+  explorarShiny: {fileID: 1164210053425713636, guid: 27132cc4b64c13d4fa7bf915517302f3, type: 3}
+  andar:
+  - {fileID: -5989926373713484671, guid: fc61df69bc1d4cc478c0679444551912, type: 3}
+  - {fileID: -7540362095879264590, guid: fc61df69bc1d4cc478c0679444551912, type: 3}
+  - {fileID: 8213962362547173007, guid: fc61df69bc1d4cc478c0679444551912, type: 3}
+  - {fileID: -6396118508440458283, guid: fc61df69bc1d4cc478c0679444551912, type: 3}
+  andarShiny:
+  - {fileID: -5989926373713484671, guid: 27132cc4b64c13d4fa7bf915517302f3, type: 3}
+  - {fileID: -7540362095879264590, guid: 27132cc4b64c13d4fa7bf915517302f3, type: 3}
+  - {fileID: 8213962362547173007, guid: 27132cc4b64c13d4fa7bf915517302f3, type: 3}
+  - {fileID: -6396118508440458283, guid: 27132cc4b64c13d4fa7bf915517302f3, type: 3}
+  hp: 95
+  atk: 125
+  def: 85
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 25
+  ratioCaptura: 45
+  tipoExp: 1
+  exBase: 186
+  SpriteTipo1: {fileID: 7932798033344189819, guid: d6d579d0526b1aa46bd061d6721fea3f, type: 3}
+  SpriteTipo2: {fileID: 3428391033546482049, guid: 5a2f331be01955f439717de9078ff9db, type: 3}

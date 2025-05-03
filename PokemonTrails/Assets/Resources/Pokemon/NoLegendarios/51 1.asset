@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 51 1
+  m_EditorClassIdentifier: 
+  num: 51
+  nombre: Dugtrio (Alola)
+  tipo1: 16
+  tipo2: 1
+  idle: {fileID: 7917979610649508662, guid: 6242785093add404e960466917ae90de, type: 3}
+  idleShiny: {fileID: 7917979610649508662, guid: f720c7ab2e41f7146b63172ac5097422, type: 3}
+  explorar: {fileID: -3851140610821886524, guid: 6242785093add404e960466917ae90de, type: 3}
+  explorarShiny: {fileID: -3851140610821886524, guid: f720c7ab2e41f7146b63172ac5097422, type: 3}
+  andar:
+  - {fileID: 2916765549126203809, guid: 6242785093add404e960466917ae90de, type: 3}
+  - {fileID: -5038765651108750807, guid: 6242785093add404e960466917ae90de, type: 3}
+  - {fileID: 866169463557691274, guid: 6242785093add404e960466917ae90de, type: 3}
+  - {fileID: 8182357427158218865, guid: 6242785093add404e960466917ae90de, type: 3}
+  andarShiny:
+  - {fileID: 2916765549126203809, guid: f720c7ab2e41f7146b63172ac5097422, type: 3}
+  - {fileID: -5038765651108750807, guid: f720c7ab2e41f7146b63172ac5097422, type: 3}
+  - {fileID: 866169463557691274, guid: f720c7ab2e41f7146b63172ac5097422, type: 3}
+  - {fileID: 8182357427158218865, guid: f720c7ab2e41f7146b63172ac5097422, type: 3}
+  hp: 35
+  atk: 100
+  def: 70
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 26
+  ratioCaptura: 50
+  tipoExp: 2
+  exBase: 149
+  SpriteTipo1: {fileID: -3878557786174838139, guid: 15b6f5b649c3dc840a961d3f87c45c27, type: 3}
+  SpriteTipo2: {fileID: 4226397978021778064, guid: dee16be6095eb474bbabf67738024674, type: 3}

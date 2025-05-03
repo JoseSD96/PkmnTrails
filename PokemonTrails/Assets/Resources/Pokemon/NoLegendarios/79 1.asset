@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 79 1
+  m_EditorClassIdentifier: 
+  num: 79
+  nombre: Slowpoke (Galar)
+  tipo1: 13
+  tipo2: 0
+  idle: {fileID: -8114572390345736849, guid: 205e101b73d9d764284605416cc16c64, type: 3}
+  idleShiny: {fileID: -8114572390345736849, guid: 0488683c3d98106409e492450468f61e, type: 3}
+  explorar: {fileID: -8633046520393402073, guid: 205e101b73d9d764284605416cc16c64, type: 3}
+  explorarShiny: {fileID: -8633046520393402073, guid: 0488683c3d98106409e492450468f61e, type: 3}
+  andar:
+  - {fileID: 7177593419341804339, guid: 205e101b73d9d764284605416cc16c64, type: 3}
+  - {fileID: -4644339707347461409, guid: 205e101b73d9d764284605416cc16c64, type: 3}
+  - {fileID: -3331456006530870302, guid: 205e101b73d9d764284605416cc16c64, type: 3}
+  - {fileID: -3450434831573846262, guid: 205e101b73d9d764284605416cc16c64, type: 3}
+  andarShiny:
+  - {fileID: 7177593419341804339, guid: 0488683c3d98106409e492450468f61e, type: 3}
+  - {fileID: -4644339707347461409, guid: 0488683c3d98106409e492450468f61e, type: 3}
+  - {fileID: -3331456006530870302, guid: 0488683c3d98106409e492450468f61e, type: 3}
+  - {fileID: -3450434831573846262, guid: 0488683c3d98106409e492450468f61e, type: 3}
+  hp: 90
+  atk: 65
+  def: 65
+  lvlEvo: 37
+  evolucion:
+  - {fileID: 11400000, guid: 50319f764079d054eadf57ee00a7e7e7, type: 2}
+  - {fileID: 11400000, guid: 78339444b1f4659429b7a530ddb0a9ea, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 2
+  exBase: 63
+  SpriteTipo1: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}
+  SpriteTipo2: {fileID: 0}

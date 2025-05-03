@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 175
+  m_EditorClassIdentifier: 
+  num: 175
+  nombre: Togepi
+  tipo1: 8
+  tipo2: 0
+  idle: {fileID: -2282248698217489393, guid: 96bc918f465182345a0c427d3a20ec7b, type: 3}
+  idleShiny: {fileID: -2282248698217489393, guid: 6fe4f94f1049f4e479053df6b0ddb8bf, type: 3}
+  explorar: {fileID: -4573161650780669524, guid: 96bc918f465182345a0c427d3a20ec7b, type: 3}
+  explorarShiny: {fileID: -4573161650780669524, guid: 6fe4f94f1049f4e479053df6b0ddb8bf, type: 3}
+  andar:
+  - {fileID: 4535429896457696789, guid: 96bc918f465182345a0c427d3a20ec7b, type: 3}
+  - {fileID: 6650569632616937699, guid: 96bc918f465182345a0c427d3a20ec7b, type: 3}
+  - {fileID: -1339863815042123085, guid: 96bc918f465182345a0c427d3a20ec7b, type: 3}
+  - {fileID: 4022655369879898156, guid: 96bc918f465182345a0c427d3a20ec7b, type: 3}
+  andarShiny:
+  - {fileID: 4535429896457696789, guid: 6fe4f94f1049f4e479053df6b0ddb8bf, type: 3}
+  - {fileID: 6650569632616937699, guid: 6fe4f94f1049f4e479053df6b0ddb8bf, type: 3}
+  - {fileID: -1339863815042123085, guid: 6fe4f94f1049f4e479053df6b0ddb8bf, type: 3}
+  - {fileID: 4022655369879898156, guid: 6fe4f94f1049f4e479053df6b0ddb8bf, type: 3}
+  hp: 35
+  atk: 40
+  def: 65
+  lvlEvo: 12
+  evolucion:
+  - {fileID: 11400000, guid: 6cb2ed0a93c96384ebda29245fd28ca8, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 3
+  exBase: 49
+  SpriteTipo1: {fileID: -2990309890484215505, guid: 89937cfd53b749e4aaa21deb0531704a, type: 3}
+  SpriteTipo2: {fileID: 0}

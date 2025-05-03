@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 249
+  m_EditorClassIdentifier: 
+  num: 249
+  nombre: Lugia
+  tipo1: 13
+  tipo2: 18
+  idle: {fileID: 5810503287642432626, guid: aa13b1e97bfb2d347a4624947e9da091, type: 3}
+  idleShiny: {fileID: 5810503287642432626, guid: 7a8f13b6f0ffa5f4cb65ad416b51d05e, type: 3}
+  explorar: {fileID: -6049953770355535014, guid: aa13b1e97bfb2d347a4624947e9da091, type: 3}
+  explorarShiny: {fileID: -6049953770355535014, guid: 7a8f13b6f0ffa5f4cb65ad416b51d05e, type: 3}
+  andar:
+  - {fileID: 2613235114536406034, guid: aa13b1e97bfb2d347a4624947e9da091, type: 3}
+  - {fileID: -7677879131772824978, guid: aa13b1e97bfb2d347a4624947e9da091, type: 3}
+  - {fileID: -2731505310025246440, guid: aa13b1e97bfb2d347a4624947e9da091, type: 3}
+  - {fileID: 3797899885777222472, guid: aa13b1e97bfb2d347a4624947e9da091, type: 3}
+  andarShiny:
+  - {fileID: 2613235114536406034, guid: 7a8f13b6f0ffa5f4cb65ad416b51d05e, type: 3}
+  - {fileID: -7677879131772824978, guid: 7a8f13b6f0ffa5f4cb65ad416b51d05e, type: 3}
+  - {fileID: -2731505310025246440, guid: 7a8f13b6f0ffa5f4cb65ad416b51d05e, type: 3}
+  - {fileID: 3797899885777222472, guid: 7a8f13b6f0ffa5f4cb65ad416b51d05e, type: 3}
+  hp: 106
+  atk: 90
+  def: 154
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 70
+  ratioCaptura: 3
+  tipoExp: 1
+  exBase: 306
+  SpriteTipo1: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 209
+  m_EditorClassIdentifier: 
+  num: 209
+  nombre: Snubbull
+  tipo1: 8
+  tipo2: 0
+  idle: {fileID: 5342962865178588758, guid: 4b36443363d2f8a4193f27461aa75830, type: 3}
+  idleShiny: {fileID: 5342962865178588758, guid: a5065ad3683b22b4896a2194a03e4355, type: 3}
+  explorar: {fileID: -4849091785316911079, guid: 4b36443363d2f8a4193f27461aa75830, type: 3}
+  explorarShiny: {fileID: -4849091785316911079, guid: a5065ad3683b22b4896a2194a03e4355, type: 3}
+  andar:
+  - {fileID: -231824878851244060, guid: 4b36443363d2f8a4193f27461aa75830, type: 3}
+  - {fileID: 397059879368341077, guid: 4b36443363d2f8a4193f27461aa75830, type: 3}
+  - {fileID: -3763030838754612695, guid: 4b36443363d2f8a4193f27461aa75830, type: 3}
+  - {fileID: -6198521452759283992, guid: 4b36443363d2f8a4193f27461aa75830, type: 3}
+  andarShiny:
+  - {fileID: -231824878851244060, guid: a5065ad3683b22b4896a2194a03e4355, type: 3}
+  - {fileID: 397059879368341077, guid: a5065ad3683b22b4896a2194a03e4355, type: 3}
+  - {fileID: -3763030838754612695, guid: a5065ad3683b22b4896a2194a03e4355, type: 3}
+  - {fileID: -6198521452759283992, guid: a5065ad3683b22b4896a2194a03e4355, type: 3}
+  hp: 60
+  atk: 80
+  def: 50
+  lvlEvo: 23
+  evolucion:
+  - {fileID: 11400000, guid: e1020134b256f6f4ba5653c06b4049a0, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 3
+  exBase: 60
+  SpriteTipo1: {fileID: -2990309890484215505, guid: 89937cfd53b749e4aaa21deb0531704a, type: 3}
+  SpriteTipo2: {fileID: 0}

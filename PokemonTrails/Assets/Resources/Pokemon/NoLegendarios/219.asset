@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 219
+  m_EditorClassIdentifier: 
+  num: 219
+  nombre: Magcargo
+  tipo1: 7
+  tipo2: 14
+  idle: {fileID: -8986147360102700353, guid: 26240084edea9c642bd51feb83e5405f, type: 3}
+  idleShiny: {fileID: -8986147360102700353, guid: 08fa81d0ddae2114ea441de6f145eb2a, type: 3}
+  explorar: {fileID: -5741463310814872275, guid: 26240084edea9c642bd51feb83e5405f, type: 3}
+  explorarShiny: {fileID: -5741463310814872275, guid: 08fa81d0ddae2114ea441de6f145eb2a, type: 3}
+  andar:
+  - {fileID: 1249043621783772020, guid: 26240084edea9c642bd51feb83e5405f, type: 3}
+  - {fileID: -467822526671841679, guid: 26240084edea9c642bd51feb83e5405f, type: 3}
+  - {fileID: 4773126761114287126, guid: 26240084edea9c642bd51feb83e5405f, type: 3}
+  - {fileID: -3819665301012808343, guid: 26240084edea9c642bd51feb83e5405f, type: 3}
+  andarShiny:
+  - {fileID: 1249043621783772020, guid: 08fa81d0ddae2114ea441de6f145eb2a, type: 3}
+  - {fileID: -467822526671841679, guid: 08fa81d0ddae2114ea441de6f145eb2a, type: 3}
+  - {fileID: 4773126761114287126, guid: 08fa81d0ddae2114ea441de6f145eb2a, type: 3}
+  - {fileID: -3819665301012808343, guid: 08fa81d0ddae2114ea441de6f145eb2a, type: 3}
+  hp: 60
+  atk: 90
+  def: 120
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 38
+  ratioCaptura: 75
+  tipoExp: 2
+  exBase: 151
+  SpriteTipo1: {fileID: 8334651344603559088, guid: cab788a1cc7eb3844af4d00747186c07, type: 3}
+  SpriteTipo2: {fileID: -2182124076254010665, guid: 62ea7f7259a4b424ca10cb0fd9c073d8, type: 3}

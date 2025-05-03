@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 205
+  m_EditorClassIdentifier: 
+  num: 205
+  nombre: Forretress
+  tipo1: 3
+  tipo2: 1
+  idle: {fileID: 8394217124262042363, guid: c45347e37d3613443b63f12c9f0c7484, type: 3}
+  idleShiny: {fileID: 8394217124262042363, guid: 2e5da46da290d534991d5385a25fbc0d, type: 3}
+  explorar: {fileID: -3319462882360917304, guid: c45347e37d3613443b63f12c9f0c7484, type: 3}
+  explorarShiny: {fileID: -3319462882360917304, guid: 2e5da46da290d534991d5385a25fbc0d, type: 3}
+  andar:
+  - {fileID: -8081012523557031969, guid: c45347e37d3613443b63f12c9f0c7484, type: 3}
+  - {fileID: 1666112029491267687, guid: c45347e37d3613443b63f12c9f0c7484, type: 3}
+  - {fileID: 1240669001487122477, guid: c45347e37d3613443b63f12c9f0c7484, type: 3}
+  - {fileID: -8335096803681231919, guid: c45347e37d3613443b63f12c9f0c7484, type: 3}
+  andarShiny:
+  - {fileID: -8081012523557031969, guid: 2e5da46da290d534991d5385a25fbc0d, type: 3}
+  - {fileID: 1666112029491267687, guid: 2e5da46da290d534991d5385a25fbc0d, type: 3}
+  - {fileID: 1240669001487122477, guid: 2e5da46da290d534991d5385a25fbc0d, type: 3}
+  - {fileID: -8335096803681231919, guid: 2e5da46da290d534991d5385a25fbc0d, type: 3}
+  hp: 75
+  atk: 90
+  def: 140
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 31
+  ratioCaptura: 75
+  tipoExp: 2
+  exBase: 163
+  SpriteTipo1: {fileID: -3367932149377307684, guid: 6fd472e56c695804abba7eca29ae7f25, type: 3}
+  SpriteTipo2: {fileID: 4226397978021778064, guid: dee16be6095eb474bbabf67738024674, type: 3}

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 192
+  m_EditorClassIdentifier: 
+  num: 192
+  nombre: Sunflora
+  tipo1: 12
+  tipo2: 0
+  idle: {fileID: 377218537196851217, guid: 90af7a52532295042854d3e3df5e66b9, type: 3}
+  idleShiny: {fileID: 377218537196851217, guid: 786ac761b5c4bfa478530bd305b9ab3f, type: 3}
+  explorar: {fileID: -1738124573326242935, guid: 90af7a52532295042854d3e3df5e66b9, type: 3}
+  explorarShiny: {fileID: -1738124573326242935, guid: 786ac761b5c4bfa478530bd305b9ab3f, type: 3}
+  andar:
+  - {fileID: -2869173891043008644, guid: 90af7a52532295042854d3e3df5e66b9, type: 3}
+  - {fileID: 7345901762262397671, guid: 90af7a52532295042854d3e3df5e66b9, type: 3}
+  - {fileID: -1422389269784530003, guid: 90af7a52532295042854d3e3df5e66b9, type: 3}
+  - {fileID: 325249358890311140, guid: 90af7a52532295042854d3e3df5e66b9, type: 3}
+  andarShiny:
+  - {fileID: -2869173891043008644, guid: 786ac761b5c4bfa478530bd305b9ab3f, type: 3}
+  - {fileID: 7345901762262397671, guid: 786ac761b5c4bfa478530bd305b9ab3f, type: 3}
+  - {fileID: -1422389269784530003, guid: 786ac761b5c4bfa478530bd305b9ab3f, type: 3}
+  - {fileID: 325249358890311140, guid: 786ac761b5c4bfa478530bd305b9ab3f, type: 3}
+  hp: 75
+  atk: 105
+  def: 85
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 25
+  ratioCaptura: 120
+  tipoExp: 0
+  exBase: 149
+  SpriteTipo1: {fileID: 7932798033344189819, guid: d6d579d0526b1aa46bd061d6721fea3f, type: 3}
+  SpriteTipo2: {fileID: 0}

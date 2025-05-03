@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 77 1
+  m_EditorClassIdentifier: 
+  num: 77
+  nombre: Ponyta (Galar)
+  tipo1: 13
+  tipo2: 0
+  idle: {fileID: -8907314035658573108, guid: a6a67f95c845a0044979abd9b076346c, type: 3}
+  idleShiny: {fileID: -8907314035658573108, guid: 74ba461d583ef4c42974165fd069ab21, type: 3}
+  explorar: {fileID: 8910663927797911060, guid: a6a67f95c845a0044979abd9b076346c, type: 3}
+  explorarShiny: {fileID: 8910663927797911060, guid: 74ba461d583ef4c42974165fd069ab21, type: 3}
+  andar:
+  - {fileID: -4358068549563051038, guid: a6a67f95c845a0044979abd9b076346c, type: 3}
+  - {fileID: -5373801065415532255, guid: a6a67f95c845a0044979abd9b076346c, type: 3}
+  - {fileID: -7406598046464166152, guid: a6a67f95c845a0044979abd9b076346c, type: 3}
+  - {fileID: -3949485411858274266, guid: a6a67f95c845a0044979abd9b076346c, type: 3}
+  andarShiny:
+  - {fileID: -4358068549563051038, guid: 74ba461d583ef4c42974165fd069ab21, type: 3}
+  - {fileID: -5373801065415532255, guid: 74ba461d583ef4c42974165fd069ab21, type: 3}
+  - {fileID: -7406598046464166152, guid: 74ba461d583ef4c42974165fd069ab21, type: 3}
+  - {fileID: -3949485411858274266, guid: 74ba461d583ef4c42974165fd069ab21, type: 3}
+  hp: 50
+  atk: 85
+  def: 65
+  lvlEvo: 40
+  evolucion:
+  - {fileID: 11400000, guid: ce46ab2a28ace404cb335148da5fa46d, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 2
+  exBase: 82
+  SpriteTipo1: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}
+  SpriteTipo2: {fileID: 0}

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 206
+  m_EditorClassIdentifier: 
+  num: 206
+  nombre: Dunsparce
+  tipo1: 11
+  tipo2: 0
+  idle: {fileID: 7951900225827811928, guid: 1d620d70544c31443b8c8cda6aa17c75, type: 3}
+  idleShiny: {fileID: 7951900225827811928, guid: 57b06047a37912a4fae43c8ab6caa7fd, type: 3}
+  explorar: {fileID: 8717648295373064372, guid: 1d620d70544c31443b8c8cda6aa17c75, type: 3}
+  explorarShiny: {fileID: 8717648295373064372, guid: 57b06047a37912a4fae43c8ab6caa7fd, type: 3}
+  andar:
+  - {fileID: 7086067326408765425, guid: 1d620d70544c31443b8c8cda6aa17c75, type: 3}
+  - {fileID: 3633632033721400920, guid: 1d620d70544c31443b8c8cda6aa17c75, type: 3}
+  - {fileID: -8553385419747227807, guid: 1d620d70544c31443b8c8cda6aa17c75, type: 3}
+  - {fileID: 4568647973678381812, guid: 1d620d70544c31443b8c8cda6aa17c75, type: 3}
+  andarShiny:
+  - {fileID: 7086067326408765425, guid: 57b06047a37912a4fae43c8ab6caa7fd, type: 3}
+  - {fileID: 3633632033721400920, guid: 57b06047a37912a4fae43c8ab6caa7fd, type: 3}
+  - {fileID: -8553385419747227807, guid: 57b06047a37912a4fae43c8ab6caa7fd, type: 3}
+  - {fileID: 4568647973678381812, guid: 57b06047a37912a4fae43c8ab6caa7fd, type: 3}
+  hp: 100
+  atk: 70
+  def: 70
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 2
+  exBase: 145
+  SpriteTipo1: {fileID: 4606157284126940538, guid: bcea1507ef7c2e5439b7d3f5e0aecd67, type: 3}
+  SpriteTipo2: {fileID: 0}

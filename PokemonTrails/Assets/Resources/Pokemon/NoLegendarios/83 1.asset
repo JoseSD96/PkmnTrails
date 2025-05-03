@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 83 1
+  m_EditorClassIdentifier: 
+  num: 83
+  nombre: Farfetch'd (Galar)
+  tipo1: 10
+  tipo2: 0
+  idle: {fileID: -5588330696658607050, guid: dee948fcc2ea61941b1161c4845a2445, type: 3}
+  idleShiny: {fileID: -5588330696658607050, guid: 0a693b9adf882c94681aeee4ef438ace, type: 3}
+  explorar: {fileID: -4775152925421993447, guid: dee948fcc2ea61941b1161c4845a2445, type: 3}
+  explorarShiny: {fileID: -4775152925421993447, guid: 0a693b9adf882c94681aeee4ef438ace, type: 3}
+  andar:
+  - {fileID: 705763444270490710, guid: dee948fcc2ea61941b1161c4845a2445, type: 3}
+  - {fileID: -6055650308050504241, guid: dee948fcc2ea61941b1161c4845a2445, type: 3}
+  - {fileID: -7928829731756050437, guid: dee948fcc2ea61941b1161c4845a2445, type: 3}
+  - {fileID: 6403574808844708265, guid: dee948fcc2ea61941b1161c4845a2445, type: 3}
+  andarShiny:
+  - {fileID: 705763444270490710, guid: 0a693b9adf882c94681aeee4ef438ace, type: 3}
+  - {fileID: -6055650308050504241, guid: 0a693b9adf882c94681aeee4ef438ace, type: 3}
+  - {fileID: -7928829731756050437, guid: 0a693b9adf882c94681aeee4ef438ace, type: 3}
+  - {fileID: 6403574808844708265, guid: 0a693b9adf882c94681aeee4ef438ace, type: 3}
+  hp: 52
+  atk: 95
+  def: 62
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 45
+  tipoExp: 2
+  exBase: 132
+  SpriteTipo1: {fileID: -2810909829056618550, guid: f1eb9c19331ad2448b325bdcaccbecb0, type: 3}
+  SpriteTipo2: {fileID: 0}

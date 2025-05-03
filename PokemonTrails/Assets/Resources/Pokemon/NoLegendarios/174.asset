@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 174
+  m_EditorClassIdentifier: 
+  num: 174
+  nombre: Igglybuff
+  tipo1: 11
+  tipo2: 8
+  idle: {fileID: -759554225901191899, guid: 3a90085f82ced5946a8f5503d0eddf90, type: 3}
+  idleShiny: {fileID: -759554225901191899, guid: 72d22978b1acd5843b89b8656adcadc2, type: 3}
+  explorar: {fileID: 6754604313631726685, guid: 3a90085f82ced5946a8f5503d0eddf90, type: 3}
+  explorarShiny: {fileID: 6754604313631726685, guid: 72d22978b1acd5843b89b8656adcadc2, type: 3}
+  andar:
+  - {fileID: 6973242469586339205, guid: 3a90085f82ced5946a8f5503d0eddf90, type: 3}
+  - {fileID: 1779076990734646022, guid: 3a90085f82ced5946a8f5503d0eddf90, type: 3}
+  - {fileID: -7796935469874730461, guid: 3a90085f82ced5946a8f5503d0eddf90, type: 3}
+  - {fileID: 404495853622240043, guid: 3a90085f82ced5946a8f5503d0eddf90, type: 3}
+  andarShiny:
+  - {fileID: 6973242469586339205, guid: 72d22978b1acd5843b89b8656adcadc2, type: 3}
+  - {fileID: 1779076990734646022, guid: 72d22978b1acd5843b89b8656adcadc2, type: 3}
+  - {fileID: -7796935469874730461, guid: 72d22978b1acd5843b89b8656adcadc2, type: 3}
+  - {fileID: 404495853622240043, guid: 72d22978b1acd5843b89b8656adcadc2, type: 3}
+  hp: 90
+  atk: 40
+  def: 20
+  lvlEvo: 12
+  evolucion:
+  - {fileID: 11400000, guid: 5a63c3f730bb9ac419169f1b3a1018ca, type: 2}
+  minLvl: 1
+  ratioCaptura: 170
+  tipoExp: 0
+  exBase: 42
+  SpriteTipo1: {fileID: 4606157284126940538, guid: bcea1507ef7c2e5439b7d3f5e0aecd67, type: 3}
+  SpriteTipo2: {fileID: -2990309890484215505, guid: 89937cfd53b749e4aaa21deb0531704a, type: 3}

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 248
+  m_EditorClassIdentifier: 
+  num: 248
+  nombre: Tyranitar
+  tipo1: 14
+  tipo2: 15
+  idle: {fileID: -7538872117052523703, guid: 3143c3315bf446b42826f5504aefea41, type: 3}
+  idleShiny: {fileID: -7538872117052523703, guid: 53ef10e5902cdc34f961685efad8e0b6, type: 3}
+  explorar: {fileID: 4989342837727242120, guid: 3143c3315bf446b42826f5504aefea41, type: 3}
+  explorarShiny: {fileID: 4989342837727242120, guid: 53ef10e5902cdc34f961685efad8e0b6, type: 3}
+  andar:
+  - {fileID: 1289168962547456255, guid: 3143c3315bf446b42826f5504aefea41, type: 3}
+  - {fileID: -2631073644863808279, guid: 3143c3315bf446b42826f5504aefea41, type: 3}
+  - {fileID: 7675276973531275801, guid: 3143c3315bf446b42826f5504aefea41, type: 3}
+  - {fileID: 1101431809634319391, guid: 3143c3315bf446b42826f5504aefea41, type: 3}
+  andarShiny:
+  - {fileID: 1289168962547456255, guid: 53ef10e5902cdc34f961685efad8e0b6, type: 3}
+  - {fileID: -2631073644863808279, guid: 53ef10e5902cdc34f961685efad8e0b6, type: 3}
+  - {fileID: 7675276973531275801, guid: 53ef10e5902cdc34f961685efad8e0b6, type: 3}
+  - {fileID: 1101431809634319391, guid: 53ef10e5902cdc34f961685efad8e0b6, type: 3}
+  hp: 100
+  atk: 134
+  def: 110
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 55
+  ratioCaptura: 45
+  tipoExp: 1
+  exBase: 270
+  SpriteTipo1: {fileID: -2182124076254010665, guid: 62ea7f7259a4b424ca10cb0fd9c073d8, type: 3}
+  SpriteTipo2: {fileID: -6729511157232288408, guid: 5c82e9f86c291b2429e98339bd58b3ce, type: 3}

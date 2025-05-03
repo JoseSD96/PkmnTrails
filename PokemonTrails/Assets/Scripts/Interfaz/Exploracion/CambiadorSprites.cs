@@ -10,6 +10,7 @@ public class CambiadorSprites : MonoBehaviour
     private Coroutine walkCoroutine;
     [SerializeField] SpriteRenderer spriteRendererEntrenador;
     [SerializeField] SpriteRenderer spriteRendererPkmn;
+    [SerializeField] SpriteRenderer shinyCharm;
 
     private bool isWalking = false;
 
@@ -27,6 +28,15 @@ public class CambiadorSprites : MonoBehaviour
     /// </summary>
     void SetIdle()
     {
+        if (player.pokedex.pokemones.Count >= 100)
+        {
+            shinyCharm.color = new Color(1f, 1f, 1f, 1f);
+        }
+        else
+        {
+            shinyCharm.color = new Color(1f, 1f, 1f, 0.2f);
+        }
+
         if (walkCoroutine != null)
         {
             StopCoroutine(walkCoroutine);

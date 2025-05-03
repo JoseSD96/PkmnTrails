@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 53 1
+  m_EditorClassIdentifier: 
+  num: 53
+  nombre: Persian (Alola)
+  tipo1: 15
+  tipo2: 0
+  idle: {fileID: -1348623107414585681, guid: b7e0a931adc1f074abbb2e2763e55e0c, type: 3}
+  idleShiny: {fileID: -1348623107414585681, guid: 576799b62566fc64b97ae97507d7a3f2, type: 3}
+  explorar: {fileID: -4235929126441114384, guid: b7e0a931adc1f074abbb2e2763e55e0c, type: 3}
+  explorarShiny: {fileID: -4235929126441114384, guid: 576799b62566fc64b97ae97507d7a3f2, type: 3}
+  andar:
+  - {fileID: -1179997670944113077, guid: b7e0a931adc1f074abbb2e2763e55e0c, type: 3}
+  - {fileID: 3224450486612242625, guid: b7e0a931adc1f074abbb2e2763e55e0c, type: 3}
+  - {fileID: 6476245796654491130, guid: b7e0a931adc1f074abbb2e2763e55e0c, type: 3}
+  - {fileID: 7210177151548880073, guid: b7e0a931adc1f074abbb2e2763e55e0c, type: 3}
+  andarShiny:
+  - {fileID: -1179997670944113077, guid: 576799b62566fc64b97ae97507d7a3f2, type: 3}
+  - {fileID: 3224450486612242625, guid: 576799b62566fc64b97ae97507d7a3f2, type: 3}
+  - {fileID: 6476245796654491130, guid: 576799b62566fc64b97ae97507d7a3f2, type: 3}
+  - {fileID: 7210177151548880073, guid: 576799b62566fc64b97ae97507d7a3f2, type: 3}
+  hp: 65
+  atk: 75
+  def: 65
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 28
+  ratioCaptura: 90
+  tipoExp: 2
+  exBase: 154
+  SpriteTipo1: {fileID: -6729511157232288408, guid: 5c82e9f86c291b2429e98339bd58b3ce, type: 3}
+  SpriteTipo2: {fileID: 0}

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 188
+  m_EditorClassIdentifier: 
+  num: 188
+  nombre: Skiploom
+  tipo1: 12
+  tipo2: 18
+  idle: {fileID: -4821177280663915193, guid: 6c6268a9aba6a9b4ca5af10ebb3ddace, type: 3}
+  idleShiny: {fileID: -4821177280663915193, guid: 8386349c964d341478baedc929dfc7d9, type: 3}
+  explorar: {fileID: -180092247175983747, guid: 6c6268a9aba6a9b4ca5af10ebb3ddace, type: 3}
+  explorarShiny: {fileID: -180092247175983747, guid: 8386349c964d341478baedc929dfc7d9, type: 3}
+  andar:
+  - {fileID: -4085649679220983059, guid: 6c6268a9aba6a9b4ca5af10ebb3ddace, type: 3}
+  - {fileID: -4478092516107081502, guid: 6c6268a9aba6a9b4ca5af10ebb3ddace, type: 3}
+  - {fileID: -9109328927236920251, guid: 6c6268a9aba6a9b4ca5af10ebb3ddace, type: 3}
+  - {fileID: -7535169222446268710, guid: 6c6268a9aba6a9b4ca5af10ebb3ddace, type: 3}
+  andarShiny:
+  - {fileID: -4085649679220983059, guid: 8386349c964d341478baedc929dfc7d9, type: 3}
+  - {fileID: -4478092516107081502, guid: 8386349c964d341478baedc929dfc7d9, type: 3}
+  - {fileID: -9109328927236920251, guid: 8386349c964d341478baedc929dfc7d9, type: 3}
+  - {fileID: -7535169222446268710, guid: 8386349c964d341478baedc929dfc7d9, type: 3}
+  hp: 55
+  atk: 45
+  def: 65
+  lvlEvo: 27
+  evolucion:
+  - {fileID: 11400000, guid: 6d4cb31aa9dbea342a3bd0eedf8ddbae, type: 2}
+  minLvl: 18
+  ratioCaptura: 120
+  tipoExp: 0
+  exBase: 119
+  SpriteTipo1: {fileID: 7932798033344189819, guid: d6d579d0526b1aa46bd061d6721fea3f, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

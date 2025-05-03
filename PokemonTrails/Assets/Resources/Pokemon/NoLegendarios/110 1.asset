@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 110 1
+  m_EditorClassIdentifier: 
+  num: 110
+  nombre: Weezing (Galar)
+  tipo1: 17
+  tipo2: 8
+  idle: {fileID: -1741485483150476676, guid: 22b4bf70013282e44ad0d60cc8c2e39e, type: 3}
+  idleShiny: {fileID: -1741485483150476676, guid: 6879efb3d7f7f494b8ac46685d64e5ac, type: 3}
+  explorar: {fileID: 1156316175692311146, guid: 22b4bf70013282e44ad0d60cc8c2e39e, type: 3}
+  explorarShiny: {fileID: 1156316175692311146, guid: 6879efb3d7f7f494b8ac46685d64e5ac, type: 3}
+  andar:
+  - {fileID: -6733351406503144018, guid: 22b4bf70013282e44ad0d60cc8c2e39e, type: 3}
+  - {fileID: 6259583009869888819, guid: 22b4bf70013282e44ad0d60cc8c2e39e, type: 3}
+  - {fileID: -8009049213772375291, guid: 22b4bf70013282e44ad0d60cc8c2e39e, type: 3}
+  - {fileID: -3665014996730278654, guid: 22b4bf70013282e44ad0d60cc8c2e39e, type: 3}
+  andarShiny:
+  - {fileID: -6733351406503144018, guid: 6879efb3d7f7f494b8ac46685d64e5ac, type: 3}
+  - {fileID: 6259583009869888819, guid: 6879efb3d7f7f494b8ac46685d64e5ac, type: 3}
+  - {fileID: -8009049213772375291, guid: 6879efb3d7f7f494b8ac46685d64e5ac, type: 3}
+  - {fileID: -3665014996730278654, guid: 6879efb3d7f7f494b8ac46685d64e5ac, type: 3}
+  hp: 65
+  atk: 90
+  def: 120
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 35
+  ratioCaptura: 60
+  tipoExp: 2
+  exBase: 172
+  SpriteTipo1: {fileID: -5005990984189769374, guid: e92ae9ff3784b7240b609f27cb3756ca, type: 3}
+  SpriteTipo2: {fileID: -2990309890484215505, guid: 89937cfd53b749e4aaa21deb0531704a, type: 3}

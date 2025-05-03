@@ -29,7 +29,7 @@ public class PC : MonoBehaviour
     /// </summary>
     void Awake()
     {
-        panelEquipo.anchoredPosition = new Vector2(panelEquipo.anchoredPosition.x, 440);
+        panelEquipo.anchoredPosition = new Vector2(0, 259);
     }
 
     /// <summary>
@@ -317,7 +317,7 @@ public class PC : MonoBehaviour
     /// </summary>
     public void OcultarInterfazEquipoEnPC()
     {
-        panelEquipo.DOLocalMoveY(440, 0.4f);
+        panelEquipo.DOAnchorPos(new Vector2(0, 259), 0.4f);
     }
 
     /// <summary>
@@ -417,20 +417,20 @@ public class PC : MonoBehaviour
     public void TogglePanelEquipo()
     {
         float yActual = panelEquipo.anchoredPosition.y;
-        float yArriba = 440f;
-        float yAbajo = 0f;
+        float yArriba = 259f;
+        float yAbajo = -259f;
         float duracion = 0.4f;
 
         ActualizarPanelEquipoSimple(botonesPanelEquipo, interfazEquipo.Equipo, interfazEquipo.indiceSeleccionado);
 
         if (Mathf.Abs(yActual - yArriba) < 1f)
         {
-            panelEquipo.DOLocalMoveY(yAbajo, duracion);
+            panelEquipo.DOAnchorPos(new Vector2(0, yAbajo), duracion);
             btnOpciones.SetActive(true);
         }
         else
         {
-            panelEquipo.DOLocalMoveY(yArriba, duracion);
+            panelEquipo.DOAnchorPos(new Vector2(0, yArriba), duracion);
             btnOpciones.SetActive(false);
             LimpiarSeleccion();
             esperandoIntercambioConEquipo = false;

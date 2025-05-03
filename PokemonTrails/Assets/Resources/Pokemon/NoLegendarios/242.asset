@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 242
+  m_EditorClassIdentifier: 
+  num: 242
+  nombre: Blissey
+  tipo1: 11
+  tipo2: 0
+  idle: {fileID: -5971026317936863997, guid: ad32b69ffa48e424e8d4bffc9160f351, type: 3}
+  idleShiny: {fileID: -5971026317936863997, guid: 9a0c5653b6c74264caf011abc5372be9, type: 3}
+  explorar: {fileID: -3719327265485839069, guid: ad32b69ffa48e424e8d4bffc9160f351, type: 3}
+  explorarShiny: {fileID: -3719327265485839069, guid: 9a0c5653b6c74264caf011abc5372be9, type: 3}
+  andar:
+  - {fileID: -1335704087697162221, guid: ad32b69ffa48e424e8d4bffc9160f351, type: 3}
+  - {fileID: 4861937163842593102, guid: ad32b69ffa48e424e8d4bffc9160f351, type: 3}
+  - {fileID: -5799846181415098691, guid: ad32b69ffa48e424e8d4bffc9160f351, type: 3}
+  - {fileID: 7564617370146553647, guid: ad32b69ffa48e424e8d4bffc9160f351, type: 3}
+  andarShiny:
+  - {fileID: -1335704087697162221, guid: 9a0c5653b6c74264caf011abc5372be9, type: 3}
+  - {fileID: 4861937163842593102, guid: 9a0c5653b6c74264caf011abc5372be9, type: 3}
+  - {fileID: -5799846181415098691, guid: 9a0c5653b6c74264caf011abc5372be9, type: 3}
+  - {fileID: 7564617370146553647, guid: 9a0c5653b6c74264caf011abc5372be9, type: 3}
+  hp: 255
+  atk: 75
+  def: 135
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 30
+  ratioCaptura: 30
+  tipoExp: 3
+  exBase: 608
+  SpriteTipo1: {fileID: 4606157284126940538, guid: bcea1507ef7c2e5439b7d3f5e0aecd67, type: 3}
+  SpriteTipo2: {fileID: 0}

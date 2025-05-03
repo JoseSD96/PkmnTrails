@@ -32,7 +32,7 @@ public class Salvajes : MonoBehaviour
     /// </summary>
     /// <param name="nivelMedioEquipo">Nivel medio del equipo del jugador.</param>
     /// <returns>Instancia de Pokémon salvaje generado.</returns>
-    public Pokemon GenerarPokemonSalvaje(int nivelMedioEquipo)
+    public Pokemon GenerarPokemonSalvaje(int nivelMedioEquipo, bool shinyCharm)
     {
         Pokemon pokemonSalvaje = new Pokemon();
         if (zonaBase.PokemonLegendario.Length > 0 && Random.Range(0, 100) < 10)
@@ -41,7 +41,15 @@ public class Salvajes : MonoBehaviour
 
             pokemonSalvaje.Base = legendario;
             pokemonSalvaje.Nivel = legendario.MinLvl;
-            pokemonSalvaje.Init(Random.Range(20, 32), Random.Range(0, 100) < 5);
+            int potencial = Random.Range(0, 32);
+            if (shinyCharm)
+            {
+                pokemonSalvaje.Init(potencial, Random.Range(0, 100) < 4);
+            }
+            else
+            {
+                pokemonSalvaje.Init(potencial, Random.Range(0, 100) < 2);
+            }
             return pokemonSalvaje;
         }
         else

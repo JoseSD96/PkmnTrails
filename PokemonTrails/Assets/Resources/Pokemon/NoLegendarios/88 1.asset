@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 88 1
+  m_EditorClassIdentifier: 
+  num: 88
+  nombre: Grimer (Alola)
+  tipo1: 17
+  tipo2: 15
+  idle: {fileID: -2984855899084553423, guid: 7651b329b269c2847b3ed79bc25947ab, type: 3}
+  idleShiny: {fileID: -2984855899084553423, guid: ec8137f78c90fa3478616ba1b0b3e6a8, type: 3}
+  explorar: {fileID: -1217465563197350428, guid: 7651b329b269c2847b3ed79bc25947ab, type: 3}
+  explorarShiny: {fileID: -1217465563197350428, guid: ec8137f78c90fa3478616ba1b0b3e6a8, type: 3}
+  andar:
+  - {fileID: -7834037971497904152, guid: 7651b329b269c2847b3ed79bc25947ab, type: 3}
+  - {fileID: 3610538940909357446, guid: 7651b329b269c2847b3ed79bc25947ab, type: 3}
+  - {fileID: 3177138850539867789, guid: 7651b329b269c2847b3ed79bc25947ab, type: 3}
+  - {fileID: 6047187160326921636, guid: 7651b329b269c2847b3ed79bc25947ab, type: 3}
+  andarShiny:
+  - {fileID: -7834037971497904152, guid: ec8137f78c90fa3478616ba1b0b3e6a8, type: 3}
+  - {fileID: 3610538940909357446, guid: ec8137f78c90fa3478616ba1b0b3e6a8, type: 3}
+  - {fileID: 3177138850539867789, guid: ec8137f78c90fa3478616ba1b0b3e6a8, type: 3}
+  - {fileID: 6047187160326921636, guid: ec8137f78c90fa3478616ba1b0b3e6a8, type: 3}
+  hp: 80
+  atk: 80
+  def: 50
+  lvlEvo: 38
+  evolucion:
+  - {fileID: 11400000, guid: 8a6b45c1c9d701442a99061616046175, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 2
+  exBase: 65
+  SpriteTipo1: {fileID: -5005990984189769374, guid: e92ae9ff3784b7240b609f27cb3756ca, type: 3}
+  SpriteTipo2: {fileID: -6729511157232288408, guid: 5c82e9f86c291b2429e98339bd58b3ce, type: 3}

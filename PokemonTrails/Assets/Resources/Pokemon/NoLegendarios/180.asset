@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 180
+  m_EditorClassIdentifier: 
+  num: 180
+  nombre: Flaaffy
+  tipo1: 5
+  tipo2: 0
+  idle: {fileID: 5564224616174987352, guid: 6dd51855a0ee26945aa143536b6c18b7, type: 3}
+  idleShiny: {fileID: 5564224616174987352, guid: f79a05683ff9ac244ae678cc4cd5d804, type: 3}
+  explorar: {fileID: -160479526218507839, guid: 6dd51855a0ee26945aa143536b6c18b7, type: 3}
+  explorarShiny: {fileID: -160479526218507839, guid: f79a05683ff9ac244ae678cc4cd5d804, type: 3}
+  andar:
+  - {fileID: -2702053448067061222, guid: 6dd51855a0ee26945aa143536b6c18b7, type: 3}
+  - {fileID: -4703949698569384744, guid: 6dd51855a0ee26945aa143536b6c18b7, type: 3}
+  - {fileID: -8651670986394605545, guid: 6dd51855a0ee26945aa143536b6c18b7, type: 3}
+  - {fileID: 7488576504657492664, guid: 6dd51855a0ee26945aa143536b6c18b7, type: 3}
+  andarShiny:
+  - {fileID: -2702053448067061222, guid: f79a05683ff9ac244ae678cc4cd5d804, type: 3}
+  - {fileID: -4703949698569384744, guid: f79a05683ff9ac244ae678cc4cd5d804, type: 3}
+  - {fileID: -8651670986394605545, guid: f79a05683ff9ac244ae678cc4cd5d804, type: 3}
+  - {fileID: 7488576504657492664, guid: f79a05683ff9ac244ae678cc4cd5d804, type: 3}
+  hp: 70
+  atk: 80
+  def: 60
+  lvlEvo: 30
+  evolucion:
+  - {fileID: 11400000, guid: e4384385138e07540bf9be2f5426127e, type: 2}
+  minLvl: 15
+  ratioCaptura: 120
+  tipoExp: 0
+  exBase: 128
+  SpriteTipo1: {fileID: 5820286478268577726, guid: f1d7827866e38664fb759c583947fb9a, type: 3}
+  SpriteTipo2: {fileID: 0}

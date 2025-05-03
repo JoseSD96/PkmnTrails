@@ -126,10 +126,19 @@ public class ControladorPartida : MonoBehaviour
         var salvajes = zonaActual.GetComponent<Salvajes>();
         salvajes.Inicializar();
 
-        var salvaje = salvajes.GenerarPokemonSalvaje(equipo.GetMediaNivel());
+        bool shinyCharm = false;
+        if (jugador.pokedex.pokemones.Count >= 100)
+        {
+            shinyCharm = true;
+        }
+
+        var salvaje = salvajes.GenerarPokemonSalvaje(equipo.GetMediaNivel(), shinyCharm);
         bool esLegendario = salvaje.Base.Num == 144 || salvaje.Base.Num == 145 ||
                     salvaje.Base.Num == 146 || salvaje.Base.Num == 150 ||
-                    salvaje.Base.Num == 151;
+                    salvaje.Base.Num == 151 || salvaje.Base.Num == 243 ||
+                    salvaje.Base.Num == 244 || salvaje.Base.Num == 245 ||
+                    salvaje.Base.Num == 249 || salvaje.Base.Num == 250 ||
+                    salvaje.Base.Num == 251;
 
         if (esLegendario)
         {
@@ -151,7 +160,7 @@ public class ControladorPartida : MonoBehaviour
     /// </summary>
     public void CurarPokemon()
     {
-        SavingSystem.i.Save("Save");
+        SavingSystem.i.Save("Save0.6");
         for (int i = 0; i < equipo.pokemones.Count; i++)
         {
             if (equipo.pokemones[i].HP < equipo.pokemones[i].MaxHP)
@@ -200,7 +209,7 @@ public class ControladorPartida : MonoBehaviour
     {
         if (cambiarMusica)
             audioManager.PlayMusicaExploracion();
-        SavingSystem.i.Save("Save");
+        SavingSystem.i.Save("Save0.6");
         var cambiadorSprites = FindFirstObjectByType<CambiadorSprites>();
         if (cambiadorSprites != null)
             cambiadorSprites.SendMessage("SetIdle");
@@ -387,7 +396,7 @@ public class ControladorPartida : MonoBehaviour
     /// </summary>
     public void ContinuarPartida()
     {
-        SavingSystem.i.Load("Save");
+        SavingSystem.i.Load("Save0.6");
         ActivarExploracion();
     }
 

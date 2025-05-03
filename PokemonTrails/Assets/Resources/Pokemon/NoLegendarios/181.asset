@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 181
+  m_EditorClassIdentifier: 
+  num: 181
+  nombre: Ampharos
+  tipo1: 5
+  tipo2: 0
+  idle: {fileID: 5330676613791763666, guid: 5a142b21b39c1664c823b75775f35440, type: 3}
+  idleShiny: {fileID: 5330676613791763666, guid: 8d8963c631384b549ae8489cd59ee959, type: 3}
+  explorar: {fileID: -6992828773301744620, guid: 5a142b21b39c1664c823b75775f35440, type: 3}
+  explorarShiny: {fileID: -6992828773301744620, guid: 8d8963c631384b549ae8489cd59ee959, type: 3}
+  andar:
+  - {fileID: -6401824525656994947, guid: 5a142b21b39c1664c823b75775f35440, type: 3}
+  - {fileID: -1848158459904826750, guid: 5a142b21b39c1664c823b75775f35440, type: 3}
+  - {fileID: 4520218826867364555, guid: 5a142b21b39c1664c823b75775f35440, type: 3}
+  - {fileID: 5843968138093375695, guid: 5a142b21b39c1664c823b75775f35440, type: 3}
+  andarShiny:
+  - {fileID: -6401824525656994947, guid: 8d8963c631384b549ae8489cd59ee959, type: 3}
+  - {fileID: -1848158459904826750, guid: 8d8963c631384b549ae8489cd59ee959, type: 3}
+  - {fileID: 4520218826867364555, guid: 8d8963c631384b549ae8489cd59ee959, type: 3}
+  - {fileID: 5843968138093375695, guid: 8d8963c631384b549ae8489cd59ee959, type: 3}
+  hp: 90
+  atk: 115
+  def: 90
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 30
+  ratioCaptura: 45
+  tipoExp: 0
+  exBase: 230
+  SpriteTipo1: {fileID: 5820286478268577726, guid: f1d7827866e38664fb759c583947fb9a, type: 3}
+  SpriteTipo2: {fileID: 0}

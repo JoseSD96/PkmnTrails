@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 245
+  m_EditorClassIdentifier: 
+  num: 245
+  nombre: Suicune
+  tipo1: 2
+  tipo2: 0
+  idle: {fileID: 4955517318711749209, guid: c5e2f41bc62ca9848aeaaeec5e3329e8, type: 3}
+  idleShiny: {fileID: 4955517318711749209, guid: ed36e62a7071c3341aa28941ccd8efde, type: 3}
+  explorar: {fileID: -2087982095157284305, guid: c5e2f41bc62ca9848aeaaeec5e3329e8, type: 3}
+  explorarShiny: {fileID: -2087982095157284305, guid: ed36e62a7071c3341aa28941ccd8efde, type: 3}
+  andar:
+  - {fileID: -7566236180767297886, guid: c5e2f41bc62ca9848aeaaeec5e3329e8, type: 3}
+  - {fileID: 4476455105438157529, guid: c5e2f41bc62ca9848aeaaeec5e3329e8, type: 3}
+  - {fileID: 7684028852211507209, guid: c5e2f41bc62ca9848aeaaeec5e3329e8, type: 3}
+  - {fileID: 4725249927765639070, guid: c5e2f41bc62ca9848aeaaeec5e3329e8, type: 3}
+  andarShiny:
+  - {fileID: -7566236180767297886, guid: ed36e62a7071c3341aa28941ccd8efde, type: 3}
+  - {fileID: 4476455105438157529, guid: ed36e62a7071c3341aa28941ccd8efde, type: 3}
+  - {fileID: 7684028852211507209, guid: ed36e62a7071c3341aa28941ccd8efde, type: 3}
+  - {fileID: 4725249927765639070, guid: ed36e62a7071c3341aa28941ccd8efde, type: 3}
+  hp: 100
+  atk: 90
+  def: 115
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 50
+  ratioCaptura: 3
+  tipoExp: 1
+  exBase: 261
+  SpriteTipo1: {fileID: 8509550459451208454, guid: 6e26c3eb6d8ce2d43b13c1fe1a7c772c, type: 3}
+  SpriteTipo2: {fileID: 0}

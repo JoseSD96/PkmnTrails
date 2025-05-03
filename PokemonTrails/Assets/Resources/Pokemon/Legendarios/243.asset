@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 243
+  m_EditorClassIdentifier: 
+  num: 243
+  nombre: Raikou
+  tipo1: 5
+  tipo2: 0
+  idle: {fileID: -2978606428369813131, guid: a15ec224acb9a1843b4dc124016dfe53, type: 3}
+  idleShiny: {fileID: -2978606428369813131, guid: 735dd9e4b4486694f9d78721d4f04668, type: 3}
+  explorar: {fileID: 6043891868492220994, guid: a15ec224acb9a1843b4dc124016dfe53, type: 3}
+  explorarShiny: {fileID: 6043891868492220994, guid: 735dd9e4b4486694f9d78721d4f04668, type: 3}
+  andar:
+  - {fileID: 3539914276535742068, guid: a15ec224acb9a1843b4dc124016dfe53, type: 3}
+  - {fileID: -8316565279439140062, guid: a15ec224acb9a1843b4dc124016dfe53, type: 3}
+  - {fileID: 3014618956865317125, guid: a15ec224acb9a1843b4dc124016dfe53, type: 3}
+  - {fileID: 6304153747867372495, guid: a15ec224acb9a1843b4dc124016dfe53, type: 3}
+  andarShiny:
+  - {fileID: 3539914276535742068, guid: 735dd9e4b4486694f9d78721d4f04668, type: 3}
+  - {fileID: -8316565279439140062, guid: 735dd9e4b4486694f9d78721d4f04668, type: 3}
+  - {fileID: 3014618956865317125, guid: 735dd9e4b4486694f9d78721d4f04668, type: 3}
+  - {fileID: 6304153747867372495, guid: 735dd9e4b4486694f9d78721d4f04668, type: 3}
+  hp: 90
+  atk: 115
+  def: 100
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 50
+  ratioCaptura: 3
+  tipoExp: 1
+  exBase: 261
+  SpriteTipo1: {fileID: 5820286478268577726, guid: f1d7827866e38664fb759c583947fb9a, type: 3}
+  SpriteTipo2: {fileID: 0}

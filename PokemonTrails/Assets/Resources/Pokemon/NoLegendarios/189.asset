@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 189
+  m_EditorClassIdentifier: 
+  num: 189
+  nombre: Jumpluff
+  tipo1: 12
+  tipo2: 18
+  idle: {fileID: -3381887629941641539, guid: e02cb3a682d57fb45b23f1500fc74645, type: 3}
+  idleShiny: {fileID: -3381887629941641539, guid: d9ed2fa320dd52a4c84b6e20fa98ea71, type: 3}
+  explorar: {fileID: 5213910114484509455, guid: e02cb3a682d57fb45b23f1500fc74645, type: 3}
+  explorarShiny: {fileID: 5213910114484509455, guid: d9ed2fa320dd52a4c84b6e20fa98ea71, type: 3}
+  andar:
+  - {fileID: 2969287256248998066, guid: e02cb3a682d57fb45b23f1500fc74645, type: 3}
+  - {fileID: -1117765056707480440, guid: e02cb3a682d57fb45b23f1500fc74645, type: 3}
+  - {fileID: 8064276123697974195, guid: e02cb3a682d57fb45b23f1500fc74645, type: 3}
+  - {fileID: -2629243734726766695, guid: e02cb3a682d57fb45b23f1500fc74645, type: 3}
+  andarShiny:
+  - {fileID: 2969287256248998066, guid: d9ed2fa320dd52a4c84b6e20fa98ea71, type: 3}
+  - {fileID: -1117765056707480440, guid: d9ed2fa320dd52a4c84b6e20fa98ea71, type: 3}
+  - {fileID: 8064276123697974195, guid: d9ed2fa320dd52a4c84b6e20fa98ea71, type: 3}
+  - {fileID: -2629243734726766695, guid: d9ed2fa320dd52a4c84b6e20fa98ea71, type: 3}
+  hp: 75
+  atk: 55
+  def: 95
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 27
+  ratioCaptura: 45
+  tipoExp: 0
+  exBase: 207
+  SpriteTipo1: {fileID: 7932798033344189819, guid: d6d579d0526b1aa46bd061d6721fea3f, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

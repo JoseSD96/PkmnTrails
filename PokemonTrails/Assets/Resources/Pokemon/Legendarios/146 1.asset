@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 146 1
+  m_EditorClassIdentifier: 
+  num: 146
+  nombre: Moltres (Galar)
+  tipo1: 15
+  tipo2: 18
+  idle: {fileID: 4755832645741408706, guid: 3120418cd73d0624eabe00aad6c3222e, type: 3}
+  idleShiny: {fileID: 4755832645741408706, guid: d2381b94c7726aa4da53d7be6cc80fff, type: 3}
+  explorar: {fileID: 8210646806050936267, guid: 3120418cd73d0624eabe00aad6c3222e, type: 3}
+  explorarShiny: {fileID: 8210646806050936267, guid: d2381b94c7726aa4da53d7be6cc80fff, type: 3}
+  andar:
+  - {fileID: 3112056980786179086, guid: 3120418cd73d0624eabe00aad6c3222e, type: 3}
+  - {fileID: -5648279070803788528, guid: 3120418cd73d0624eabe00aad6c3222e, type: 3}
+  - {fileID: 6058991216281591745, guid: 3120418cd73d0624eabe00aad6c3222e, type: 3}
+  - {fileID: 653662157134844518, guid: 3120418cd73d0624eabe00aad6c3222e, type: 3}
+  andarShiny:
+  - {fileID: 3112056980786179086, guid: d2381b94c7726aa4da53d7be6cc80fff, type: 3}
+  - {fileID: -5648279070803788528, guid: d2381b94c7726aa4da53d7be6cc80fff, type: 3}
+  - {fileID: 6058991216281591745, guid: d2381b94c7726aa4da53d7be6cc80fff, type: 3}
+  - {fileID: 653662157134844518, guid: d2381b94c7726aa4da53d7be6cc80fff, type: 3}
+  hp: 90
+  atk: 100
+  def: 125
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 50
+  ratioCaptura: 3
+  tipoExp: 1
+  exBase: 261
+  SpriteTipo1: {fileID: -6729511157232288408, guid: 5c82e9f86c291b2429e98339bd58b3ce, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

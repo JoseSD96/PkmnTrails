@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 251
+  m_EditorClassIdentifier: 
+  num: 251
+  nombre: Celebi
+  tipo1: 13
+  tipo2: 12
+  idle: {fileID: 350872570678795896, guid: 867d1ecde97035e42831fed6e0716621, type: 3}
+  idleShiny: {fileID: 350872570678795896, guid: 0301c523375f47949a0ebe4fa86d3ed7, type: 3}
+  explorar: {fileID: -8616841650662260663, guid: 867d1ecde97035e42831fed6e0716621, type: 3}
+  explorarShiny: {fileID: -8616841650662260663, guid: 0301c523375f47949a0ebe4fa86d3ed7, type: 3}
+  andar:
+  - {fileID: 3926086075510792991, guid: 867d1ecde97035e42831fed6e0716621, type: 3}
+  - {fileID: -5116180550445655481, guid: 867d1ecde97035e42831fed6e0716621, type: 3}
+  - {fileID: 6826956286435649795, guid: 867d1ecde97035e42831fed6e0716621, type: 3}
+  - {fileID: 1612754327791749493, guid: 867d1ecde97035e42831fed6e0716621, type: 3}
+  andarShiny:
+  - {fileID: 3926086075510792991, guid: 0301c523375f47949a0ebe4fa86d3ed7, type: 3}
+  - {fileID: -5116180550445655481, guid: 0301c523375f47949a0ebe4fa86d3ed7, type: 3}
+  - {fileID: 6826956286435649795, guid: 0301c523375f47949a0ebe4fa86d3ed7, type: 3}
+  - {fileID: 1612754327791749493, guid: 0301c523375f47949a0ebe4fa86d3ed7, type: 3}
+  hp: 100
+  atk: 100
+  def: 100
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 50
+  ratioCaptura: 45
+  tipoExp: 0
+  exBase: 270
+  SpriteTipo1: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}
+  SpriteTipo2: {fileID: 7932798033344189819, guid: d6d579d0526b1aa46bd061d6721fea3f, type: 3}

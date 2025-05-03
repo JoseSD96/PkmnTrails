@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 210
+  m_EditorClassIdentifier: 
+  num: 210
+  nombre: Granbull
+  tipo1: 8
+  tipo2: 0
+  idle: {fileID: 6865029148933736910, guid: 93db118e9f7032943b4533c9b6cef657, type: 3}
+  idleShiny: {fileID: 6865029148933736910, guid: 61cc30085e1cff04c8fc5c6bbd1c1080, type: 3}
+  explorar: {fileID: 7006917641573719086, guid: 93db118e9f7032943b4533c9b6cef657, type: 3}
+  explorarShiny: {fileID: 7006917641573719086, guid: 61cc30085e1cff04c8fc5c6bbd1c1080, type: 3}
+  andar:
+  - {fileID: 256344820908386422, guid: 93db118e9f7032943b4533c9b6cef657, type: 3}
+  - {fileID: -3880443520175158068, guid: 93db118e9f7032943b4533c9b6cef657, type: 3}
+  - {fileID: 4114721497836034874, guid: 93db118e9f7032943b4533c9b6cef657, type: 3}
+  - {fileID: 7644506999340873272, guid: 93db118e9f7032943b4533c9b6cef657, type: 3}
+  andarShiny:
+  - {fileID: 256344820908386422, guid: 61cc30085e1cff04c8fc5c6bbd1c1080, type: 3}
+  - {fileID: -3880443520175158068, guid: 61cc30085e1cff04c8fc5c6bbd1c1080, type: 3}
+  - {fileID: 4114721497836034874, guid: 61cc30085e1cff04c8fc5c6bbd1c1080, type: 3}
+  - {fileID: 7644506999340873272, guid: 61cc30085e1cff04c8fc5c6bbd1c1080, type: 3}
+  hp: 90
+  atk: 120
+  def: 75
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 23
+  ratioCaptura: 75
+  tipoExp: 3
+  exBase: 158
+  SpriteTipo1: {fileID: -2990309890484215505, guid: 89937cfd53b749e4aaa21deb0531704a, type: 3}
+  SpriteTipo2: {fileID: 0}

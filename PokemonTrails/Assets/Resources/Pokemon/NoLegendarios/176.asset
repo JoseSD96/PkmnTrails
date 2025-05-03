@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 176
+  m_EditorClassIdentifier: 
+  num: 176
+  nombre: Togetic
+  tipo1: 8
+  tipo2: 18
+  idle: {fileID: 1376200803902349852, guid: b5aee87dabe195742873fce82877d431, type: 3}
+  idleShiny: {fileID: 1376200803902349852, guid: b9498e3f9e47bf04a94832640963dd4b, type: 3}
+  explorar: {fileID: -5920596787348107986, guid: b5aee87dabe195742873fce82877d431, type: 3}
+  explorarShiny: {fileID: -5920596787348107986, guid: b9498e3f9e47bf04a94832640963dd4b, type: 3}
+  andar:
+  - {fileID: 1812264460353822138, guid: b5aee87dabe195742873fce82877d431, type: 3}
+  - {fileID: 6057772170999471737, guid: b5aee87dabe195742873fce82877d431, type: 3}
+  - {fileID: -2552299913713048255, guid: b5aee87dabe195742873fce82877d431, type: 3}
+  - {fileID: -511668093210106837, guid: b5aee87dabe195742873fce82877d431, type: 3}
+  andarShiny:
+  - {fileID: 1812264460353822138, guid: b9498e3f9e47bf04a94832640963dd4b, type: 3}
+  - {fileID: 6057772170999471737, guid: b9498e3f9e47bf04a94832640963dd4b, type: 3}
+  - {fileID: -2552299913713048255, guid: b9498e3f9e47bf04a94832640963dd4b, type: 3}
+  - {fileID: -511668093210106837, guid: b9498e3f9e47bf04a94832640963dd4b, type: 3}
+  hp: 55
+  atk: 80
+  def: 105
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 12
+  ratioCaptura: 75
+  tipoExp: 3
+  exBase: 142
+  SpriteTipo1: {fileID: -2990309890484215505, guid: 89937cfd53b749e4aaa21deb0531704a, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

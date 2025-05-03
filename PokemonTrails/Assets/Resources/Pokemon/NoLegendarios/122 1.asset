@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 122 1
+  m_EditorClassIdentifier: 
+  num: 122
+  nombre: Mr. Mime (Galar)
+  tipo1: 9
+  tipo2: 13
+  idle: {fileID: 8233008090003062669, guid: fffbacdc94af1d14ebe4fd8d31634535, type: 3}
+  idleShiny: {fileID: 8233008090003062669, guid: de8c73824dd0a3c4c8038558b6cae6b9, type: 3}
+  explorar: {fileID: -52349141893181187, guid: fffbacdc94af1d14ebe4fd8d31634535, type: 3}
+  explorarShiny: {fileID: -52349141893181187, guid: de8c73824dd0a3c4c8038558b6cae6b9, type: 3}
+  andar:
+  - {fileID: -4284768611891204507, guid: fffbacdc94af1d14ebe4fd8d31634535, type: 3}
+  - {fileID: 7193291811427751849, guid: fffbacdc94af1d14ebe4fd8d31634535, type: 3}
+  - {fileID: 3199316096992749880, guid: fffbacdc94af1d14ebe4fd8d31634535, type: 3}
+  - {fileID: 4071262250837411869, guid: fffbacdc94af1d14ebe4fd8d31634535, type: 3}
+  andarShiny:
+  - {fileID: -4284768611891204507, guid: de8c73824dd0a3c4c8038558b6cae6b9, type: 3}
+  - {fileID: 7193291811427751849, guid: de8c73824dd0a3c4c8038558b6cae6b9, type: 3}
+  - {fileID: 3199316096992749880, guid: de8c73824dd0a3c4c8038558b6cae6b9, type: 3}
+  - {fileID: 4071262250837411869, guid: de8c73824dd0a3c4c8038558b6cae6b9, type: 3}
+  hp: 50
+  atk: 90
+  def: 90
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 45
+  tipoExp: 2
+  exBase: 161
+  SpriteTipo1: {fileID: -856085545168688419, guid: d8e3894f455edc740b8c7ffd27ea0c67, type: 3}
+  SpriteTipo2: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 200
+  m_EditorClassIdentifier: 
+  num: 200
+  nombre: Misdreavus
+  tipo1: 6
+  tipo2: 0
+  idle: {fileID: -5808283805970215291, guid: 60e2f12d3550d9f4c9499bb267d6d932, type: 3}
+  idleShiny: {fileID: -5808283805970215291, guid: 24e0f97e42b27fb49b7591ddc84900fb, type: 3}
+  explorar: {fileID: -2076001854449509980, guid: 60e2f12d3550d9f4c9499bb267d6d932, type: 3}
+  explorarShiny: {fileID: -2076001854449509980, guid: 24e0f97e42b27fb49b7591ddc84900fb, type: 3}
+  andar:
+  - {fileID: 7497516817814785531, guid: 60e2f12d3550d9f4c9499bb267d6d932, type: 3}
+  - {fileID: 5691645552258273021, guid: 60e2f12d3550d9f4c9499bb267d6d932, type: 3}
+  - {fileID: 2652248746092402487, guid: 60e2f12d3550d9f4c9499bb267d6d932, type: 3}
+  - {fileID: -8221382592057971027, guid: 60e2f12d3550d9f4c9499bb267d6d932, type: 3}
+  andarShiny:
+  - {fileID: 7497516817814785531, guid: 24e0f97e42b27fb49b7591ddc84900fb, type: 3}
+  - {fileID: 5691645552258273021, guid: 24e0f97e42b27fb49b7591ddc84900fb, type: 3}
+  - {fileID: 2652248746092402487, guid: 24e0f97e42b27fb49b7591ddc84900fb, type: 3}
+  - {fileID: -8221382592057971027, guid: 24e0f97e42b27fb49b7591ddc84900fb, type: 3}
+  hp: 60
+  atk: 85
+  def: 85
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 45
+  tipoExp: 3
+  exBase: 87
+  SpriteTipo1: {fileID: 4448715427215634006, guid: 4a8254e73c1ad2a41ab3a14c94623e9b, type: 3}
+  SpriteTipo2: {fileID: 0}

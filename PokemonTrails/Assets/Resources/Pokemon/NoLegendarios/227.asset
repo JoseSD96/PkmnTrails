@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 227
+  m_EditorClassIdentifier: 
+  num: 227
+  nombre: Skarmory
+  tipo1: 1
+  tipo2: 18
+  idle: {fileID: -6202002058229288963, guid: bfb4c052c0bb76943920a3ff11d599af, type: 3}
+  idleShiny: {fileID: -6202002058229288963, guid: e067159ef0ea9fd4a8a1309fc614f17c, type: 3}
+  explorar: {fileID: -1083310442633043947, guid: bfb4c052c0bb76943920a3ff11d599af, type: 3}
+  explorarShiny: {fileID: -1083310442633043947, guid: e067159ef0ea9fd4a8a1309fc614f17c, type: 3}
+  andar:
+  - {fileID: -7585192257846501217, guid: bfb4c052c0bb76943920a3ff11d599af, type: 3}
+  - {fileID: -6851240726622468, guid: bfb4c052c0bb76943920a3ff11d599af, type: 3}
+  - {fileID: 5635713561449875945, guid: bfb4c052c0bb76943920a3ff11d599af, type: 3}
+  - {fileID: 8086304882104720120, guid: bfb4c052c0bb76943920a3ff11d599af, type: 3}
+  andarShiny:
+  - {fileID: -7585192257846501217, guid: e067159ef0ea9fd4a8a1309fc614f17c, type: 3}
+  - {fileID: -6851240726622468, guid: e067159ef0ea9fd4a8a1309fc614f17c, type: 3}
+  - {fileID: 5635713561449875945, guid: e067159ef0ea9fd4a8a1309fc614f17c, type: 3}
+  - {fileID: 8086304882104720120, guid: e067159ef0ea9fd4a8a1309fc614f17c, type: 3}
+  hp: 65
+  atk: 80
+  def: 140
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 25
+  tipoExp: 1
+  exBase: 163
+  SpriteTipo1: {fileID: 4226397978021778064, guid: dee16be6095eb474bbabf67738024674, type: 3}
+  SpriteTipo2: {fileID: -8716530363669133318, guid: 1331f2f3fd61ebb4f9cedd3eb40fe62a, type: 3}

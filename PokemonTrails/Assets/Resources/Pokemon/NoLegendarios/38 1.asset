@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 38 1
+  m_EditorClassIdentifier: 
+  num: 38
+  nombre: Ninetales (Alola)
+  tipo1: 9
+  tipo2: 8
+  idle: {fileID: 8539034616646301393, guid: 70da89b30b4792947b872ec396e0f18d, type: 3}
+  idleShiny: {fileID: 8539034616646301393, guid: bdaeab76bae1e7142862a5c8b6a7c69a, type: 3}
+  explorar: {fileID: 3396005589439457672, guid: 70da89b30b4792947b872ec396e0f18d, type: 3}
+  explorarShiny: {fileID: 3396005589439457672, guid: bdaeab76bae1e7142862a5c8b6a7c69a, type: 3}
+  andar:
+  - {fileID: -533508049684007668, guid: 70da89b30b4792947b872ec396e0f18d, type: 3}
+  - {fileID: -605132251988305213, guid: 70da89b30b4792947b872ec396e0f18d, type: 3}
+  - {fileID: 6778882371496196179, guid: 70da89b30b4792947b872ec396e0f18d, type: 3}
+  - {fileID: 3710349088502054884, guid: 70da89b30b4792947b872ec396e0f18d, type: 3}
+  andarShiny:
+  - {fileID: -533508049684007668, guid: bdaeab76bae1e7142862a5c8b6a7c69a, type: 3}
+  - {fileID: -605132251988305213, guid: bdaeab76bae1e7142862a5c8b6a7c69a, type: 3}
+  - {fileID: 6778882371496196179, guid: bdaeab76bae1e7142862a5c8b6a7c69a, type: 3}
+  - {fileID: 3710349088502054884, guid: bdaeab76bae1e7142862a5c8b6a7c69a, type: 3}
+  hp: 73
+  atk: 81
+  def: 100
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 25
+  ratioCaptura: 75
+  tipoExp: 2
+  exBase: 177
+  SpriteTipo1: {fileID: -856085545168688419, guid: d8e3894f455edc740b8c7ffd27ea0c67, type: 3}
+  SpriteTipo2: {fileID: -2990309890484215505, guid: 89937cfd53b749e4aaa21deb0531704a, type: 3}

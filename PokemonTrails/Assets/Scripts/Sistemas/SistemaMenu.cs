@@ -67,7 +67,7 @@ public class SistemaMenu : MonoBehaviour
         btnNo.interactable = true;
         onConfirmarNuevaPartida = onConfirmar;
 
-        if (SavingSystem.i.CheckIfSaveExists("Save"))
+        if (SavingSystem.i.CheckIfSaveExists("Save0.6"))
         {
             textoConfirmacion.text = "Esto borrara tu partida actual, ¿Seguro que quieres continuar?";
         }

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 232
+  m_EditorClassIdentifier: 
+  num: 232
+  nombre: Donphan
+  tipo1: 16
+  tipo2: 0
+  idle: {fileID: -6860264870069564686, guid: 92904f02ad8440241bdf3f2ffb93fab1, type: 3}
+  idleShiny: {fileID: -6860264870069564686, guid: d6f2e21f72558d045bd746a1073628ba, type: 3}
+  explorar: {fileID: 8378738256729339197, guid: 92904f02ad8440241bdf3f2ffb93fab1, type: 3}
+  explorarShiny: {fileID: 8378738256729339197, guid: d6f2e21f72558d045bd746a1073628ba, type: 3}
+  andar:
+  - {fileID: 1120795232914215458, guid: 92904f02ad8440241bdf3f2ffb93fab1, type: 3}
+  - {fileID: -1935244323181070064, guid: 92904f02ad8440241bdf3f2ffb93fab1, type: 3}
+  - {fileID: -5468832089372456479, guid: 92904f02ad8440241bdf3f2ffb93fab1, type: 3}
+  - {fileID: -4015367663965053850, guid: 92904f02ad8440241bdf3f2ffb93fab1, type: 3}
+  andarShiny:
+  - {fileID: 1120795232914215458, guid: d6f2e21f72558d045bd746a1073628ba, type: 3}
+  - {fileID: -1935244323181070064, guid: d6f2e21f72558d045bd746a1073628ba, type: 3}
+  - {fileID: -5468832089372456479, guid: d6f2e21f72558d045bd746a1073628ba, type: 3}
+  - {fileID: -4015367663965053850, guid: d6f2e21f72558d045bd746a1073628ba, type: 3}
+  hp: 90
+  atk: 120
+  def: 120
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 25
+  ratioCaptura: 60
+  tipoExp: 2
+  exBase: 175
+  SpriteTipo1: {fileID: -3878557786174838139, guid: 15b6f5b649c3dc840a961d3f87c45c27, type: 3}
+  SpriteTipo2: {fileID: 0}

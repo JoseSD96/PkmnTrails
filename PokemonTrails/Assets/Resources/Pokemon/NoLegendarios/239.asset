@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 239
+  m_EditorClassIdentifier: 
+  num: 239
+  nombre: Elekid
+  tipo1: 5
+  tipo2: 0
+  idle: {fileID: 4155908193341578051, guid: acecb41083ca7a949975eb300e7486e2, type: 3}
+  idleShiny: {fileID: 4155908193341578051, guid: fbf1a176c2f91e544a484d7d221eb707, type: 3}
+  explorar: {fileID: -1787482561872120833, guid: acecb41083ca7a949975eb300e7486e2, type: 3}
+  explorarShiny: {fileID: -1787482561872120833, guid: fbf1a176c2f91e544a484d7d221eb707, type: 3}
+  andar:
+  - {fileID: 8335439607814076292, guid: acecb41083ca7a949975eb300e7486e2, type: 3}
+  - {fileID: -7089713787860431534, guid: acecb41083ca7a949975eb300e7486e2, type: 3}
+  - {fileID: -6010711387406541976, guid: acecb41083ca7a949975eb300e7486e2, type: 3}
+  - {fileID: -396096252628635153, guid: acecb41083ca7a949975eb300e7486e2, type: 3}
+  andarShiny:
+  - {fileID: 8335439607814076292, guid: fbf1a176c2f91e544a484d7d221eb707, type: 3}
+  - {fileID: -7089713787860431534, guid: fbf1a176c2f91e544a484d7d221eb707, type: 3}
+  - {fileID: -6010711387406541976, guid: fbf1a176c2f91e544a484d7d221eb707, type: 3}
+  - {fileID: -396096252628635153, guid: fbf1a176c2f91e544a484d7d221eb707, type: 3}
+  hp: 45
+  atk: 65
+  def: 55
+  lvlEvo: 30
+  evolucion:
+  - {fileID: 11400000, guid: 9a769b4a851d9594b8188d3f1a8bb5f2, type: 2}
+  minLvl: 1
+  ratioCaptura: 45
+  tipoExp: 2
+  exBase: 72
+  SpriteTipo1: {fileID: 5820286478268577726, guid: f1d7827866e38664fb759c583947fb9a, type: 3}
+  SpriteTipo2: {fileID: 0}

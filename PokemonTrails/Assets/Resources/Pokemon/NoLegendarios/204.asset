@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 204
+  m_EditorClassIdentifier: 
+  num: 204
+  nombre: Pineco
+  tipo1: 3
+  tipo2: 0
+  idle: {fileID: 5586097700223401997, guid: 1889b41b7eae7444a853b5a748a1b775, type: 3}
+  idleShiny: {fileID: 5586097700223401997, guid: 59b0850a36c98ca40838c4bd46ccd5dd, type: 3}
+  explorar: {fileID: -1300531348649073150, guid: 1889b41b7eae7444a853b5a748a1b775, type: 3}
+  explorarShiny: {fileID: -1300531348649073150, guid: 59b0850a36c98ca40838c4bd46ccd5dd, type: 3}
+  andar:
+  - {fileID: 305015705582122837, guid: 1889b41b7eae7444a853b5a748a1b775, type: 3}
+  - {fileID: 1554368813534182904, guid: 1889b41b7eae7444a853b5a748a1b775, type: 3}
+  - {fileID: -3570795577005289575, guid: 1889b41b7eae7444a853b5a748a1b775, type: 3}
+  - {fileID: 292942989640994081, guid: 1889b41b7eae7444a853b5a748a1b775, type: 3}
+  andarShiny:
+  - {fileID: 305015705582122837, guid: 59b0850a36c98ca40838c4bd46ccd5dd, type: 3}
+  - {fileID: 1554368813534182904, guid: 59b0850a36c98ca40838c4bd46ccd5dd, type: 3}
+  - {fileID: -3570795577005289575, guid: 59b0850a36c98ca40838c4bd46ccd5dd, type: 3}
+  - {fileID: 292942989640994081, guid: 59b0850a36c98ca40838c4bd46ccd5dd, type: 3}
+  hp: 50
+  atk: 65
+  def: 90
+  lvlEvo: 31
+  evolucion:
+  - {fileID: 11400000, guid: 40412d45439e17f49945ff7601bc6099, type: 2}
+  minLvl: 1
+  ratioCaptura: 190
+  tipoExp: 2
+  exBase: 163
+  SpriteTipo1: {fileID: -3367932149377307684, guid: 6fd472e56c695804abba7eca29ae7f25, type: 3}
+  SpriteTipo2: {fileID: 0}

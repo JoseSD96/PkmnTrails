@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 202
+  m_EditorClassIdentifier: 
+  num: 202
+  nombre: Wobbuffet
+  tipo1: 13
+  tipo2: 0
+  idle: {fileID: 3037265243899496965, guid: 20aeffbbcdaec514c9a08bf9ca15d04a, type: 3}
+  idleShiny: {fileID: 3037265243899496965, guid: 98dab311e03fc194f9d321cb666d0b30, type: 3}
+  explorar: {fileID: 4469877615015030236, guid: 20aeffbbcdaec514c9a08bf9ca15d04a, type: 3}
+  explorarShiny: {fileID: 4469877615015030236, guid: 98dab311e03fc194f9d321cb666d0b30, type: 3}
+  andar:
+  - {fileID: 1483166449919395961, guid: 20aeffbbcdaec514c9a08bf9ca15d04a, type: 3}
+  - {fileID: 2209317985273494156, guid: 20aeffbbcdaec514c9a08bf9ca15d04a, type: 3}
+  - {fileID: -973851923030824861, guid: 20aeffbbcdaec514c9a08bf9ca15d04a, type: 3}
+  - {fileID: -8522921885959746039, guid: 20aeffbbcdaec514c9a08bf9ca15d04a, type: 3}
+  andarShiny:
+  - {fileID: 1483166449919395961, guid: 98dab311e03fc194f9d321cb666d0b30, type: 3}
+  - {fileID: 2209317985273494156, guid: 98dab311e03fc194f9d321cb666d0b30, type: 3}
+  - {fileID: -973851923030824861, guid: 98dab311e03fc194f9d321cb666d0b30, type: 3}
+  - {fileID: -8522921885959746039, guid: 98dab311e03fc194f9d321cb666d0b30, type: 3}
+  hp: 190
+  atk: 33
+  def: 58
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 45
+  tipoExp: 2
+  exBase: 142
+  SpriteTipo1: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}
+  SpriteTipo2: {fileID: 0}

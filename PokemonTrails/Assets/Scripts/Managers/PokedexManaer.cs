@@ -43,7 +43,7 @@ public class PokedexManager : MonoBehaviour
                 Image imagen = nuevaCelda.GetComponentInChildren<Image>();
                 imagen.sprite = todosLosPokemons[indexPokemon].SpriteIdle;
 
-                imagenesPokemons.Add(imagen); // Guardamos la referencia
+                imagenesPokemons.Add(imagen);
 
                 if (!pokedexCapturados.pokemones.Contains(todosLosPokemons[indexPokemon]))
                 {

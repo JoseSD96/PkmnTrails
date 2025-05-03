@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 203
+  m_EditorClassIdentifier: 
+  num: 203
+  nombre: Girafarig
+  tipo1: 11
+  tipo2: 13
+  idle: {fileID: -597654480317897897, guid: f4157b0f9bf30a9488c8d872da89f6f7, type: 3}
+  idleShiny: {fileID: -597654480317897897, guid: 335d90dc465d3d347a9b95a366835f15, type: 3}
+  explorar: {fileID: 7414592133293223011, guid: f4157b0f9bf30a9488c8d872da89f6f7, type: 3}
+  explorarShiny: {fileID: 7414592133293223011, guid: 335d90dc465d3d347a9b95a366835f15, type: 3}
+  andar:
+  - {fileID: -468456483401841143, guid: f4157b0f9bf30a9488c8d872da89f6f7, type: 3}
+  - {fileID: -2485437682861003135, guid: f4157b0f9bf30a9488c8d872da89f6f7, type: 3}
+  - {fileID: 5927908512242783136, guid: f4157b0f9bf30a9488c8d872da89f6f7, type: 3}
+  - {fileID: -5605610092709534585, guid: f4157b0f9bf30a9488c8d872da89f6f7, type: 3}
+  andarShiny:
+  - {fileID: -468456483401841143, guid: 335d90dc465d3d347a9b95a366835f15, type: 3}
+  - {fileID: -2485437682861003135, guid: 335d90dc465d3d347a9b95a366835f15, type: 3}
+  - {fileID: 5927908512242783136, guid: 335d90dc465d3d347a9b95a366835f15, type: 3}
+  - {fileID: -5605610092709534585, guid: 335d90dc465d3d347a9b95a366835f15, type: 3}
+  hp: 70
+  atk: 90
+  def: 65
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 1
+  ratioCaptura: 60
+  tipoExp: 2
+  exBase: 159
+  SpriteTipo1: {fileID: 4606157284126940538, guid: bcea1507ef7c2e5439b7d3f5e0aecd67, type: 3}
+  SpriteTipo2: {fileID: 5126300740797948313, guid: c5640c723c3583b4b943dd169d077a60, type: 3}

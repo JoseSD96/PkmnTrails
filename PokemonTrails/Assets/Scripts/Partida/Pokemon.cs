@@ -161,7 +161,7 @@ public class Pokemon
     /// </summary>
     public void ComprobarEvolucion()
     {
-        if (Base.LvlEvo > 0)
+        if (Base.Evolucion.Length > 0)
         {
             if (nivel >= Base.LvlEvo)
             {

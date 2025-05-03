@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86980084b438ba4418a883db4146f654, type: 3}
+  m_Name: 208
+  m_EditorClassIdentifier: 
+  num: 208
+  nombre: Steelix
+  tipo1: 1
+  tipo2: 16
+  idle: {fileID: -1855350211163485885, guid: c8584f18bd9b936438f61931cafaf409, type: 3}
+  idleShiny: {fileID: -1855350211163485885, guid: 99f2d43c6b6615f45ae4ccb4a14e771b, type: 3}
+  explorar: {fileID: 4702821780045315596, guid: c8584f18bd9b936438f61931cafaf409, type: 3}
+  explorarShiny: {fileID: 4702821780045315596, guid: 99f2d43c6b6615f45ae4ccb4a14e771b, type: 3}
+  andar:
+  - {fileID: 5376079253771823552, guid: c8584f18bd9b936438f61931cafaf409, type: 3}
+  - {fileID: -2903769592005612491, guid: c8584f18bd9b936438f61931cafaf409, type: 3}
+  - {fileID: -1791859329675281835, guid: c8584f18bd9b936438f61931cafaf409, type: 3}
+  - {fileID: 600507450328850964, guid: c8584f18bd9b936438f61931cafaf409, type: 3}
+  andarShiny:
+  - {fileID: 5376079253771823552, guid: 99f2d43c6b6615f45ae4ccb4a14e771b, type: 3}
+  - {fileID: -2903769592005612491, guid: 99f2d43c6b6615f45ae4ccb4a14e771b, type: 3}
+  - {fileID: -1791859329675281835, guid: 99f2d43c6b6615f45ae4ccb4a14e771b, type: 3}
+  - {fileID: 600507450328850964, guid: 99f2d43c6b6615f45ae4ccb4a14e771b, type: 3}
+  hp: 75
+  atk: 85
+  def: 200
+  lvlEvo: 0
+  evolucion: []
+  minLvl: 25
+  ratioCaptura: 25
+  tipoExp: 2
+  exBase: 179
+  SpriteTipo1: {fileID: 4226397978021778064, guid: dee16be6095eb474bbabf67738024674, type: 3}
+  SpriteTipo2: {fileID: -3878557786174838139, guid: 15b6f5b649c3dc840a961d3f87c45c27, type: 3}
