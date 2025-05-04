@@ -420,8 +420,35 @@ public class ControladorPartida : MonoBehaviour
             jugador.pc.cajas.Add(i, new List<Pokemon>());
 
         jugador.equipo.pc = jugador.pc;
-
-        var pokemonInicial = PokemonBaseManager.GetPokemon(pokemonIndex);
+        string nombre = "";
+        switch (pokemonIndex)
+        {
+            case 1:
+                nombre = "Bulbasaur";
+                break;
+            case 4:
+                nombre = "Charmander";
+                break;
+            case 7:
+                nombre = "Squirtle";
+                break;
+            case 152:
+                nombre = "Chikorita";
+                break;
+            case 155:
+                nombre = "Cyndaquil";
+                break;
+            case 158:
+                nombre = "Totodile";
+                break;
+        }
+        Debug.Log("Pokemon inicial: " + nombre);
+        var pokemonInicial = PokemonBaseManager.GetPokemon(pokemonIndex, nombre);
+        if(pokemonInicial == null)
+        {
+            Debug.LogError("Pokemon inicial no encontrado: " + nombre);
+            return;
+        }
         int potencialInicial = Random.Range(20, 32);
         bool isShiny = Random.Range(0, 100) < 10;
         jugador.equipo.AddPokemon(new Pokemon(pokemonInicial, potencialInicial, isShiny, 5));

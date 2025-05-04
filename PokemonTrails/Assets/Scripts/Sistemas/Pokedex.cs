@@ -30,7 +30,7 @@ public class Pokedex : MonoBehaviour
         pokemones = new List<PokemonBase>();
         foreach (var pkmn in saveData.pokemones)
         {
-            var pkmnBase = PokemonBaseManager.GetPokemon(pkmn.numero);
+            var pkmnBase = PokemonBaseManager.GetPokemon(pkmn.numero, pkmn.nombrePokemon);
             pokemones.Add(pkmnBase);
         }
     }

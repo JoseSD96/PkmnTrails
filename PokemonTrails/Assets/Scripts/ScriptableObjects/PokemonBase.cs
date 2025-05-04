@@ -47,7 +47,6 @@ public class PokemonBase : ScriptableObject
     public int RatioCaptura => ratioCaptura;
     public int ExBase => exBase;
 
-
     public Sprite SpriteTipo1;
     public Sprite SpriteTipo2;
 

@@ -35,6 +35,7 @@ public class Pokemon
         return new PokemonSaveData
         {
             numero = Base.Num,
+            nombrePokemon = Base.Nombre,
             hp = HP,
             nivel = Nivel,
             experiencia = Experiencia,
@@ -74,7 +75,7 @@ public class Pokemon
     /// <param name="data">Datos serializados del Pokémon.</param>
     public Pokemon(PokemonSaveData data)
     {
-        _base = PokemonBaseManager.GetPokemon(data.numero);
+        _base = PokemonBaseManager.GetPokemon(data.numero, data.nombrePokemon);
         HP = data.hp;
         nivel = data.nivel;
         Experiencia = data.experiencia;
@@ -191,6 +192,6 @@ public class PokemonSaveData
     public int experiencia;
     public int potencial;
     public bool isShiny;
-
+    public string nombrePokemon;
     // Esta clase es solo para almacenar los datos serializables del Pokémon.
 }

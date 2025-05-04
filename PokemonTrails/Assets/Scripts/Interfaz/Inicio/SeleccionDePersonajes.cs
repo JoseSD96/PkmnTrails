@@ -12,7 +12,7 @@ public class SeleccionDePersonajes : MonoBehaviour
     private int trainerSeleccionado = -1;
     private int pokemonSeleccionado = -1;
 
-    private readonly int[] numerosPokemon = { 1, 4, 7 };
+    private readonly int[] numerosPokemon = { 1, 4, 7, 152, 155, 158 };
 
     private readonly string[] nombresTrainers = {
         "Rojo", "Azul", "Hoja", "Oro", "Plata", "Cristal",

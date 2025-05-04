@@ -255,8 +255,8 @@ public class SistemaCombate : MonoBehaviour
     /// </summary>
     private IEnumerator TerminarCombateCapturado()
     {
-
         yield return new WaitForSeconds(0.8f);
+        GanarExp();
         sistemaCaptura.resetPokeball();
         Atk1.interactable = false;
         Atk2.interactable = false;
@@ -268,6 +268,7 @@ public class SistemaCombate : MonoBehaviour
     private void GanarExp()
     {
         equipo.pokemones[0].Experiencia += pkmnEnemigo.Pkmn.Base.ExBase * pkmnEnemigo.Pkmn.Nivel / 5;
+        equipo.pokemones[0].ComprobarSubirNivel();
         for (int i = 1; i < equipo.pokemones.Count; i++)
         {
             Pokemon pkmn = equipo.pokemones[i];

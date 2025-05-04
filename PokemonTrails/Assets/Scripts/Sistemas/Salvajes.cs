@@ -35,7 +35,7 @@ public class Salvajes : MonoBehaviour
     public Pokemon GenerarPokemonSalvaje(int nivelMedioEquipo, bool shinyCharm)
     {
         Pokemon pokemonSalvaje = new Pokemon();
-        if (zonaBase.PokemonLegendario.Length > 0 && Random.Range(0, 100) < 10)
+        if (zonaBase.PokemonLegendario.Length > 0 && Random.Range(0, 100) < 10 && nivelMedioEquipo >= 30)
         {
             PokemonBase legendario = zonaBase.PokemonLegendario[0];
 

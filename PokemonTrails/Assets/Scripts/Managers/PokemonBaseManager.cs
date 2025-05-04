@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PokemonBaseManager
 {
-    static Dictionary<int, PokemonBase> pokemones;
+    static Dictionary<(int, string), PokemonBase> pokemones;
 
     /// <summary>
     /// Inicializa el diccionario de Pokémon base cargando todos los Pokémon normales y legendarios desde los recursos.
@@ -12,16 +12,16 @@ public class PokemonBaseManager
     /// </summary>
     public static void Init()
     {
-        pokemones = new Dictionary<int, PokemonBase>();
+        pokemones = new Dictionary<(int, string), PokemonBase>();
         var pkmns = Resources.LoadAll<PokemonBase>("Pokemon/NoLegendarios");
         var pokemonesLegendarios = Resources.LoadAll<PokemonBase>("Pokemon/Legendarios");
         foreach (var pkmn in pkmns)
         {
-            pokemones[pkmn.Num] = pkmn;
+            pokemones[(pkmn.Num, pkmn.Nombre)] = pkmn;
         }
         foreach (var pkmn in pokemonesLegendarios)
         {
-            pokemones[pkmn.Num] = pkmn;
+            pokemones[(pkmn.Num, pkmn.Nombre)] = pkmn;
         }
     }
 
@@ -31,17 +31,15 @@ public class PokemonBaseManager
     /// </summary>
     /// <param name="num">Número del Pokémon a buscar.</param>
     /// <returns>Instancia de PokemonBase o null si no se encuentra.</returns>
-    public static PokemonBase GetPokemon(int num)
+    public static PokemonBase GetPokemon(int num, string nombre)
     {
-        if (pokemones.ContainsKey(num))
+        foreach (var pkmn in pokemones)
         {
-            Debug.Log("Pokemon encontrado: " + num);
-            return pokemones[num];
+            if (pkmn.Key.Item1 == num && pkmn.Key.Item2 == nombre)
+            {
+                return pkmn.Value;
+            }
         }
-        else
-        {
-            Debug.LogError("Pokemon no encontrado: " + num);
-            return null;
-        }
+        return null;
     }
 }
