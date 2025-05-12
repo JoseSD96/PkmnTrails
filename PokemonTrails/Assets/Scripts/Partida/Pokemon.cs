@@ -166,6 +166,13 @@ public class Pokemon
         {
             if (nivel >= Base.LvlEvo)
             {
+                // Añadir la pre-evolución a la Pokédex si no está
+                var player = GameObject.FindFirstObjectByType<Player>();
+                if (player != null && player.pokedex != null && !player.pokedex.pokemones.Contains(this.Base))
+                {
+                    player.pokedex.pokemones.Add(this.Base);
+                }
+
                 if (Base.Evolucion.Length == 1)
                 {
                     int maxHPAntes = MaxHP;

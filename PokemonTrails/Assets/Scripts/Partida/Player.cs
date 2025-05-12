@@ -57,6 +57,7 @@ public class Player : MonoBehaviour, ISavable
         trainer = TrainerManager.GetTrainer(saveData.trainerName);
         equipo.RestoreState(saveData.equipo);
         pc.RestoreState(saveData.pc);
+        pokedex.RestoreState(saveData.pokedex);
     }
 }
 

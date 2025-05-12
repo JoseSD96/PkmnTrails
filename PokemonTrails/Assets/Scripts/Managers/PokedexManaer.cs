@@ -14,6 +14,10 @@ public class PokedexManager : MonoBehaviour
 
     private List<Image> imagenesPokemons = new List<Image>();
 
+    /// <summary>
+    /// Inicializa la Pokédex visual, creando las filas y celdas para mostrar todos los Pokémon.
+    /// Asigna el sprite correspondiente y ajusta la opacidad según si el Pokémon ha sido capturado.
+    /// </summary>
     void Start()
     {
         PokemonBase[] pokemons = Resources.LoadAll<PokemonBase>("Pokemon/NoLegendarios");
@@ -63,6 +67,10 @@ public class PokedexManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Actualiza la opacidad de los sprites de los Pokémon en la Pokédex visual,
+    /// reflejando si han sido capturados o no.
+    /// </summary>
     public void ActualizarIluminacionPokemons()
     {
         PokemonBase[] pokemons = Resources.LoadAll<PokemonBase>("Pokemon/NoLegendarios");

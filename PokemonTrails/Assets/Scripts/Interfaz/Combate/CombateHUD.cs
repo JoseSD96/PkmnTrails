@@ -98,14 +98,10 @@ public class CombateHUD : MonoBehaviour
 
         if (pokemonCombate.isEnemy)
         {
-            if (jugador.pokedex.pokemones.Contains(pokemonCombate.Pkmn.Base))
-            {
-                iconoCapturado.enabled = true;
-            }
-            else
-            {
-                iconoCapturado.enabled = false;
-            }
+            bool capturado = jugador.pokedex.pokemones.Exists(
+                p => p.Num == pokemonCombate.Pkmn.Base.Num && p.Nombre == pokemonCombate.Pkmn.Base.Nombre
+            );
+            iconoCapturado.gameObject.SetActive(capturado);
         }
 
         ResetAnimacionEntrada();

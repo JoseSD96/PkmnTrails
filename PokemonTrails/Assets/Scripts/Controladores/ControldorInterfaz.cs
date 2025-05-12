@@ -292,6 +292,7 @@ public class ControldorInterfaz : MonoBehaviour
         explorarButton.interactable = false;
         equipoButton.interactable = false;
         PCButton.interactable = false;
+        PokedexButton.interactable = false;
     }
 
     /// <summary>
@@ -307,6 +308,7 @@ public class ControldorInterfaz : MonoBehaviour
             explorarButton.interactable = true;
             equipoButton.interactable = true;
             PCButton.interactable = true;
+            PokedexButton.interactable = true;
         }
     }
 

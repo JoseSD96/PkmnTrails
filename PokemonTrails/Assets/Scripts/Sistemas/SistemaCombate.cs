@@ -103,6 +103,11 @@ public class SistemaCombate : MonoBehaviour
         huirBtn.interactable = false;
         StartCoroutine(CapturaCoroutine());
     }
+    
+    /// <summary>
+    /// Corrutina que gestiona la lógica de captura del Pokémon enemigo.
+    /// Llama a la función de lanzar Pokéball, espera el resultado y gestiona el flujo según éxito o fallo.
+    /// </summary>
     private IEnumerator CapturaCoroutine()
     {
         sistemaCaptura.LanzarPokeball();
@@ -265,6 +270,9 @@ public class SistemaCombate : MonoBehaviour
         partida.TerminarCombate(pkmnEnemigo.Pkmn);
     }
 
+    /// <summary>
+    /// Otorga experiencia a los Pokémon del equipo tras ganar un combate y comprueba si suben de nivel o evolucionan.
+    /// </summary>
     private void GanarExp()
     {
         equipo.pokemones[0].Experiencia += pkmnEnemigo.Pkmn.Base.ExBase * pkmnEnemigo.Pkmn.Nivel / 5;

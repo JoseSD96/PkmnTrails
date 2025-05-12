@@ -1322,12 +1322,12 @@ GameObject:
   - component: {fileID: 91803562}
   - component: {fileID: 91803563}
   m_Layer: 0
-  m_Name: iconoCaptirado
+  m_Name: iconoCapturado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &91803562
 Transform:
   m_ObjectHideFlags: 0
@@ -1337,7 +1337,7 @@ Transform:
   m_GameObject: {fileID: 91803561}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.72002685, y: 0.13873565, z: -5}
+  m_LocalPosition: {x: 0.78, y: -0.005, z: -10}
   m_LocalScale: {x: 0.45391622, y: 0.45391622, z: 0.45391622}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6108,7 +6108,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.008
+  m_Volume: 0.03
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -14650,7 +14650,7 @@ Transform:
   m_GameObject: {fileID: 1036394743}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1.478, y: 0.043, z: 0}
+  m_LocalPosition: {x: 1.701, y: 0.036, z: 0}
   m_LocalScale: {x: 0.3172402, y: 0.29943156, z: 0.44886887}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23008,7 +23008,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Version 0.6.3
+  m_text: Version 0.6.4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9c0cc00cdbba6724da758be95cbe2569, type: 2}
   m_sharedMaterial: {fileID: 2018231244567834937, guid: 9c0cc00cdbba6724da758be95cbe2569, type: 2}
@@ -24310,7 +24310,7 @@ Transform:
   m_GameObject: {fileID: 1987433015}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7075294, w: 0.70668393}
-  m_LocalPosition: {x: -1.431, y: 0.064, z: 0}
+  m_LocalPosition: {x: -1.996, y: -0.054, z: 0}
   m_LocalScale: {x: 0.3172402, y: 0.29943156, z: 0.4488688}
   m_ConstrainProportionsScale: 0
   m_Children:
